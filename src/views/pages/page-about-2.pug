@@ -1,0 +1,335 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header-3.pug
+
+block content
+  section.section-box
+    .banner-hero.bg-about-2
+      .container
+        .row
+          .col-lg-6.box-banner-left
+            span.tag-1.bg-6.color-green-900 What We Do, What You Get
+            h1.text-display-3.mt-30 Start Your Dream Business Today
+            p.text-body-lead-large.color-gray-500.mt-40.pr-40
+              | Integrated workflow designed for 
+              br.d-lg-block.d-none
+              | product teams. We create world-class
+              br.d-lg-block.d-none
+              |  development and branding
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='page-about-1.html') Join Our Team
+              a.btn.btn-link.color-gray-900.icon-arrow-right.text-heading-6(href='page-contact.html') Contact Us
+          .col-lg-6.d-none.d-lg-block
+            .banner-imgs
+              .block-1.shape-2
+                img(src='assets/imgs/page/about/2/banner.png', alt='Agon')
+              .float-end.col-lg-6.mt-90
+                .list-icons.mt-50
+                  .item-icon.none-bd
+                    span.icon-left
+                      img(src='assets/imgs/page/about/2/icon-project-done.svg', alt='Agon')
+                    h4.text-heading-4
+                      span.text-heading-3.color-green-900 +
+                        span.count 12
+                        | k
+                    p.text-body-text.color-gray-500 Projects done
+                  .item-icon.none-bd
+                    span.icon-left
+                      img(src='assets/imgs/page/about/2/icon-officer.svg', alt='Agon')
+                    h4.text-heading-4
+                      span.text-heading-3.color-green-900 +
+                        span.count 28
+                        | k
+                    p.text-body-text.color-gray-500 Offices / Factories
+                  .item-icon.none-bd
+                    span.icon-left
+                      img(src='assets/imgs/page/about/2/icon-constant.svg', alt='Agon')
+                    h4.text-heading-4
+                      span.text-heading-3.color-green-900 +
+                        span.count 15
+                        | k
+                    p.text-body-text.color-gray-500 Constant clients
+  section.section-box.mt-70
+    .container
+      .row
+        .col-lg-1.col-sm-1.col-12
+        .col-lg-10.col-sm-10.col-12.text-center
+          .text-center.mb-20
+            span.tag-1 How It Work ?
+          h2.text-display-3.color-gray-900.mb-60
+            | Elevate your Employee
+            br.d-lg-block.d-none
+            |  Development Journey
+        .col-lg-1.col-sm-1.col-12
+    .container
+      .row
+        .col-lg-1.col-sm-12.col-12
+        .col-lg-10.col-sm-12.col-12
+          ul.list-steps
+            li.icon-asset1.wow.animate__animated.animate__fadeIn(data-wow-delay='.1s')
+              .text-center.block-step
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-start-plan.svg', alt='Agon')
+                h3.text-heading-5.mb-10 Start Plan
+                p.text-body-text.color-gray-500 Choose any of our packages
+            li.icon-asset2.wow.animate__animated.animate__fadeIn(data-wow-delay='.3s')
+              .text-center.block-step
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-connect.svg', alt='Agon')
+                h3.text-heading-5.mb-10 Connect
+                p.text-body-text.color-gray-500 Receive concepts In 24 hours
+            li.icon-asset3.wow.animate__animated.animate__fadeIn(data-wow-delay='.5s')
+              .text-center.block-step.bg-5
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-match.svg', alt='Agon')
+                h3.text-heading-5.mb-10 Match
+                p.text-body-text.color-gray-500 Development Stage
+            li.icon-asset4.wow.animate__animated.animate__fadeIn(data-wow-delay='.9s')
+              .text-center.block-step.bg-5
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-complete.svg', alt='Agon')
+                h3.text-heading-5.mb-10 Complete
+                p.text-body-text.color-gray-500 After-release Support
+            li.wow.animate__animated.animate__fadeIn(data-wow-delay='.7s')
+              .text-center.block-step.bg-9
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-review.svg', alt='Agon')
+                h3.text-heading-5.mb-10 Review
+                p.text-body-text.color-gray-500 Project launch and checkout
+        .col-lg-1.col-sm-12.col-12
+  section.section-box.mt-100.bg-green-900.pt-90.pb-90
+    .container
+      .row
+        .col-lg-6.col-sm-12.col-12.block-gallery-1
+          .row
+            .col-lg-6
+              img.img-responsive.mb-10(src='assets/imgs/page/about/2/img-2.png', alt='Agon')
+              img.img-responsive(src='assets/imgs/page/about/2/img-3.png', alt='Agon')
+            .col-lg-6
+              img.img-responsive(src='assets/imgs/page/about/2/img-1.png', alt='Agon')
+        .col-lg-6.col-sm-12.col-12.block-pl
+          h2.text-heading-1.color-white.mb-30.mt-20 Our game-changing approach to working together
+          p.text-inter-lg
+            | Check out stories from companies like Leroy Merlin and Decathlon to get inspired by how much you can gain.
+          .mt-30
+            a.btn.btn-black.text-body-text(href='page-service-2.html') Keep Reading
+  section.section-box
+    .container.mt-100
+      .row
+        .col-lg-8
+          h3.text-heading-1.mb-10 Learn about us
+          p.text-body-lead-large.color-gray-600 Know more about our potentiality
+        .col-lg-4.text-lg-end.text-start.pt-30
+          a.btn.btn-black.icon-arrow-right-white(href='page-service-1.html') View More
+    .container.mt-90
+      .row
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Company
+            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-1.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Marketing Event
+            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-2.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Customer Services
+            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
+            .grid-4-img.color-bg-4
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-3.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Company
+            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-4.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Marketing Event
+            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-5.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Customer Services
+            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
+            .grid-4-img.color-bg-4
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-6.png', alt='Agon')
+  section.section-box.mt-100
+    .container
+      .row
+        .col-lg-2.col-sm-1.col-12
+        .col-lg-8.col-sm-10.col-12.text-center
+          h2.text-heading-1.color-gray-900 Frequently asked questions
+          p.text-body-lead-large.color-gray-600.mt-20
+            | Feeling inquisitive? Have a read through some of our FAQs or contact our supporters for help
+        .col-lg-2.col-sm-1.col-12
+    .container.mt-70
+      .row
+        .col-lg-1
+        .col-lg-10
+          .row
+            .col-lg-4.mb-50
+              h4.text-heading-6.icon-leaf People first 
+              p.text-body-excerpt.color-gray-600.mt-15 The latest design trends meet hand-crafted templates.
+            .col-lg-4.mb-50
+              h4.text-heading-6.icon-leaf Agile approach
+              p.text-body-excerpt.color-gray-600.mt-15 The latest design trends meet hand-crafted templates.
+            .col-lg-4.mb-50
+              h4.text-heading-6.icon-leaf New mindset
+              p.text-body-excerpt.color-gray-600.mt-15 The latest design trends meet hand-crafted templates.
+          .row
+            .col-lg-12.mt-50
+              #accordionFAQ.accordion
+                .accordion-item
+                  h2#headingOne.accordion-header
+                    button.accordion-button.text-heading-5(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                      | Where is my order? Quisque molestie
+                  #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionFAQ')
+                    .accordion-body
+                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+                .accordion-item
+                  h2#headingTwo.accordion-header
+                    button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                      | How can I return an item purchased online?
+                  #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionFAQ')
+                    .accordion-body
+                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+                .accordion-item
+                  h2#headingThree.accordion-header
+                    button.accordion-button.text-heading-5.collapsed.text-heading-5(class='type=', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                      | Can I cancel or change my order?
+                  #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionFAQ')
+                    .accordion-body
+                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+                .accordion-item
+                  h2#headingFour.accordion-header
+                    button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                      | I have promotional or discount code?
+                  #collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour', data-bs-parent='#accordionFAQ')
+                    .accordion-body
+                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+                .accordion-item
+                  h2#headingFive.accordion-header
+                    button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                      | What are the delivery types you use?
+                  #collapseFive.accordion-collapse.collapse(aria-labelledby='headingFive', data-bs-parent='#accordionFAQ')
+                    .accordion-body
+                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+                .accordion-item
+                  h2#headingSix.accordion-header
+                    button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
+                      | How can I pay for my purchases?
+                  #collapseSix.accordion-collapse.collapse(aria-labelledby='headingSix', data-bs-parent='#accordionFAQ')
+                    .accordion-body
+                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+                .accordion-item
+                  h2#headingSeven.accordion-header
+                    button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSeven', aria-expanded='false', aria-controls='collapseSeven')
+                      | Can I cancel my order?
+                  #collapseSeven.accordion-collapse.collapse(aria-labelledby='headingSeven', data-bs-parent='#accordionFAQ')
+                    .accordion-body
+                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+              .mt-100.text-center
+                a.btn.btn-green-900.icon-arrow-right-white.text-heading-6.color-white(href='#') Contact Us
+                a.btn.btn-link.text-heading-6(href='#') Support Center
+        .col-lg-1
+  section.section-box.box-gray-100.mt-120.mb-20
+    .container
+      .icon-wave
+        .row
+          .col-lg-12.mb-60
+            span.text-body-capitalized.text-uppercase Contact us
+            h2.text-heading-3.color-gray-900.mt-10 Have an prject in mind?
+            p.text-body-text.color-gray-600.mt-20
+              | The right move at the right time saves your investment.
+              br.d-lg-block.d-none
+              |  live the dream of expanding your business.
+          .col-lg-4.mb-40
+            h4.text-heading-6.color-gray-900.icon-home.mb-10.mt-10 Agon Studio
+            p.text-body-text.color-gray-600
+              | 4517 Washington Ave. 
+              br
+              | Manchester, Kentucky 39495
+            p.text-body-text.color-gray-600 (239) 555-0108
+            p.text-body-text.color-gray-600 contact@agon.com
+          .col-lg-8
+            .row
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Enter your name')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Comapy (optioanl)')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Your email')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Phone number')
+              .col-lg-12
+                .form-group
+                  textarea.form-control(placeholder='Tell us about yourself')
+              .col-lg-12.mt-15
+                button.btn.btn-black.icon-arrow-right-white.mr-40.mb-20(type='submit') Send Message
+                br.d-lg-none.d-block
+                span.text-body-text-md.color-gray-500.mb-20 By clicking contact us button, you agree our terms and policy,
+  section.section-box
+    .container.mt-100
+      .row
+        .col-lg-9.col-sm-8
+          h3.text-heading-1.mb-10 Our Happy Customers
+          p.text-body-lead-large.color-gray-600 Know about our clients, we are a woldwide corporate brand
+    .container.mt-80
+      .box-swiper
+        .swiper-container.swiper-group-4
+          .swiper-wrapper.pb-70.pt-5
+            .swiper-slide.active
+              .card-grid-style-3.hover-up
+                .grid-3-img
+                  img(src='assets/imgs/page/homepage1/user-1.png', alt='Agon')
+                h3.text-heading-6.mb-5.mt-20 Wade Warren
+                span.text-body-small.d-block Louis Vuitton
+                p.text-body-text.text-desc.color-gray-500.mt-20
+                  | Even factoring differences in body weight between children and adults into account.
+            .swiper-slide
+              .card-grid-style-3.bd-bg-6.hover-up
+                .grid-3-img
+                  img(src='assets/imgs/page/homepage1/user-2.png', alt='Agon')
+                h3.text-heading-5.mt-20 Brooklyn Simmons
+                span.text-body-small.d-block Nintendo
+                p.text-body-text.text-desc.color-gray-500.mt-20
+                  | So yes, the alcohol (ethanol) in hand sanitizers can be absorbed through the skin, but no, it would not cause intoxication.
+            .swiper-slide
+              .card-grid-style-3.bd-bg-10.hover-up
+                .grid-3-img
+                  img(src='assets/imgs/page/homepage1/user-3.png', alt='Agon')
+                h3.text-heading-6.mb-5.mt-20 Jenny Wilson
+                span.text-body-small.d-block Starbucks
+                p.text-body-text.text-desc.color-gray-500.mt-20
+                  | Their blood alcohol levels rose to 0.007 to 0.02 o/oo (parts per thousand), or 0.7 to 2.0 mg/L.
+            .swiper-slide
+              .card-grid-style-3.bd-bg-9.hover-up
+                .grid-3-img
+                  img(src='assets/imgs/page/homepage1/user-4.png', alt='Agon')
+                h3.text-heading-5.mt-20 Albert Flores
+                span.text-body-small.d-block Bank of America
+                p.text-body-text.text-desc.color-gray-500.mt-20
+                  | So yes, the alcohol (ethanol) in hand sanitizers can be absorbed through the skin, but no, it would not cause intoxication.
+          .swiper-pagination.swiper-pagination3
+        .swiper-button-next.swiper-button-next-4
+        .swiper-button-prev.swiper-button-prev-4

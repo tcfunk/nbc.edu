@@ -1,0 +1,141 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .container.mt-70
+      .row
+        .col-lg-1.col-sm-1.col-12
+        .col-lg-10.col-sm-10.col-12.text-center
+          h2.text-heading-1.color-gray-900.mb-10 Our Blog
+          p.text-heading-6.color-gray-600.mt-20
+            | From year to year we strive to invent the most innovative technology
+            br.d-lg-block.d-none
+            |  that is used by both small enterprises and space enterprises.
+        .col-lg-1.col-sm-1.col-12
+    .container.mt-70
+      .slider-news
+        .swiper-container.swiper-group-1
+          .swiper-wrapper.pb-70.pt-5
+            .swiper-slide.active
+              .block-news
+                .item-news
+                  .row
+                    .col-xl-6.col-lg-12
+                      .img-news
+                        a(href='blog-single.html')
+                          img(src='assets/imgs/page/blog/1/img-1.png', alt='Agon')
+                    .col-xl-6.col-lg-12
+                      .right-news.card-grid-style-4.mb-0
+                        span.tag-dot Marketing Event
+                        a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
+                        p.text-body-text.color-gray-500.text-desc-fix-h
+                          | Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ullamcorper sed pharetra senectus donec nunc. Consequat semper viverra nam libero justo laoreet facilisis magna etiam.
+                        .blog-img-user
+                          .img-user.img-user-round
+                            img(src='assets/imgs/page/blog/2/user-1.png', alt='Agon')
+                          h4.text-heading-6.color-gray-900 Jenny Wilson
+                          p.text-body-small.color-gray-500 August 25, 2025
+            .swiper-slide
+              .block-news
+                .item-news
+                  .row
+                    .col-xl-6.col-lg-12
+                      .img-news
+                        a(href='blog-single.html')
+                          img(src='assets/imgs/page/blog/1/img-1.png', alt='Agon')
+                    .col-xl-6.col-lg-12
+                      .right-news.card-grid-style-4.mb-0
+                        span.tag-dot Company
+                        a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
+                        p.text-body-text.color-gray-500.text-desc-fix-h
+                          | Lorem ipsum dolor sit amet consectetur adipiscing elit interdum ullamcorper sed pharetra senectus donec nunc. Consequat semper viverra nam libero justo laoreet facilisis magna etiam.
+                        .blog-img-user
+                          .img-user.img-user-round
+                            img(src='assets/imgs/page/blog/2/user-2.png', alt='Agon')
+                          h4.text-heading-6.color-gray-900 Robert Fox
+                          p.text-body-small.color-gray-500 August 25, 2025
+        .swiper-button-next.swiper-button-next-5
+        .swiper-button-prev.swiper-button-prev-5
+  section.section-box
+    .container.mt-30
+      .row
+        .col-lg-1.col-sm-1.col-12
+        .col-lg-10.col-sm-10.col-12.text-center
+          h2.text-heading-1.color-gray-900.mb-10 Latest News
+          p.text-body-lead-large.color-gray-600.mt-20 From Our Blog And Event Fanpage
+        .col-lg-1.col-sm-1.col-12
+    .container.mt-90
+      .row
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Company
+            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-1.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Marketing Event
+            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-2.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Customer Services
+            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
+            .grid-4-img.color-bg-4
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-3.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Company
+            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-4.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Marketing Event
+            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
+            .grid-4-img
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-5.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Customer Services
+            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
+            .grid-4-img.color-bg-4
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-6.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Company
+            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
+            .grid-4-img.color-bg-2
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-7.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Marketing Event
+            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
+            .grid-4-img.color-bg-8
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-8.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30.mb-50
+          .card-grid-style-4
+            span.tag-dot Customer Services
+            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
+            .grid-4-img.color-bg-1
+              a(href='blog-single.html')
+                img(src='assets/imgs/page/homepage1/img-news-9.png', alt='Agon')
+      .mt-20.mb-30.text-center
+        a.btn.btn-black.icon-arrow-right-white(href='blog-2.html') Load more posts
+
+  include ../sections/section_newsletter_2.pug

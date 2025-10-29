@@ -1,0 +1,18 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box.mt-100
+    .container
+      .row
+        .col-lg-12.text-center.mt-40
+          img.img-responsive(src='assets/imgs/template/404.png', alt="Agon")
+          h2.text-heading-1.color-gray-900.mb-20.mt-50 Whoops! That page doesn&rsquo;t exist.
+          p.text-heading-5.color-gray-600.mt-30.mb-70 The page you requested could not be found.
+          .text-center.mb-50
+            a.btn.btn-black.icon-arrow-left(href='index.html') Back to Homepage

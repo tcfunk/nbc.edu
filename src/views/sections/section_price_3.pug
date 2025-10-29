@@ -1,0 +1,167 @@
+.container.mt-70
+  .row
+    .col-lg-1
+    .col-lg-10
+      .block-pricing-3.mb-90
+        .row
+          .col-lg-12.col-xl-6.col-sm-12
+            .block-pricing-left
+              .box-switch
+                label
+                  input#cb_billed_type(type='checkbox', name='billed_type', onchange='checkBilled2()')
+                  span.text-billed.text-billed-month.active Monthly
+                  span.text-billed.text-billed-year Yearly
+              ul.list-package-feature
+                li.active Unlimited updates
+                li.active Custom designs &amp; features
+                li.active Custom permissions
+                li Custom instructors
+                li Many devices
+          .col-xl-6.col-lg-12.col-sm-12
+            .block-price-item.active(data-package='3')
+              span.checkbox
+              .block-pricing-info
+                h3.text-heading-5.color-gray-900.mb-15 Standard
+                span.tag-round.text-body-text Save %20
+              .box-info-price
+                span.text-heading-3.for-month.display-month $35
+                span.text-heading-3.for-year $420
+                span.text-month.for-month.text-body-text.color-gray-500 /month
+                span.text-month.for-year.text-body-text.color-gray-500 /year
+            .block-price-item(data-package='3')
+              span.checkbox
+              .block-pricing-info
+                h3.text-heading-5.color-gray-900.mb-15 Essentials
+                span.tag-round.text-body-text Save %20
+              .box-info-price
+                span.text-heading-3.for-month.display-month $89
+                span.text-heading-3.for-year $1068
+                span.text-month.for-month.text-body-text.color-gray-500 /month
+                span.text-month.for-year.text-body-text.color-gray-500 /year
+            .block-price-item(data-package='4')
+              span.checkbox
+              .block-pricing-info
+                h3.text-heading-5.color-gray-900.mb-15 Premium
+                span.tag-round.text-body-text Save %20
+              .box-info-price
+                span.text-heading-3.for-month.display-month $125
+                span.text-heading-3.for-year $1500
+                span.text-month.for-month.text-body-text.color-gray-500 /month
+                span.text-month.for-year.text-body-text.color-gray-500 /year
+            .block-price-item(data-package='5')
+              span.checkbox
+              .block-pricing-info
+                h3.text-heading-5.color-gray-900.mb-15 Unlimited
+                span.tag-round.text-body-text Save %20
+              .box-info-price
+                span.text-heading-3.for-month.display-month $199
+                span.text-heading-3.for-year $2388
+                span.text-month.for-month.text-body-text.color-gray-500 /month
+                span.text-month.for-year.text-body-text.color-gray-500 /year
+      .text-center.mt-30.mb-100
+        a.btn.btn-black.icon-arrow-right-white.mb-20.mr-20(href='#') Start free trial
+        a.btn.btn-default.icon-arrow-right.mb-20(href='#') View plans comparison
+      .row
+        .col-lg-12.col-sm-12.col-12.text-center.mt-40
+          h2.text-heading-1.color-gray-900.mb-10
+            | Compare Pricing
+            br.d-lg-block.d-none
+            |  Packages
+        .col-lg-12.col-sm-12.col-12.text-center.mt-70
+          .table-responsive
+            .table-mw-700
+              table.table.table-striped.table-pricing
+                thead
+                  tr
+                    th.thw-40
+                    th.text-center.thw-20
+                      span.text-heading-5.color-gray-900.d-block.mb-10 Basic
+                      p.text-body-text.color-gray-400.mb-20 On request
+                    th.text-center.thw-20
+                      span.text-heading-5.color-gray-900.d-block.mb-10 Premium
+                      p.text-body-text.color-gray-400.mb-20 On request
+                    th.text-center.thw-20
+                      span.text-heading-5.color-gray-900.d-block.mb-10 Enterprise
+                      p.text-body-text.color-gray-400.mb-20 On request
+                tbody
+                  tr
+                    td
+                      | Members 
+                      span.icon-question-2
+                    td 1
+                    td Up to 3
+                    td Unlimited
+                  tr
+                    td
+                      | Workspace roles 
+                      span.text-bd-round.text-body-small soon
+                      span.icon-question-2
+                    td Admin only
+                    td Admin only
+                    td Admin &amp; collaborator
+                  tr
+                    td
+                      | Guests 
+                      span.text-bd-round.text-body-small soon
+                      span.icon-question-2
+                    td
+                    td
+                    td
+                      span.tick-green
+                  tr
+                    td
+                      | Live collaboration 
+                      span.text-bd-round.text-body-small soon
+                      span.icon-question-2
+                    td
+                    td
+                      span.tick-green
+                    td
+                      span.tick-green
+                  tr
+                    td
+                      | Integration of sub-brands 
+                      span.icon-question-2
+                    td
+                    td
+                      span.tick-green
+                    td
+                      span.tick-green
+                  tr
+                    td
+                      | Access to standard templates 
+                      span.icon-question-2
+                    td
+                      span.tick-green
+                    td
+                      span.tick-green
+                    td
+                      span.tick-green
+                  tr
+                    td
+                      | Access to pro templates 
+                      span.icon-question-2
+                    td
+                    td
+                      span.tick-green
+                    td
+                      span.tick-green
+                  tr
+                    td
+                      | Custom designed templates 
+                      span.icon-question-2
+                    td
+                    td
+                    td
+                      span.tick-green
+                  tr
+                    td
+                      | Asset library 
+                      span.icon-question-2
+                    td
+                      span.tick-green
+                    td
+                      span.tick-green
+                    td
+                      span.tick-green
+    .col-lg-1

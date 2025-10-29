@@ -1,0 +1,59 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='index.html') Home
+            li
+              a(href='page-portfolio-grid-1.html') Portfolio
+            li
+              span Grid 4 columns
+  include ../sections/portfolio_page_title.pug
+  .container
+    .filter.filter-basic
+      .filter-nav.text-center.mb-60
+        button.btn.hover-up.mb-3.active(data-filter='') Show All
+        button.btn.hover-up.mb-3(data-filter='website') Website
+        button.btn.hover-up.mb-3(data-filter='logos') Logos
+        button.btn.hover-up.mb-3(data-filter='branding') Branding
+        button.btn.hover-up.mb-3(data-filter='media') Media
+        button.btn.hover-up.mb-3(data-filter='social') Social
+    .filter-gallery
+      .row
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-1.png', 'Branding', 'Global JSC Branding', 'August 25, 2025', 'website')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-2.png', 'Branding', 'Real Estate UI/UX kit', 'August 25, 2025','logos')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-3.png', 'Branding', 'TrendyMart UI/UX', 'August 25, 2025', 'branding')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-4.png', 'Branding', 'FitTrack App Design', 'August 25, 2025','media')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-5.png', 'Branding', 'NovaTech Identity', 'August 25, 2025','social')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-6.png', 'Branding', 'FinTrust Dashboard', 'August 25, 2025', 'branding')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-7.png', 'Branding', 'EventSphere Landing', 'August 25, 2025', 'website')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-8.png', 'Branding', 'Meisa Rosie Portfolio', 'August 25, 2025', 'media')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-9.png', 'Branding', 'HomeNest Real Estate', 'August 25, 2025', 'website')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-10.png', 'Branding', 'CloudSync SaaS', 'August 25, 2025', 'logos')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-11.png', 'Branding', 'Muzilla Game UI', 'August 25, 2025', 'media')
+        +PortfolioCard-2('assets/imgs/page/portfolio/portfolio-12.png', 'Branding', 'Carento Rental UI', 'August 25, 2025', 'social')
+      .paginations
+        ul.pager
+          li
+            a.prev-page(href='#')
+          li
+            a(href='#') 1
+          li
+            a(href='#') 2
+          li
+            a(href='#') 3
+          li
+            a.page-dotted(href='#')
+          li
+            a.next-page(href='#')
+  include ../sections/shop_bottom_banner.pug

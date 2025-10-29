@@ -1,0 +1,277 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  .section-box
+    .banner-hero.banner-homepage6
+      .container
+        .row
+          .col-lg-7.mt-50.pb-120
+            span.tag-1.bg-green-900 Digital Marketing Agency
+            h1.text-display-2.mt-20 The Fastest way to achieve success
+            p.text-body-lead-large.color-gray-500.mt-30.pr-40
+              | It was popularised in the 1960s with the release 
+              br.d-lg-block.d-none
+              | sheets. We bring the right people together
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='#') Get Start
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='#') How it works
+          .col-lg-5.d-none.d-lg-block
+            .banner-imgs
+              .block-1.shape-1
+                img(src='assets/imgs/page/homepage6/line-chart.svg', alt='Agon')
+              .block-2.shape-3
+                img(src='assets/imgs/page/homepage6/card.png', alt='Agon')
+              img.img-banner.img-responsive.shape-2(alt='Agon', src='assets/imgs/page/homepage6/banner.png')
+  .section-box.box-slider-3.d-none.d-lg-flex
+    .container
+      .block-slider-bottom-banner
+        .box-swiper
+          .swiper-container.swiper-group-1
+            .swiper-wrapper.pt-5
+              // Slider 1
+              .swiper-slide.active
+                .row
+                  .col-12.swiper-slide-1
+                    .grid-category.grid-category-style-2
+                      .grid-image-left-category
+                        a(href='#')
+                          .category-image
+                            span.for-design
+                          .category-info
+                            h3.text-heading-6 Computer for Designer, Art
+                      .grid-image-bottom
+                        a(href='#')
+                          img(src='assets/imgs/page/homepage6/img-2.png')
+                  .col-12.swiper-slide-1
+                    .grid-category.grid-category-style-2
+                      .grid-image-left-category
+                        a(href='#')
+                          .category-image
+                            span.for-software
+                          .category-info
+                            h3.text-heading-6 Computer for Designer, Art
+                      .grid-image-bottom
+                        a(href='#')
+                          img(src='assets/imgs/page/homepage6/img-3.png')
+                  .col-12.swiper-slide-2
+                    .grid-category.grid-category-style-2
+                      .grid-image-left-category
+                        a(href='#')
+                          .category-image
+                            span.for-office
+                          .category-info
+                            h3.text-heading-6.mt-15 Computer for Designer, Art
+                            p.text-body-lead-large.color-gray-500.mt-10 Real-time display of data
+                            span.icon-arrow-right-thin
+                      .grid-image-bottom
+                        a(href='#')
+                          img(src='assets/imgs/page/homepage6/img-4.png')
+          .swiper-button-next.swiper-button-next-5
+          .swiper-button-prev.swiper-button-prev-5
+  .section-box.mt-100
+    .container
+      .row
+        .col-lg-6
+          .row
+            .col-lg-6.col-md-6.col-sm-6.col-12.pr-mb-70.mb-30
+              h3.text-display-3 
+                span.count 38
+                | k
+              span.text-body-quote Our Office
+              p.text-body-text We always provide people a complete solution upon focused of any business
+            .col-lg-6.col-md-6.col-sm-6.col-12.pr-mb-70.mb-30
+              h3.text-display-3
+                span.count 12
+                | k+
+              span.text-body-quote Completed Cases
+              p.text-body-text We always provide people a complete solution upon focused of any business
+            .col-lg-6.col-md-6.col-sm-6.col-12.pr-mb-70.mb-30
+              h3.text-display-3
+                span.count 17
+                | k+
+              span.text-body-quote Happy Clients
+              p.text-body-text We always provide people a complete solution upon focused of any business
+            .col-lg-6.col-md-6.col-sm-6.col-12.pr-mb-70
+              h3.text-display-3
+                span.count 18
+                | k+
+              span.text-body-quote Skilled People
+              p.text-body-text We always provide people a complete solution upon focused of any business
+        .col-lg-6.pdl-md
+          h3.text-heading-1 Tell us about your business, we are ready to solve.
+          .mt-40.box-mw-610
+            .form-newsletter-2
+              form
+                input.input-newsletter(type='text', value='', placeholder='Enter your email ...')
+                button.btn.btn-newsletter.icon-arrow-right-white(type='submit') Get A Quote
+          .mt-40
+            ul.list-icon-3
+              li.text-body-text-md Subscribe Newsletter
+              li.text-body-text-md Get The Latest News
+  .section-box.mt-70
+    .container
+      .box-bg-bottom
+        .box-video-homepage6
+          .box-image.mt-30.mb-30
+            a.popup-youtube.btn-play-video.btn-play-middle(href='https://www.youtube.com/watch?v=ea-I4sqgVGY')
+            img.img-responsive.bdrd-16(src='assets/imgs/page/homepage6/img.png')
+        .row
+          .col-lg-4.col-md-12.col-sm-12
+            .list-icons.mt-50
+              .item-icon.none-bd
+                span.icon-left
+                  img(src='assets/imgs/page/homepage6/icon-acquis.svg')
+                h4.text-heading-4 1. Acquisition
+                p.text-body-text.color-gray-600.mt-15 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          .col-lg-4.col-md-12.col-sm-12
+            .list-icons.mt-50
+              .item-icon.none-bd
+                span.icon-left
+                  img(src='assets/imgs/page/homepage6/icon-active.svg')
+                h4.text-heading-4 2. Activation
+                p.text-body-text.color-gray-600.mt-15 Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod
+          .col-lg-4.col-md-12.col-sm-12
+            .list-icons.mt-50
+              .item-icon.none-bd
+                span.icon-left
+                  img(src='assets/imgs/page/homepage6/icon-retent.svg')
+                h4.text-heading-4 3. Retention
+                p.text-body-text.color-gray-600.mt-15 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut a
+  .section-box
+    .container.mt-120
+      .row
+        .col-xl-5.col-lg-6.col-sm-12.mb-30
+          img.bdrd-16.img-responsive(src='assets/imgs/page/homepage6/img-1.png', alt='Agon')
+        .col-xl-7.col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-6.color-green-900 What We Do, What You Get
+          h3.text-heading-1.mt-20 Exceptional Solution for Digital Business Model
+          p.text-body-lead-large.color-gray-600.mt-30
+            | In a professional context it often happens that private or corporate clients order a publication news while still not being ready.
+          .row.mt-20
+            .col-lg-6.col-sm-6.col-12.mt-20
+              h4.text-heading-6.icon-leaf Boost your sale
+            .col-lg-6.col-sm-6.col-12.mt-20
+              h4.text-heading-6.icon-leaf Smart Installation Tools
+            .col-lg-6.col-sm-6.col-12.mt-20
+              h4.text-heading-6.icon-leaf Introducing New Features
+            .col-lg-6.col-sm-6.col-12.mt-20
+              h4.text-heading-6.icon-leaf Dynamic Boosting
+  .section-box.overflow-visible.mt-70
+    .container
+      .row
+        .col-lg-2.col-md-3.col-sm-4.col-6.text-center
+          a.item-logo.box-hover-shadow.hover-up(href='#')
+            img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-1.svg')
+        .col-lg-2.col-md-3.col-sm-4.col-6.text-center
+          a.item-logo.box-hover-shadow.hover-up(href='#')
+            img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-2.svg')
+        .col-lg-2.col-md-3.col-sm-4.col-6.text-center
+          a.item-logo.box-hover-shadow.hover-up(href='#')
+            img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-3.svg')
+        .col-lg-2.col-md-3.col-sm-4.col-6.text-center
+          a.item-logo.box-hover-shadow.hover-up(href='#')
+            img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-4.svg')
+        .col-lg-2.col-md-3.col-sm-4.col-6.text-center
+          a.item-logo.box-hover-shadow.hover-up(href='#')
+            img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-5.svg')
+        .col-lg-2.col-md-3.col-sm-4.col-6.text-center
+          a.item-logo.box-hover-shadow.hover-up(href='#')
+            img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-6.svg')
+  .section-box.box-gray-100.mt-120.mb-20
+    .container
+      .icon-wave
+        .row
+          .col-lg-12.mb-60
+            span.text-body-capitalized.text-uppercase Contact us
+            h2.text-heading-3.color-gray-900.mt-10 Have an prject in mind?
+            p.text-body-text.color-gray-600.mt-20
+              | The right move at the right time saves your investment.
+              br.d-lg-block.d-none
+              |  live the dream of expanding your business.
+          .col-lg-4.mb-40
+            h4.text-heading-6.color-gray-900.icon-home.mb-10.mt-10 Agon Studio
+            p.text-body-text.color-gray-600
+              | 4517 Washington Ave. 
+              br
+              | Manchester, Kentucky 39495
+            p.text-body-text.color-gray-600 (239) 555-0108
+            p.text-body-text.color-gray-600 contact@agon.com
+          .col-lg-8
+            .row
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Enter your name')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Comapy (optioanl)')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Your email')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Phone number')
+              .col-lg-12
+                .form-group
+                  textarea.form-control(placeholder='Tell us about yourself')
+              .col-lg-12.mt-15
+                button.btn.btn-black.icon-arrow-right-white.mr-40.mb-20(type='submit') Send Message
+                br.d-lg-none.d-block
+                span.text-body-text-md.color-gray-500.mb-20 By clicking contact us button, you agree our terms and policy,
+  .section-box
+    .container.mt-100
+      .row
+        .col-lg-8
+          h3.text-heading-1.mb-10 Latest News
+          p.text-body-lead-large.color-gray-600 From Our blog and Event fanpage
+        .col-lg-4.text-lg-end.text-start.pt-30
+          a.btn.btn-black.icon-arrow-right-white(href='#') View More
+    .container.mt-90
+      .row
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Company
+            a.text-heading-4(href='#') We can blend colors multiple ways, the most common
+            .grid-4-img
+              a(href='#')
+                img(src='assets/imgs/page/homepage1/img-news-1.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Marketing Event
+            a.text-heading-4(href='#') How To Blow Through Capital At An Incredible Rate
+            .grid-4-img
+              a(href='#')
+                img(src='assets/imgs/page/homepage1/img-news-2.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Customer Services
+            a.text-heading-4(href='#') Design Studios That Everyone Should Know About?
+            .grid-4-img.color-bg-4
+              a(href='#')
+                img(src='assets/imgs/page/homepage1/img-news-3.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Company
+            a.text-heading-4(href='#') We can blend colors multiple ways, the most common
+            .grid-4-img
+              a(href='#')
+                img(src='assets/imgs/page/homepage1/img-news-4.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Marketing Event
+            a.text-heading-4(href='#') How To Blow Through Capital At An Incredible Rate
+            .grid-4-img
+              a(href='#')
+                img(src='assets/imgs/page/homepage1/img-news-5.png', alt='Agon')
+        .col-lg-4.col-sm-12.pr-30
+          .card-grid-style-4
+            span.tag-dot Customer Services
+            a.text-heading-4(href='#') Design Studios That Everyone Should Know About?
+            .grid-4-img.color-bg-4
+              a(href='#')
+                img(src='assets/imgs/page/homepage1/img-news-6.png', alt='Agon')

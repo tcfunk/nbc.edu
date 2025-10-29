@@ -1,0 +1,58 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .bg-6-opacity-30.pt-90
+      .container
+        .box-signup
+          h1.text-heading-3.mb-50.text-center Let&rsquo;s join us
+          a.btn.btn-login-google.color-gray-500.text-heading-6.box-shadow-2(href='#')
+            img.img-responsive.img-middle.mr-10(src='assets/imgs/template/icons/Icon-gg-login.svg', alt='Agon')
+            |  Sign up with Google
+          .text-center
+            .mt-40.box-line-throught.mb-40
+              span.text-body-text.color-gray-500 Or, sign up with your email
+          .box-form-signup.mb-200
+            .form-group
+              input.form-control(type='text', placeholder='Your name *')
+              a.link-edit.text-body-text(href='#') Edit
+            .form-group
+              input.form-control(type='text', placeholder='Your email *')
+            .form-group
+              .form-field
+                span.text-body-small.color-green-900.tag-top Password
+                input.form-control.input-green-bd.input-with-icon(type='text', placeholder='')
+                span.icon-eye-right
+            .form-group
+              .form-field
+                span.text-body-small.color-green-900.tag-top Re-type Password
+                input.form-control.input-green-bd.input-with-icon(type='text', placeholder='')
+                span.icon-eye-right
+            .form-group
+              label.text-body-small.color-gray-500
+                input.chkbox(type='checkbox')
+                |  Agree to 
+                a(href='#') terms &amp; conditions
+            .form-group
+              button.btn.btn-green-full.text-heading-6 Continue
+            div
+              span.text-body-text.color-gray-500 Already have an account?
+              a.text-body-text.color-green-900(href='page-login.html') Sign in now
+      .images-lists
+        .row
+          .col-lg-2.col-md-2.col-sm-6.pl-0
+            img.img-responsive.img-full.img-1(src='assets/imgs/page/signup/img-1.png', alt='Agon')
+          .col-lg-2.col-md-2.col-sm-6
+            img.img-responsive.img-full.img-2(src='assets/imgs/page/signup/img-2.png', alt='Agon')
+          .col-lg-4.col-md-4.col-sm-12
+            img.img-responsive.img-full.img-3(src='assets/imgs/page/signup/img-3.png', alt='Agon')
+          .col-lg-2.col-md-2.col-sm-6
+            img.img-responsive.img-full.img-4(src='assets/imgs/page/signup/img-4.png', alt='Agon')
+          .col-lg-2.col-md-2.col-sm-6.pr-0
+            img.img-responsive.img-full.img-5(src='assets/imgs/page/signup/img-5.png', alt='Agon')

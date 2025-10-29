@@ -1,0 +1,68 @@
+section.section-box.mt-90
+  .container
+    h2.text-heading-1.color-gray-900 Latest products
+    p.text-body-lead-large.color-gray-600.mt-20 Don&rsquo;t miss world trending
+  .container.mt-70
+    .filters-products.d-flex
+      .number-info
+        strong.text-body-lead.color-gray-500
+          | There are 
+          span.color-green-900 1853
+          |  products in this category
+      .fitler-info
+        .icon-layout.mr-10.text-body-text.color-gray-500
+          | Show: 
+          .color-green-900.d-inline
+            .dropdown.dropdown-sort
+              button#dropdownPage.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false', data-bs-display='static')
+                span 50
+                i.fi-rr-angle-small-down
+              ul.dropdown-menu.dropdown-menu-light(aria-labelledby='dropdownPage')
+                li
+                  a.dropdown-item.active(href='#') 50
+                li
+                  a.dropdown-item(href='#') 100
+                li
+                  a.dropdown-item(href='#') 150
+        .icon-sort.text-body-text.color-gray-500
+          | Sort by: 
+          .color-green-900.d-inline
+            .dropdown.dropdown-sort
+              button#dropdownSort.btn.dropdown-toggle(type='button', data-bs-toggle='dropdown', aria-expanded='false', data-bs-display='static')
+                span Featured
+                i.fi-rr-angle-small-down
+              ul.dropdown-menu.dropdown-menu-light(aria-labelledby='dropdownSort')
+                li
+                  a.dropdown-item.active(href='#') Featured
+                li
+                  a.dropdown-item(href='#') Rating
+                li
+                  a.dropdown-item(href='#') Low Price
+    .row.mt-40
+      +ProductCardGrid('assets/imgs/page/homepage5/sp4.png', 'Sony', '4K TV Game Mini Arcade Rocker Console 32GB/64GB', '94', '$22.51', '$29.8')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp5.png', 'Apple', 'T500BT Original Wireless Bluetooth Headphone Deep Bass', '126', '$95.26', '$96.5')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp6.png', 'Toshiba', 'Black Walnut Wood & Aluminum Headphone Stand ', '87', '$25.6', '$32.2')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp7.png', 'BassX', 'Beats Studio3 Wireless Bluetooth Headphones', '12', '$18.5', '$22.6')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp8.png', 'Konika', 'Marshall MAJOR III Wireless Folding Bluetooth', '43', '$28.2', '$33.7')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp9.png', 'Samsung', 'BT918 ANC 35dB Hybrid Active Noise Cancelling', '56', '$125', '$129.8')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp10.png', 'Google', 'Cancelling Headset Music Sport Deep Bass', '87', '$23.5', '$29.8')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp11.png', 'Huawei', 'AirPods 2 Pro 3 Wireless Headphone Bluetooth', '57', '$15.51', '$29.8')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp8.png', 'Nikon', 'Outdoor Waterproof Loudspeaker Stereo Surround Support', '46', '$21.55', '$29.8')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp4.png', 'Alaex', 'uisine Smoking Gun Meat Burn Smokehouse', '24', '$56.4', '$56.8')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp5.png', 'XiaoMi', 'Walnut Gaming Headset Holder with Solid Metal', '17', '$34.3', '$36.5')
+      +ProductCardGrid('assets/imgs/page/homepage5/sp6.png', 'Lenovo', 'Headphones Surround 3D Deep Bass Sport Gaming', '87', '$25.6', '$29.8')
+
+    .paginations
+      ul.pager
+        li
+          a.prev-page(href='#')
+        li
+          a(href='#') 1
+        li
+          a(href='#') 2
+        li
+          a(href='#') 3
+        li
+          a.page-dotted(href='#')
+        li
+          a.next-page(href='#')

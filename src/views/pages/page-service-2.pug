@@ -1,0 +1,205 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row
+          .col-lg-12.text-center
+            h1.text-display-2
+              | Advanced 
+              span.color-green-900 analytics
+              |  to 
+              br.d-lg-block.d-none
+              | grow your business
+            p.text-body-lead-large.color-gray-500.mt-40.pr-40
+              | Connect your conversations with the tools and services that you use to get the job done. With over 1,500 apps and a robust API
+            .mt-40.text-center
+              a.btn.btn-black.icon-arrow-right-white(href='page-about-1.html') Get Started
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='page-faqs-2.html') How it works
+          .col-lg-12.d-none.d-lg-block
+            .row
+              .col-lg-2
+              .col-lg-8
+                .banner-imgs
+                  .block-1.shape-2
+                    img(src='assets/imgs/page/services/2/banner2.png', alt='Agon')
+                  .block-2.shape-2
+                    img(src='assets/imgs/page/services/2/banner1.png', alt='Agon')
+                  .block-3.shape-2
+                    img(src='assets/imgs/page/services/2/banner3.png', alt='Agon')
+                  img(src='assets/imgs/page/services/1/banner.png', alt='Agon')
+              .col-lg-2
+  section.section-box.overflow-visible.mt-70
+    .container
+      h2.text-heading-3.text-center.color-gray-900.mb-60 Trusted by the world&rsquo;s leading companies
+      .row
+        .col-lg-12
+          ul.list-partners
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-1.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-1.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-2.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-3.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-4.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-5.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-6.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-7.svg')
+            li
+              a.item-logo.box-hover-shadow(href='#')
+                img(alt='Agon', src='assets/imgs/slider/logo/sample-logo-8.svg')
+  section.section-box.mt-90
+    .container
+      .row
+        .col-lg-2.col-sm-1.col-12
+        .col-lg-8.col-sm-10.col-12.text-center.mt-40
+          h2.text-heading-1.color-gray-900.mb-10
+            | Discover powerful features to
+            br.d-lg-block.d-none
+            |  boost your productivity
+          p.text-body-lead-large.color-gray-600.mt-20
+            | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum &mdash; semper quis lectus nulla.
+        .col-lg-2.col-sm-1.col-12
+    .container.mt-90.mb-100
+      .row
+        .col-lg-6.col-sm-12
+          .bg-2.box-square.hover-up
+            h4.text-heading-4.color-gray-900.mb-15 Cross-Platform
+            p.text-body-text-md.color-gray-600
+              | Your site is not complete with only landings. Get essential inner pages using our ready demos.
+            .box-image-inner.bg-color-1
+              img(src='assets/imgs/page/homepage2/temp-1.png', alt='Agon')
+        .col-lg-6.col-sm-12
+          .bg-6.box-square.hover-up
+            h4.text-heading-4.color-gray-900.mb-15 Extremely Flexible
+            p.text-body-text-md.color-gray-600
+              | Your site is not complete with only landings. Get essential inner pages using our ready demos.
+            .box-image-inner.bg-color-2
+              img(src='assets/imgs/page/homepage2/temp-2.png', alt='Agon')
+  section.section-box
+    .container.mt-120
+      .bg-2.bdrd-58.pattern-white.none-pattern.pb-60
+        .row
+          .col-lg-2.col-sm-1.col-12
+          .col-lg-8.col-sm-10.col-12.text-center.mt-70
+            h2.text-heading-1.color-gray-900 What We Offer
+            p.text-body-lead-large.color-gray-600.mt-20
+              | What makes us different from others? We give holistic solutions with strategy, design &amp; technology.
+          .col-lg-2.col-sm-1.col-12
+        .container.mt-70
+          .box-swiper
+            .swiper-container.swiper-group-3
+              .swiper-wrapper.pb-70.pt-5
+                .swiper-slide
+                  .card-grid-style-2.hover-up
+                    .grid-2-img
+                      img(src='assets/imgs/page/homepage1/market.svg', alt='Agon')
+                    h3.text-heading-5.mt-20 Market research
+                    p.text-body-text.color-gray-600.mt-20
+                      | One make creepeth, man bearing theira firmament.
+                .swiper-slide
+                  .card-grid-style-2.hover-up
+                    .grid-2-img
+                      img(src='assets/imgs/page/homepage1/consulting.svg', alt='Agon')
+                    h3.text-heading-5.mt-20 Strategic Consulting
+                    p.text-body-text.color-gray-600.mt-20
+                      | One make creepeth, man bearing theira firmament.
+                .swiper-slide
+                  .card-grid-style-2.hover-up
+                    .grid-2-img
+                      img(src='assets/imgs/page/homepage1/cognity.svg', alt='Agon')
+                    h3.text-heading-5.mt-20 Cognitive Solution
+                    p.text-body-text.color-gray-600.mt-20
+                      | One make creepeth, man bearing theira firmament.
+              .swiper-pagination.swiper-pagination3
+  section.section-box.pt-140.pb-50
+    .container
+      .row
+        .col-lg-5.mb-40
+          h3.text-heading-1 Frequently asked questions
+          p.text-body-text.color-gray-600.mt-30
+            | Feeling inquisitive? Have a read through some of our FAQs or contact our supporters for help
+          .row
+            .col-lg-12.mt-50
+              h4.text-heading-6.icon-leaf Boost your sale
+              p.text-body-excerpt.color-gray-600.mt-15 The latest design trends meet hand-crafted templates.
+            .col-lg-12.mt-50
+              h4.text-heading-6.icon-leaf Introducing New Features
+              p.text-body-excerpt.color-gray-600.mt-15 The latest design trends meet hand-crafted templates.
+          .mt-60
+            a.btn.btn-black.icon-arrow-right-white(href='page-contact.html') Contact Us
+            a.btn.btn-link.text-heading-6(href='page-about-1.html') Support Center
+        .col-lg-7
+          #accordionFAQ.accordion
+            .accordion-item
+              h2#headingOne.accordion-header
+                button.accordion-button.text-heading-5(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                  | Where is my order? Quisque molestie
+              #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingTwo.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                  | How can I return an item purchased online?
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingThree.accordion-header
+                button.accordion-button.text-heading-5.collapsed.text-heading-5(class='type=', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                  | Can I cancel or change my order?
+              #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingFour.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                  | I have promotional or discount code?
+              #collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingFive.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                  | What are the delivery types you use?
+              #collapseFive.accordion-collapse.collapse(aria-labelledby='headingFive', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingSix.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
+                  | How can I pay for my purchases?
+              #collapseSix.accordion-collapse.collapse(aria-labelledby='headingSix', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingSeven.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSeven', aria-expanded='false', aria-controls='collapseSeven')
+                  | Can I cancel my order?
+              #collapseSeven.accordion-collapse.collapse(aria-labelledby='headingSeven', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+
+  include ../sections/section_newsletter_2.pug

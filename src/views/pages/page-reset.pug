@@ -1,0 +1,25 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+  
+  section.section-box
+    .container.box-reset
+      .row
+        .col-lg-12.col-md-12
+          .box-signup.mt-90
+            h1.text-heading-3.mb-15.text-center Reset password
+            .text-center.mb-50
+              p.text-body-text.color-gray-500 Enter your email to reset your password.
+            .box-form-signup
+              .form-group
+                .form-field
+                  input.form-control.input-green-bd.input-with-icon(type='text', placeholder='Enter your email')
+                  span.icon-email-right
+              .form-group
+                button.btn.btn-green-full.text-heading-6 Reset password
+              .form-group
+                a.text-body-text(href='index.html') Back to homepage

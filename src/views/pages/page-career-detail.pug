@@ -1,0 +1,95 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block topbar
+  include ../components/topbar-2.pug
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.banner-breadcrums
+      .container.text-center
+        .row
+          .col-lg-12
+            h1.text-heading-2.color-gray-900.mb-20
+              | Senior Full Stack Engineer, Creator
+              br.d-lg-block.d-none
+              |  Success Full Time
+            .breadcrumbs
+              ul.text-body-text
+                li
+                  a.color-gray-900(href='#') Home
+                li
+                  span.color-gray-500 Jobs details
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2.text-heading-4 Job Description
+            p.text-body-text
+              | The AliStudio Design team has a vision to establish a trusted platform that enables productive and healthy enterprises in a world of digital and remote everything, constantly changing work patterns and norms, and the need for organizational resiliency.
+            p.text-body-text
+              | The ideal candidate will have strong creative skills and a portfolio of work which demonstrates their passion for illustrative design and typography. This candidate will have experiences in working with numerous different design platforms such as digital and print forms.
+            p
+        .row
+          .col-lg-1
+          .col-lg-10
+            .box-image.mt-30.mb-30
+              a.popup-youtube.btn-play-video.btn-play-middle(href='https://www.youtube.com/watch?v=oRI37cOPBQQ')
+              img.img-responsive.bdrd-16(src='assets/imgs/page/career/img.png', alt='Agon')
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2.text-heading-4 Essential Knowledge, Skills, and Experience
+            ul
+              li
+                | A portfolio demonstrating well thought through and polished end to end customer journeys
+              li 5+ years of industry experience in interactive design and / or visual design
+              li Excellent interpersonal skills&#x202F;
+              li Aware of trends in&#x202F;mobile, communications, and collaboration
+              li
+                | Ability to create highly polished design prototypes, mockups, and other communication artifacts
+              li
+                | The ability to scope and estimate efforts accurately and prioritize tasks and goals independently
+              li History of impacting shipping products with your work
+              li
+                | A Bachelor&rsquo;s Degree in Design (or related field) or equivalent professional experience
+              li
+                | Proficiency in a variety of design tools such as Figma, Photoshop, Illustrator, and Sketch
+            p
+            h2.text-heading-4 Essential Knowledge, Skills, and Experience
+            ul
+              li Designing user experiences for enterprise software / services
+              li Creating and applying established design principles and interaction patterns
+              li Aligning or influencing design thinking with teams working in other geographies
+            p
+            h2.text-heading-4 Essential Knowledge, Skills, and Experience
+            p
+              | Product knowledge: Deeply understand the technology and features of the product area to which you are assigned.
+            p
+              | Research: Provide human and business impact and insights for products.
+            p
+              | Deliverables: Create deliverables for your product area (for example competitive analyses, user flows, low fidelity wireframes, high fidelity mockups, prototypes, etc.) that solve real user problems through the user experience.
+            p
+              | Communication: Communicate the results of UX activities within your product area to the design team department, cross-functional partners within your product area, and other interested Superformula team members using clear language that simplifies complexity.
+            .border-bottom.mt-50.mb-50
+            .media-block
+              a.btn.btn-green-900.color-white.text-heading-6.icon-arrow-right-white.mr-20(href='page-signup.html') Apply Now
+              a.btn.btn-default.icon-arrow-right(href='page-contact.html') Contact Us
+              .float-start.float-lg-end.mt-30
+                a.btn.btn-media.mr-10(href='#')
+                  img(src='assets/imgs/template/icons/facebook-share.svg', alt='Agon')
+                  |  Share
+                a.btn.btn-media.mr-10(href='#')
+                  img(src='assets/imgs/template/icons/twitter-share.svg', alt='Agon')
+                  |  Tweet
+                a.btn.btn-media(href='#')
+                  img(src='assets/imgs/template/icons/pinterest-share.svg', alt='Agon')
+                  |  Pin
+  include ../sections/section_newsletter_2.pug

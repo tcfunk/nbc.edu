@@ -1,0 +1,84 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  .section-box
+  .banner-hero.banner-breadcrums
+    .container
+      .row
+        .col-lg-5
+          h1.text-heading-4.color-gray-900.mb-20 Join the community with more than 12,368 topics already created
+          p.text-body-text.color-gray-400 Professional support team will solve your problem.
+        .col-lg-7
+          .form-square
+            form.form-inline(action='#')
+              input.form-control.input-with-button(type='text', value='', placeholder='Your question...')
+              input.text-heading-6.btn.btn-square-green(type='submit', value='Find now')
+            .block-tags
+              a.text-body-text.color-gray-900(href='page-pricing-1.html')
+                | Pricing plan 
+                span.icon-close
+  include ../sections/page_faq_section_1.pug
+  .section-box.mt-100
+  .container
+    .row
+      .col-lg-12.col-sm-12.col-12
+        ul.list-icons-2
+          li
+            h3.text-heading-5.mb-10 Can I see the demo before purchasing?
+            p.text-body-text.color-gray-500
+              | Etiam amet mauris suscipit in odio integer congue metus vitae arcu mollis blandit ultrice ligula egestas and magna suscipit lectus magna suscipit luctus blandit vitae
+          li
+            h3.text-heading-5.mb-10 Can I use your system on different devices?
+            p.text-body-text.color-gray-500
+              | Etiam amet mauris suscipit in odio integer congue metus vitae arcu mollis blandit ultrice ligula egestas and magna suscipit lectus magna suscipit luctus blandit vitae
+          li
+            h3.text-heading-5.mb-10 Can I import my sitemap to your system?
+            p.text-body-text.color-gray-500
+              | An enim nullam tempor sapien gravida a donec ipsum enim an porta justo integer at velna vitae auctor integer congue undo magna at pretium purus pretium
+          li
+            h3.text-heading-5.mb-10 Can I cancel my subscription at any time?
+            p.text-body-text.color-gray-500
+              | An enim nullam tempor sapien gravida a donec ipsum enim an porta justo integer at velna vitae auctor integer congue undo magna at pretium purus pretium
+          li
+            h3.text-heading-5.mb-10 How can I switch my subscription between essential, and premium plan
+            p.text-body-text.color-gray-500
+              | Cubilia laoreet augue egestas and luctus donec curabite diam vitae dapibus libero and quisque gravida donec and neque.
+          li
+            h3.text-heading-5.mb-10 Is there an additional discount when paid annually?
+            p.text-body-text.color-gray-500
+              | Cubilia laoreet augue egestas and luctus donec curabite diam vitae dapibus libero and quisque gravida donec and neque. Blandit justo aliquam molestie nunc sapien
+          li
+            h3.text-heading-5.mb-10 I have an issue with my account
+            ul.text-body-text
+              li
+                | Etiam amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis blandit ultrice ligula
+              li
+                | An enim nullam tempor sapien gravida donec congue leo metus. Vitae arcu mollis blandit integer at velna
+          li
+            h3.text-heading-5.mb-10 What happens if I don&rsquo;t renew my license after one year?
+            ul.text-body-text
+              li
+                | Etiam amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis blandit ultrice ligula
+              li
+                | An enim nullam tempor sapien gravida donec congue leo metus. Vitae arcu mollis blandit integer at velna
+          li
+            h3.text-heading-5.mb-10 Do you have a free trial?
+            p.text-body-text.color-gray-500
+              ul.text-body-text
+                li Fringilla risus, luctus mauris orci auctor purus
+                li
+                  | Quaerat sodales sapien euismod blandit purus and ipsum primis in cubilia laoreet augue luctus
+          li
+            h3.text-heading-5.mb-10 What kind of payment methods do you provide?
+            p.text-body-text.color-gray-500
+              ul.text-body-text
+                li Fringilla risus, luctus mauris orci auctor purus
+                li Quaerat sodales sapien euismoda laoreet augue luctus
+                
+  include ../sections/page_faq_section_2.pug

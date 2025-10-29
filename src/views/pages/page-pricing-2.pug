@@ -1,0 +1,125 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  .section-box.mt-90
+  .container
+    h3.text-heading-1.text-center.mt-50.mb-50
+      | Choose The Best Plan
+      br.d-lg-block.d-none
+      |  That&rsquo;s For You
+
+    include ../sections/section_price_3.pug
+    
+  section.section-box.mt-30
+    .container
+      .row
+        .col-lg-12.col-sm-10.col-12.text-center.mt-40
+          h2.text-heading-1.color-gray-900.mb-10 Providing solutions of every kind
+          p.text-body-lead-large.color-gray-600.mt-20
+            | In a professional context it often happens that private or
+            br.d-lg-block.d-none
+            |  corporate clients order a publication to publish news.
+    .container.mt-30
+      .row
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-50
+            .item-icon.none-bd
+              span.icon-left
+                img(src='assets/imgs/page/homepage2/icon-acquis.svg', alt='Agon')
+              h4.text-heading-4 1. Acquisition
+              p.text-body-text.color-gray-600.mt-15
+                | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum &mdash; semper quis lectus nulla.
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-50
+            .item-icon.none-bd
+              span.icon-left
+                img(src='assets/imgs/page/homepage2/icon-active.svg', alt='Agon')
+              h4.text-heading-4 2. Activation
+              p.text-body-text.color-gray-600.mt-15
+                | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum &mdash; semper quis lectus nulla.
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-50
+            .item-icon.none-bd
+              span.icon-left
+                img(src='assets/imgs/page/homepage2/icon-retent.svg', alt='Agon')
+              h4.text-heading-4 3. Retention
+              p.text-body-text.color-gray-600.mt-15
+                | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum &mdash; semper quis lectus nulla.
+  section.section-box
+    .container
+      .row
+        .col-lg-2.col-sm-1.col-12
+        .col-lg-8.col-sm-10.col-12.text-center.mt-40
+          h2.text-heading-1.color-gray-900.mb-10
+            | Discover powerful features to
+            br.d-lg-block.d-none
+            |  boost your productivity
+          p.text-body-lead-large.color-gray-600.mt-20
+            | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum &mdash; semper quis lectus nulla.
+        .col-lg-2.col-sm-1.col-12
+    .container.mt-90.mb-100
+      .row
+        .col-lg-1
+        .col-lg-10
+          .row
+            .col-lg-6.col-sm-12
+              .bg-2.box-square
+                h4.text-heading-4.color-gray-900.mb-15 Cross-Platform
+                p.text-body-text-md.color-gray-600
+                  | Your site is not complete with only landings. Get essential inner pages using our ready demos.
+                .box-image-inner.bg-color-1
+                  img(src='assets/imgs/page/homepage2/temp-1.png', alt='Agon')
+            .col-lg-6.col-sm-12
+              .bg-6.box-square
+                h4.text-heading-4.color-gray-900.mb-15 Extremely Flexible
+                p.text-body-text-md.color-gray-600
+                  | Your site is not complete with only landings. Get essential inner pages using our ready demos.
+                .box-image-inner.bg-color-2
+                  img(src='assets/imgs/page/homepage2/temp-2.png', alt='Agon')
+  section.section-box
+    .container.mb-20.mt-170
+      .bdrd-58.box-gray-100.icon-wave
+        .row
+          .col-lg-12.mb-60
+            span.text-body-capitalized.text-uppercase Contact us
+            h2.text-heading-3.color-gray-900.mt-10 Have an prject in mind?
+            p.text-body-text.color-gray-600.mt-20
+              | The right move at the right time saves your investment.
+              br.d-lg-block.d-none
+              |  live the dream of expanding your business.
+          .col-lg-4.mb-40
+            h4.text-heading-6.color-gray-900.icon-home.mb-10.mt-10 Agon Studio
+            p.text-body-text.color-gray-600
+              | 4517 Washington Ave. 
+              br
+              | Manchester, Kentucky 39495
+            p.text-body-text.color-gray-600 (239) 555-0108
+            p.text-body-text.color-gray-600 contact@agon.com
+          .col-lg-8
+            .row
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Enter your name')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Comapy (optioanl)')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Your email')
+              .col-lg-6
+                .form-group
+                  input.form-control(type='text', value='', placeholder='Phone number')
+              .col-lg-12
+                .form-group
+                  textarea.form-control(placeholder='Tell us about yourself')
+              .col-lg-12.mt-15
+                button.btn.btn-black.icon-arrow-right-white.mr-40.mb-20(type='submit') Send Message
+                br.d-lg-none.d-block
+                span.text-body-text-md.color-gray-500.mb-20 By clicking contact us button, you agree our terms and policy.
+  include ../sections/section_newsletter.pug

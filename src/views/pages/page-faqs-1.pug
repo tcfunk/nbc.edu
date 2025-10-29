@@ -1,0 +1,95 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header-5.pug
+
+block content
+  section.section-box
+    .banner-hero.banner-faqs-1
+      .container
+        .row
+          .col-lg-12.text-center
+            h1.text-display-3.color-white.mb-30 We are here to help you
+            .form-round
+              form.form-inline(action='#')
+                input.form-control.input-round(type='text', value='', placeholder='Ark a questions...')
+                input.btn.btn-round-icon(type='submit', value='')
+            p.text-body-lead.color-white.mt-40 We are collect your searching keywords to improve our services
+  
+  include ../sections/page_faq_section_1.pug
+  
+  section.section-box.pt-140.pb-50
+    .container
+      .row
+        .col-lg-5.mb-40
+          h3.text-heading-1 Pricing Plan questions
+          p.text-body-text.color-gray-600.mt-30
+            | Feeling inquisitive? Have a read through some of our FAQs or contact our supporters for help
+          .row
+            .col-lg-12.mt-50
+              h4.text-heading-6.icon-leaf Boost your sale
+              p.text-body-excerpt.color-gray-600.mt-15 The latest design trends meet hand-crafted templates.
+            .col-lg-12.mt-50
+              h4.text-heading-6.icon-leaf Introducing New Features
+              p.text-body-excerpt.color-gray-600.mt-15 The latest design trends meet hand-crafted templates.
+          .mt-60
+            a.btn.btn-black.icon-arrow-right-white(href='page-contact.html') Contact Us
+            a.btn.btn-link.text-heading-6(href='page-login.html') Support Center
+        .col-lg-7
+          #accordionFAQ.accordion
+            .accordion-item
+              h2#headingOne.accordion-header
+                button.accordion-button.text-heading-5(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                  | Where is my order? Quisque molestie
+              #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingTwo.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                  | How can I return an item purchased online?
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingThree.accordion-header
+                button.accordion-button.text-heading-5.collapsed.text-heading-5(class='type=', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                  | Can I cancel or change my order?
+              #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingFour.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                  | I have promotional or discount code?
+              #collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingFive.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                  | What are the delivery types you use?
+              #collapseFive.accordion-collapse.collapse(aria-labelledby='headingFive', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingSix.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
+                  | How can I pay for my purchases?
+              #collapseSix.accordion-collapse.collapse(aria-labelledby='headingSix', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+            .accordion-item
+              h2#headingSeven.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseSeven', aria-expanded='false', aria-controls='collapseSeven')
+                  | Can I cancel my order?
+              #collapseSeven.accordion-collapse.collapse(aria-labelledby='headingSeven', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature Id pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua. Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum officiis id.
+  
+  include ../sections/section_price_2.pug
+
+  include ../sections/page_faq_section_2.pug

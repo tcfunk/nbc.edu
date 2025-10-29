@@ -1,0 +1,382 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='index.html') Home
+            li
+              a(href='page-shop-grid-1.html') Shop
+            li
+              a(href='page-shop-grid-2.html') Headphone
+            li
+              span Sony Digital Surround Wireless Headphones
+  .section-box.mt-70
+  section.section-box
+    .container
+      .row
+        .col-lg-7
+          .galleries
+            .detail-gallery
+              span.icon-plus
+              .product-image-slider
+                figure.border-radius-10
+                  img(src='assets/imgs/page/single-product/img-sp.jpg', alt='product image')
+                figure.border-radius-10
+                  img(src='assets/imgs/page/single-product/img-sp2.jpg', alt='product image')
+                figure.border-radius-10
+                  img(src='assets/imgs/page/single-product/img-sp3.jpg', alt='product image')
+                figure.border-radius-10
+                  img(src='assets/imgs/page/single-product/img-sp4.jpg', alt='product image')
+            .slider-nav-thumbnails
+              div
+                img(src='assets/imgs/page/single-product/img-sp.jpg', alt='product image')
+              div
+                img(src='assets/imgs/page/single-product/img-sp2.jpg', alt='product image')
+              div
+                img(src='assets/imgs/page/single-product/img-sp3.jpg', alt='product image')
+              div
+                img(src='assets/imgs/page/single-product/img-sp4.jpg', alt='product image')
+        .col-lg-5
+          .product-info
+            .d-flex
+              .box-category-product
+                span.tag-category Audio &amp; Speakers
+              .box-rate-product
+                .box-rating
+                  span
+                    img(src='assets/imgs/page/homepage5/star-active.svg', alt='agon')
+                  span
+                    img(src='assets/imgs/page/homepage5/star-active.svg', alt='agon')
+                  span
+                    img(src='assets/imgs/page/homepage5/star-active.svg', alt='agon')
+                  span
+                    img(src='assets/imgs/page/homepage5/star-active.svg', alt='agon')
+                  span
+                    img(src='assets/imgs/page/homepage5/star.svg', alt='agon')
+                span.text-semibold
+                  span (
+                  span 87
+                  span &nbsp;rates )
+            h1.text-heading-4.mt-30
+              | Sony Digital Surround Wireless Headphones Black Bundle with Deco Gear 6FT Universal 4K
+            .box-price
+              span.price $318.00
+              span.price-old $420.00
+              span.text-stock (In stock)
+            p.text-body-text.color-gray-500
+              | The WH-L600 delivers cinematic surround sound to immerse you in whatever you&apos;re watching or listening to. Sound modes enhance movies, dialogue, games, and sport, while a 98.43-ft wireless listening range gives you the freedom to move around.
+            .box-countdown.mt-40
+              .box-processbar
+                .text-hurry
+                  | Hurry up!
+                  br
+                  | Sales ends soon!
+                .process-bar-line
+                  .process-bar-inner
+                span.text-number-sold 63/158 sold
+              .box-count
+                .deals-countdown.pl-5(data-countdown='2025/05/25 00:00:00')
+            .detail-extralink.mb-30
+              .detail-qty.border.radius
+                a.qty-down(href='#')
+                  i.fi-rs-angle-small-down
+                input.qty-val(type='text', name='quantity', value='1', min='1')
+                a.qty-up(href='#')
+                  i.fi-rs-angle-small-up
+              .product-extra-link2
+                button.button.button-add-to-cart(type='submit')
+                  img(src='assets/imgs/page/single-product/cart.svg')
+                  |  Add to cart
+                a.action-btn.hover-up(aria-label='Add To Wishlist', href='#')
+                  img(src='assets/imgs/page/single-product/heart.svg')
+                a.action-btn.hover-up(aria-label='Compare', href='#')
+                  //- img(src='assets/imgs/page/single-product/shuffle.svg')
+            .box-categories-link
+              .item-cat
+                span.text-body-text.color-gray-900 Vendor:
+                a.text-body-text.color-gray-500(href='#') AgonMart
+              .item-cat
+                span.text-body-text.color-gray-900 SKU:
+                a.text-body-text.color-gray-500(href='#') ABJK767C878
+      .product-description
+        .container
+          .row
+            .col-lg-12
+              ul.nav.mt-50(role='tablist')
+                li
+                  a.btn.btn-default.btn-tab(href='#tab-1', data-bs-toggle='tab', role='tab', aria-controls='tab-1', aria-selected='true') Description
+                li
+                  a.btn.btn-default.btn-tab(href='#tab-2', data-bs-toggle='tab', role='tab', aria-controls='tab-2', aria-selected='false') Additional info
+                li
+                  a.btn.btn-default.btn-tab(href='#tab-3', data-bs-toggle='tab', role='tab', aria-controls='tab-3', aria-selected='false') Vendor
+                li
+                  a.btn.btn-default.btn-tab(href='#tab-4', data-bs-toggle='tab', role='tab', aria-controls='tab-4', aria-selected='true') Reviews (3)
+              .tab-content.mt-50
+                #tab-1.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-1')
+                  p.text-body-text.color-gray-500
+                    | Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously
+                    | this apart.
+                    br
+                    br
+                    |  Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against
+                    |                                             the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.
+                  h3.text-body-text.font-bold.color-gray-500.mt-30 E9SNWHL600B
+                  ul
+                    li WH-L600 Digital Surround Wireless Headphones (Black)
+                    li Charging Stand
+                    li AC Adapter
+                    li Optical Digital Audio Cable
+                    li USA Warranty
+                  h3.text-body-text.font-bold.color-gray-500.mt-30 Bundle Includes: 
+                  ul
+                    li Sony Digital Surround Wireless Headphones Black
+                    li Deco Gear 6FT Universal 4K HDMI 2.0 Cable with 28AWG Pure Copper Conductors
+                    li 1 Year Extended Warranty for Products Valued up to $500
+                #tab-2.tab-pane.fade(role='tabpanel', aria-labelledby='tab-2')
+                  table.table
+                    tbody
+                      tr.stand-up
+                        th Stand Up
+                        td
+                          p 35&Prime;L x 24&Prime;W x 37-45&Prime;H(front to back wheel)
+                      tr.folded-wo-wheels
+                        th Folded (w/o wheels)
+                        td
+                          p 32.5&Prime;L x 18.5&Prime;W x 16.5&Prime;H
+                      tr.folded-w-wheels
+                        th Folded (w/ wheels)
+                        td
+                          p 32.5&Prime;L x 24&Prime;W x 18.5&Prime;H
+                      tr.door-pass-through
+                        th Door Pass Through
+                        td
+                          p 24
+                      tr.frame
+                        th Frame
+                        td
+                          p Aluminum
+                      tr.weight-wo-wheels
+                        th Weight (w/o wheels)
+                        td
+                          p 20 LBS
+                      tr.weight-capacity
+                        th Weight Capacity
+                        td
+                          p 60 LBS
+                      tr.width
+                        th Width
+                        td
+                          p 24&Prime;
+                      tr.handle-height-ground-to-handle
+                        th Handle height (ground to handle)
+                        td
+                          p 37-45&Prime;
+                      tr.wheels
+                        th Wheels
+                        td
+                          p 12&Prime; air / wide track slick tread
+                      tr.seat-back-height
+                        th Seat back height
+                        td
+                          p 21.5&Prime;
+                      tr.head-room-inside-canopy
+                        th Head room (inside canopy)
+                        td
+                          p 25&Prime;
+                      tr.pa_color
+                        th Color
+                        td
+                          p Black, Blue, Red, White
+                      tr.pa_size
+                        th Size
+                        td
+                          p M, S
+                #tab-3.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3')
+                  .vendor-logo.d-flex.mb-30
+                    img(src='assets/imgs/page/single-product/vendor-18.svg', alt='')
+                    .vendor-name.ml-15
+                      h6
+                        a(href='vendor-details-2.html') Noodles Co.
+                      .product-rate-cover.text-end
+                        .product-rate.d-inline-block
+                          .product-rating(style='width: 90%')
+                        span.font-small.ml-5.text-muted  (32 reviews)
+                  ul.contact-infor.mb-50
+                    li
+                      img(src='assets/imgs/page/single-product/icon-location.svg', alt='')
+                      strong Address: 
+                      span 5171 W Campbell Ave undefined Kent, Utah 53127 United States
+                    li
+                      img(src='assets/imgs/page/single-product/icon-contact.svg', alt='')
+                      strong Contact Seller:
+                      span (+91) - 540-025-553
+                  .d-flex.mb-55
+                    .mr-30
+                      p.text-brand.font-xs Rating
+                      h4.mb-0 92%
+                    .mr-30
+                      p.text-brand.font-xs Ship on time
+                      h4.mb-0 100%
+                    div
+                      p.text-brand.font-xs Chat response
+                      h4.mb-0 89%
+                  p.text-body-text.color-gray-500
+                    | Noodles &amp; Company is an American fast-casual restaurant that offers international and American noodle dishes and pasta in addition to soups and salads. Noodles &amp; Company was founded in 1995 by Aaron Kennedy and is headquartered in Broomfield,
+                    | Colorado. The company went public in 2013 and recorded a $457 million revenue in 2017.In late 2018, there were 460 Noodles &amp; Company locations across 29 states and Washington, D.C.
+                #tab-4.tab-pane.fade(role='tabpanel', aria-labelledby='tab-4')
+                  .comments-area
+                    .row
+                      .col-lg-8
+                        h4.mb-30.title-question Customer questions &amp; answers
+                        .comment-list
+                          .single-comment.justify-content-between.d-flex.mb-30
+                            .user.justify-content-between.d-flex
+                              .thumb.text-center
+                                img(src='assets/imgs/page/single-product/author-2.png', alt='')
+                                a.font-heading.text-brand(href='#') Sienna
+                              .desc
+                                .d-flex.justify-content-between.mb-10
+                                  .d-flex.align-items-center
+                                    span.font-xs.text-muted December 4, 2025 at 3:12 pm 
+                                  .product-rate.d-inline-block
+                                    .product-rating(style='width: 100%')
+                                p.mb-10.text-body-text.color-gray-500
+                                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, suscipit exercitationem accusantium obcaecati quos voluptate nesciunt facilis itaque modi commodi dignissimos sequi
+                                  | repudiandae minus ab deleniti totam officia id incidunt? 
+                                  a.reply(href='#') Reply
+                          .single-comment.justify-content-between.d-flex.mb-30.ml-30
+                            .user.justify-content-between.d-flex
+                              .thumb.text-center
+                                img(src='assets/imgs/page/single-product/author-3.png', alt='')
+                                a.font-heading.text-brand(href='#') Brenna
+                              .desc
+                                .d-flex.justify-content-between.mb-10
+                                  .d-flex.align-items-center
+                                    span.font-xs.text-muted December 4, 2025 at 3:12 pm 
+                                  .product-rate.d-inline-block
+                                    .product-rating(style='width: 80%')
+                                p.mb-10.text-body-text.color-gray-500
+                                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, suscipit exercitationem accusantium obcaecati quos voluptate nesciunt facilis itaque modi commodi dignissimos sequi
+                                  | repudiandae minus ab deleniti totam officia id incidunt? 
+                                  a.reply(href='#') Reply
+                          .single-comment.justify-content-between.d-flex
+                            .user.justify-content-between.d-flex
+                              .thumb.text-center
+                                img(src='assets/imgs/page/single-product/author-4.png', alt='')
+                                a.font-heading.text-brand(href='#') Gemma
+                              .desc
+                                .d-flex.justify-content-between.mb-10
+                                  .d-flex.align-items-center
+                                    span.font-xs.text-muted December 4, 2025 at 3:12 pm 
+                                  .product-rate.d-inline-block
+                                    .product-rating(style='width: 80%')
+                                p.mb-10.text-body-text.color-gray-500
+                                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, suscipit exercitationem accusantium obcaecati quos voluptate nesciunt facilis itaque modi commodi dignissimos sequi
+                                  | repudiandae minus ab deleniti totam officia id incidunt? 
+                                  a.reply(href='#') Reply
+                      .col-lg-4
+                        h4.mb-30.title-question Customer reviews
+                        .d-flex.mb-30
+                          .product-rate.d-inline-block.mr-15
+                            .product-rating(style='width: 90%')
+                          h6 4.8 out of 5
+                        .progress
+                          span 5 star
+                          .progress-bar(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100') 50%
+                        .progress
+                          span 4 star
+                          .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100') 25%
+                        .progress
+                          span 3 star
+                          .progress-bar(role='progressbar', style='width: 45%', aria-valuenow='45', aria-valuemin='0', aria-valuemax='100') 45%
+                        .progress
+                          span 2 star
+                          .progress-bar(role='progressbar', style='width: 65%', aria-valuenow='65', aria-valuemin='0', aria-valuemax='100') 65%
+                        .progress.mb-30
+                          span 1 star
+                          .progress-bar(role='progressbar', style='width: 85%', aria-valuenow='85', aria-valuemin='0', aria-valuemax='100') 85%
+                        a.font-xs.text-muted(href='#') How are ratings calculated?
+  section.section-box.mt-90
+    .container
+      h2.text-heading-1.color-gray-900 You may also like
+      p.text-body-lead-large.color-gray-600.mt-20 Take it to your cart
+    .container.mt-70
+      .row
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.hover-up
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp1.png', alt='agon')
+              .product-info
+                h3.title-product Bass ultra x-203. Head phone
+                span.price-regular.mr-15 $29.8
+                span.price-regular.price-line $32.2
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.hover-up
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp2.png', alt='agon')
+              .product-info
+                h3.title-product Boxie by Dro C 3450. Active Noise
+                span.price-regular.mr-15 $30.2
+                span.price-regular.price-line $42.5
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.hover-up
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp3.png', alt='agon')
+              .product-info
+                h3.title-product Sony DSC H300 - 20.1 Megapixel
+                span.price-regular.mr-15 $59.8
+                span.price-regular.price-line $62.3
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.hover-up
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp4.png', alt='agon')
+              .product-info
+                h3.title-product Bass ultra x-203. Head phone
+                span.price-regular.mr-15 $42.6
+                span.price-regular.price-line $52.3
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.hover-up
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp5.png', alt='agon')
+              .product-info
+                h3.title-product Boxie by Dro C 3450. Active Noise
+                span.price-regular.mr-15 $69.5
+                span.price-regular.price-line $71.5
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.hover-up
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp6.png', alt='agon')
+              .product-info
+                h3.title-product Sony DSC H300 - 20.1 Megapixel
+                span.price-regular.mr-15 $52.9
+                span.price-regular.price-line $55.6
+  section.section-box.mt-80.mb-40
+    .container
+      .banner-ads
+        .box-banner-ads
+          h3.text-head-ads.mb-15 Big sale for Iphone 7 plus
+          p.desc-ads
+            | Sed mauris Pellentesque elit Aliquam at
+            br.d-lg-block.d-none
+            |  lacus interdum nascetur elit ipsum.
+  include ../sections/shop_bottom_banner.pug
+
+block scripts-custom
+  script(src='assets/js/vendors/jquery.countdown.min.js')
+  

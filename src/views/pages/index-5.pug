@@ -1,0 +1,286 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  .section-box
+    .banner-hero.banner-homepage5
+      .container.mt-50
+        .row
+          .col-lg-8
+            span.text-heading-4.color-gray-400 Exclusive Smart Watch
+            h1.text-display-2.mt-30 Let go of the challenge See yourself better
+            p.text-body-lead-large.color-gray-500.mt-40.pr-40
+              | Real-time display of data such as exercise duration,
+              br.d-lg-block.d-none
+              |  mileage, heart rate, etc
+            .mt-40
+              ul.list-icon-3
+                li.text-body-text-md Anti fingerprints
+                li.text-body-text-md Delicate touch
+                li.text-body-text-md Hardness screen
+                li.text-body-text-md Dust prevention
+                li.text-body-text-md 3D anti-chip
+                li.text-body-text-md Impact resistant
+            .mt-40.box-mw-610
+              .form-newsletter-2
+                form
+                  input.input-newsletter(type='text', value='', placeholder='Enter your email ...')
+                  button.btn.btn-newsletter.icon-arrow-right-white(type='submit') Joint Pre-Order
+          .col-lg-4.mt-50.d-none.d-lg-block
+            .banner-imgs
+              .block-1.shape-2
+                img(src='assets/imgs/page/homepage5/circle-1.svg', alt='Agon')
+              .block-2.shape-3
+                img(src='assets/imgs/page/homepage5/circle-2.svg', alt='Agon')
+              .block-3.shape-3
+                img(src='assets/imgs/page/homepage5/card.png', alt='Agon')
+              img.img-responsive.shape-1(alt='Agon', src='assets/imgs/page/homepage5/banner.png')
+  .section-box
+    .container.mt-120.mb-60
+      .row
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.wow.animate__animated.animate__fadeIn(data-wow-delay='.1s')
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp1.png')
+              .product-info
+                h3.title-product Bass ultra x-203. Head phone
+                span.price-regular.mr-15 $29.2
+                span.price-regular.price-line $32.8
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.wow.animate__animated.animate__fadeIn(data-wow-delay='.3s')
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp2.png')
+              .product-info
+                h3.title-product Boxie by Dro C 3450. Active Noise
+                span.price-regular.mr-15 $35.6
+                span.price-regular.price-line $36.4
+        .col-xl-4.col-lg-6.col-md-12.col-sm-12
+          .product-item-1.wow.animate__animated.animate__fadeIn(data-wow-delay='.5s')
+            a(href='#')
+              .product-image
+                img(src='assets/imgs/page/homepage5/sp3.png')
+              .product-info
+                h3.title-product Sony DSC H300 - 20.1 Megapixel
+                span.price-regular.mr-15 $17.3
+                span.price-regular.price-line $18.5
+  .section-box
+    .container.mt-50
+      .row
+        .col-lg-9.col-sm-8
+          h3.text-heading-1.mb-10
+            | Featured Products
+            br.d-lg-block.d-none
+            |  For Pre-Order
+    .container.mt-80
+      .box-swiper
+        .swiper-container.swiper-group-1
+          .swiper-wrapper.pb-70.pt-5
+            // Slider 1
+            .swiper-slide.active
+              .row
+                +ProductCardGrid('assets/imgs/page/homepage5/sp4.png', 'Sony', '4K TV Game Mini Arcade Rocker Console 32GB/64GB', '94', '$22.51', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp5.png', 'Apple', 'T500BT Original Wireless Bluetooth Headphone Deep Bass', '126', '$95.26', '$96.5')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp6.png', 'Toshiba', 'Black Walnut Wood & Aluminum Headphone Stand ', '87', '$25.6', '$32.2')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp7.png', 'BassX', 'Beats Studio3 Wireless Bluetooth Headphones', '12', '$18.5', '$22.6')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp8.png', 'Konika', 'Marshall MAJOR III Wireless Folding Bluetooth', '43', '$28.2', '$33.7')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp9.png', 'Samsung', 'BT918 ANC 35dB Hybrid Active Noise Cancelling', '56', '$125', '$129.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp10.png', 'Google', 'Cancelling Headset Music Sport Deep Bass', '87', '$23.5', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp11.png', 'Huawei', 'AirPods 2 Pro 3 Wireless Headphone Bluetooth', '57', '$15.51', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp8.png', 'Nikon', 'Outdoor Waterproof Loudspeaker Stereo Surround Support', '46', '$21.55', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp4.png', 'Alaex', 'uisine Smoking Gun Meat Burn Smokehouse', '24', '$56.4', '$56.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp5.png', 'XiaoMi', 'Walnut Gaming Headset Holder with Solid Metal', '17', '$34.3', '$36.5')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp6.png', 'Lenovo', 'Headphones Surround 3D Deep Bass Sport Gaming', '87', '$25.6', '$29.8')
+            // Slider 2
+            .swiper-slide
+              .row              
+                +ProductCardGrid('assets/imgs/page/homepage5/sp8.png', 'Nikon', 'Outdoor Waterproof Loudspeaker Stereo Surround Support', '46', '$21.55', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp4.png', 'Alaex', 'uisine Smoking Gun Meat Burn Smokehouse', '24', '$56.4', '$56.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp5.png', 'XiaoMi', 'Walnut Gaming Headset Holder with Solid Metal', '17', '$34.3', '$36.5')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp6.png', 'Lenovo', 'Headphones Surround 3D Deep Bass Sport Gaming', '87', '$25.6', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp4.png', 'Sony', '4K TV Game Mini Arcade Rocker Console 32GB/64GB', '94', '$22.51', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp5.png', 'Apple', 'T500BT Original Wireless Bluetooth Headphone Deep Bass', '126', '$95.26', '$96.5')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp6.png', 'Toshiba', 'Black Walnut Wood & Aluminum Headphone Stand ', '87', '$25.6', '$32.2')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp7.png', 'BassX', 'Beats Studio3 Wireless Bluetooth Headphones', '12', '$18.5', '$22.6')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp8.png', 'Konika', 'Marshall MAJOR III Wireless Folding Bluetooth', '43', '$28.2', '$33.7')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp9.png', 'Samsung', 'BT918 ANC 35dB Hybrid Active Noise Cancelling', '56', '$125', '$129.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp10.png', 'Google', 'Cancelling Headset Music Sport Deep Bass', '87', '$23.5', '$29.8')
+                +ProductCardGrid('assets/imgs/page/homepage5/sp11.png', 'Huawei', 'AirPods 2 Pro 3 Wireless Headphone Bluetooth', '57', '$15.51', '$29.8')
+            // End Slider 2
+          .swiper-pagination.swiper-pagination3
+        .swiper-button-next.swiper-button-next-5
+        .swiper-button-prev.swiper-button-prev-5
+  .section-box.mt-40
+    .container.text-center
+      h2.text-heading-1.color-gray-900 Explore by Categories
+      p.text-body-lead-large.color-gray-600.mt-20
+        | We provide many categories, choose a category according to
+        br.d-lg-block.d-none
+        |  your expertise to make it easier to find a job.
+    .container.mt-70
+      .row
+        .col-xl-5.col-lg-5.col-md-12.col-sm-12
+          .list-categories-number.box-bdr-2.mb-30
+            .header-list-category
+              h3.text-body-lead-large.font-bold Popular Categories
+            ul.list-category
+              li
+                a(href='#') Computer - Laptop
+                span.number 6
+              li
+                a(href='#') Smart phone &amp; Tablets
+                span.number 12
+              li
+                a(href='#') Fashion &amp; Accessories
+                span.number 14
+              li
+                a(href='#') Health &amp; Beauty
+                span.number 8
+        .col-xl-7.col-lg-7.col-md-12.col-sm-12
+          .row
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12
+              .grid-category.hover-up
+                a(href='#')
+                  .grid-image-left-category
+                    .category-image
+                      span.for-design
+                    .category-info
+                      h3.text-heading-6 Computer for Designer, Art
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12
+              .grid-category.hover-up
+                a(href='#')
+                  .grid-image-left-category
+                    .category-image
+                      span.for-sport
+                    .category-info
+                      h3.text-heading-6 Sport, Home, Outdoor
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12
+              .grid-category.hover-up
+                a(href='#')
+                  .grid-image-left-category
+                    .category-image
+                      span.for-office
+                    .category-info
+                      h3.text-heading-6 Laptop for office, students
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12
+              .grid-category.hover-up
+                a(href='#')
+                  .grid-image-left-category
+                    .category-image
+                      span.for-software
+                    .category-info
+                      h3.text-heading-6 Software, card, book
+          .row.mt-20
+            .col-xl-3.col-lg-3.col-md-3.col-sm-12
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12
+              .grid-category.grid-category-small.hover-up
+                a(href='#')
+                  .grid-image-left-category
+                    .category-image
+                      span.for-leaf
+                    .category-info
+                      h3.text-heading-6 See All Categories
+                    .arrow-down-green
+  .section-box.mt-70
+    .container
+      .row
+        .col-lg-1.col-sm-1.col-12
+        .col-lg-10.col-sm-10.col-12.text-center
+          .text-center.mb-20
+            span.tag-1 How It Work ?
+          h2.text-display-3.color-gray-900.mb-60
+            | Cross-border ordering has
+            br.d-lg-block.d-none
+            |  never been easier
+        .col-lg-1.col-sm-1.col-12
+    .container
+      .row
+        .col-lg-1.col-sm-12.col-12
+        .col-lg-10.col-sm-12.col-12
+          ul.list-steps
+            li.icon-asset1
+              .text-center.block-step.bg-9.hover-up
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-start-plan.svg')
+                h3.text-heading-5.mb-10 Start Plan
+                p.text-body-text.color-gray-500 Choose any of our packages
+            li.icon-asset2
+              .text-center.block-step.hover-up
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-connect.svg')
+                h3.text-heading-5.mb-10 Connect
+                p.text-body-text.color-gray-500 Receive concepts In 24 hours
+            li.icon-asset3
+              .text-center.block-step.bg-5.hover-up
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-match.svg')
+                h3.text-heading-5.mb-10 Match
+                p.text-body-text.color-gray-500 Development Stage
+            li.icon-asset4
+              .text-center.block-step.bg-5.hover-up
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-complete.svg')
+                h3.text-heading-5.mb-10 Complete
+                p.text-body-text.color-gray-500 After-release Support
+            li
+              .text-center.block-step.bg-9.hover-up
+                .mb-30
+                  img(src='assets/imgs/page/about/2/icon-review.svg')
+                h3.text-heading-5.mb-10 Review
+                p.text-body-text.color-gray-500 Project launch and checkout
+        .col-lg-1.col-sm-12.col-12
+  .section-box.mt-70
+    .container
+      .box-green.br-16
+        h3.text-heading-1.color-white
+          | You can order on
+          br.d-lg-block.d-none
+          |  App and Play store
+        p.text-desc-white Bring the world of shopping to your phone
+        .mt-60
+          a.mr-20(href='#')
+            img(src='assets/imgs/page/homepage5/apple-button.svg')
+          a(href='#')
+            img(src='assets/imgs/page/homepage5/google-play.svg')
+        .mt-30
+          span.cb-layout.mr-30 Order direct from the app
+          span.cb-layout Save and searches
+  .section-box.overflow-visible.mt-120
+    .container
+      h2.text-heading-3.text-center.color-gray-900.mb-60 Trusted by the world&rsquo;s leading companies
+      .row
+        .col-lg-12
+          ul.list-partners.none-bd.pb-0
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/agon.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/monst.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/figwire.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/evara.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/frox.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/alithemes.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/nestmask.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/theflow.svg')
+            li
+              a.item-logo.box-hover-shadow.hover-up(href='#')
+                img(alt='Agon', src='assets/imgs/page/homepage5/stacker.svg')

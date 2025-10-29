@@ -1,0 +1,123 @@
+mixin ProductCardGrid(img='assets/imgs/page/homepage5/sp4.png', cat='Sony', name='4K TV Game Mini Arcade Rocker Console 32GB/64GB', rateNumber='84', price='$22.51', oldPrice='$28.89')
+    .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-12
+        .product-item-2.hover-up
+            a(href='page-shop-single.html')
+                .product-image
+                    img(src= img alt='agon')
+            .box-quick-view
+                .quick-view
+                    a.like-product(href='#')
+                    a.shuffle-product(href='#')
+                    a.view-product(href='#')
+            .product-info
+                span.text-body-small.color-gray-500.font-bold= cat
+                a(href='page-shop-single.html')
+                    h3.text-body-lead.color-gray-900= name
+                .rating.mt-10
+                    .box-rating
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star.svg' alt='agon')
+                    span.text-semibold
+                        span (
+                        span= rateNumber 
+                        span &nbsp;rates )
+                .d-flex.mt-20
+                    .box-prices
+                        span.price-regular.mr-5= price
+                        span.price-regular.price-line= oldPrice
+                    .button-add.text-end
+                        a.btn.btn-cart(href='#') Add
+
+mixin ProductCardGrid-2(img='assets/imgs/page/homepage5/sp4.png', cat='Sony', name='4K TV Game Mini Arcade Rocker Console 32GB/64GB', rateNumber='84', price='$22.51', oldPrice='$28.89')
+    .col-xl-4.col-lg-6.col-md-6.col-sm-6.col-12
+        .product-item-2.hover-up
+            a(href='#')
+                .product-image
+                    img(src= img alt='agon')
+            .box-quick-view
+                .quick-view
+                    a.like-product(href='#')
+                    a.shuffle-product(href='#')
+                    a.view-product(href='#')
+            .product-info
+                span.text-body-small.color-gray-500.font-bold= cat
+                a(href='#')
+                    h3.text-body-lead.color-gray-900= name
+                .rating.mt-10
+                    .box-rating
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star-active.svg' alt='agon')
+                        span
+                        img(src='assets/imgs/page/homepage5/star.svg' alt='agon')
+                    span.text-semibold
+                        span (
+                        span= rateNumber 
+                        span &nbsp;rates )
+                .d-flex.mt-20
+                    .box-prices
+                        span.price-regular.mr-5= price
+                        span.price-regular.price-line= oldPrice
+                    .button-add.text-end
+                        a.btn.btn-cart(href='#') Add
+
+
+mixin CategoryCard(CatImg='assets/imgs/page/shop1/pc.svg', CatTitle='Desktop PC', TotalProducts='4553 products')
+    .col-xl-2.col-lg-3.col-md-4.col-sm-6.col-12
+        .category-grid-3.hover-up
+          .category-img
+            a(href='#')
+              img(src= CatImg alt='agon')
+          h4.text-heading-5.mb-5=CatTitle
+          p.text-body-text.color-gray-500=TotalProducts
+
+mixin ProductCard-2(ProdImg='assets/imgs/page/homepage5/sp1.png', ProdTitle='Bass ultra x-203. Head phone', ProdPrice='$29.8', ProdOldPrice='32.85')
+    .col-xl-4.col-lg-6.col-md-12.col-sm-12
+        .product-item-1.hover-up
+          a(href='#')
+            .product-image
+              img(src= ProdImg alt='agon')
+            .product-info
+              h3.title-product= ProdTitle
+              span.price-regular.mr-15= ProdPrice
+              span.price-regular.price-line= ProdOldPrice
+mixin PortfolioCard-1(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Branding', name='Brand Identity for Global JSC', date='August 25, 2025', dataCategory="branding")
+    .col-xl-3.col-lg-6.col-md-6.col-sm-6.col-12
+        .product-item-2.portfolio-card.hover-up(data-category= dataCategory)
+            .item-content
+                a(href='page-portfolio-single.html')
+                    .product-image
+                        img(src= img alt='agon')                    
+                        a.text-body-small.color-gray-500.font-bold.cat(href='page-portfolio-grid-1.html')= cat       
+                        a.view-details(href='page-portfolio-single.html')
+                .product-info
+                    span.color-gray-500=date
+                    a(href='page-portfolio-single.html')
+                        h3.text-body-lead.color-gray-900= name
+
+mixin PortfolioCard-2(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Branding', name='Brand Identity for Global JSC', date='August 25, 2025', dataCategory="branding")
+    .col-xl-4.col-lg-6.col-md-6.col-sm-6.col-12
+        .product-item-2.portfolio-card.hover-up(data-category= dataCategory)
+            .item-content
+                a(href='page-portfolio-single.html')
+                    .product-image
+                        img(src= img alt='agon')                    
+                        a.text-body-small.color-gray-500.font-bold.cat(href='page-portfolio-grid-1.html')= cat       
+                        a.view-details(href='page-portfolio-single.html')
+                .product-info
+                    span.color-gray-500=date
+                    a(href='page-portfolio-single.html')
+                        h3.text-body-lead.color-gray-900= name

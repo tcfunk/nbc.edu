@@ -1,0 +1,95 @@
+extends ../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='index.html') Home
+            li
+              a(href='page-portfolio-grid-1.html') Portfolio
+            li
+              span Real Estate UI/UX kit
+  include ../sections/portfolio_page_single_title.pug
+  .section-box
+    .container
+      .row
+        .col-lg-10.mx-auto
+          .line-bd-green
+          .row.mb-50
+            .col-lg-3.col-sm-6.col-12.mt-50
+              h4.text-heading-6.icon-leaf Client
+              p.text-body-excerpt.color-gray-600.mt-15 AliThemes Coporation
+            .col-lg-3.col-sm-6.col-12.mt-50
+              h4.text-heading-6.icon-leaf Date
+              p.text-body-excerpt.color-gray-600.mt-15 January 2025
+            .col-lg-3.col-sm-6.col-12.mt-50
+              h4.text-heading-6.icon-leaf Skills
+              p.text-body-excerpt.color-gray-600.mt-15 UI/UX design, Branding
+            .col-lg-3.col-sm-6.col-12.mt-50
+              h4.text-heading-6.icon-leaf Project URL
+              p.text-body-excerpt.color-gray-600.mt-15
+                a(href="https://alithemes.com")
+                  | https://alithemes.com
+          .box-image
+            a.popup-youtube.btn-play-video.btn-play-middle(href='https://www.youtube.com/watch?v=oRI37cOPBQQ')
+            img.img-responsive.bdrd-16(src='assets/imgs/page/portfolio/portfolio-details.png', alt="Agon")
+          .col-lg-10.mx-auto.mt-50
+            .content-detail
+              h2.text-heading-4 Overview
+              p.text-body-text
+                | The Real Estate UI/UX Kit is a comprehensive design solution crafted for real estate businesses, agencies, and property marketplaces. It offers a clean and intuitive interface with all the necessary features to enhance the home-buying and rental experience. 
+              p.text-body-text
+                | This kit ensures seamless navigation, engaging property showcases, and a smooth user journey from discovery to transaction.
+              p
+
+              h2.text-heading-4 Key Features
+              ul
+                li Modern and Clean UI – Aesthetically pleasing, responsive layouts for web and mobile.
+                li Property Listings and Details – High-quality visuals, interactive maps, and detailed descriptions.
+                li Advanced Search and Filters – Location, price range, property type, amenities, and more.
+                li User Dashboards – Separate dashboards for buyers, sellers, and agents.
+                li Appointment Scheduling – Easy booking system for property viewings.
+                li Mortgage Calculator – Helps users estimate loan payments.
+                li Favorites and Saved Listings – Allow users to bookmark properties.
+                li Light and Dark Mode Support – Enhancing accessibility and user preference.
+                li Fully Customizable Components – Designed to be adaptable to various real estate needs.
+              p
+              h2.text-heading-4 Tools and Technologies Used
+              ul
+                li Design Tools: Figma, Adobe XD, Sketch
+                li Prototyping: InVision, Framer
+                li Development-Ready Assets: HTML, CSS, Bootstrap
+              p
+              h2.text-heading-4 Design Approach
+              p
+                | The UI/UX was designed with a minimalist yet functional approach, ensuring that users can browse properties effortlessly.
+              p
+                | The color scheme, typography, and layout were chosen to evoke professionalism, trust, and ease of use. The goal was to create a visually appealing interface while keeping usability and performance in mind.
+
+              .border-bottom.mt-50.mb-50
+              .media-block
+                a.btn.btn-green-900.color-white.text-heading-6.icon-arrow-right-white.mr-20(href='page-signup.html') Get a Quote
+                a.btn.btn-default.icon-arrow-right(href='page-contact.html') Contact Us
+                .float-start.float-lg-end.mt-30
+                  a.btn.btn-media.mr-10(href='#')
+                    img(src='assets/imgs/template/icons/facebook-share.svg', alt='Agon')
+                    |  Share
+                  a.btn.btn-media.mr-10(href='#')
+                    img(src='assets/imgs/template/icons/twitter-share.svg', alt='Agon')
+                    |  Tweet
+                  a.btn.btn-media(href='#')
+                    img(src='assets/imgs/template/icons/pinterest-share.svg', alt='Agon')
+                    |  Pin
+
+          
+  
+  include ../sections/shop_bottom_banner.pug
