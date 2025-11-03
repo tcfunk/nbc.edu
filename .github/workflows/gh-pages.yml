@@ -41,6 +41,8 @@ jobs:
           # source: ./
           # destination: ./_site
       - run: bun --print process.env
+        env: 
+          ASSET_PREFIX: ${{ vars.ASSET_PREFIX }}
       - run: bun install
       - run: bun run build
       - run: cp -r ./dist ./_site
