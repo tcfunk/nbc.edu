@@ -127,10 +127,15 @@
 
     &.banner-4 {
         background-color: $color-brand-blue;
-        padding: 120px 0px 80px 0px;
+        padding: 120px 0px 0px 0px;
         .banner-imgs
         {
             position: relative;
+            img {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+            }
             .btn-play-video-2
             {
                 position: absolute;

@@ -1,0 +1,90 @@
+extends ../../layouts/master.pug
+
+block title
+  title Agon - Multipurpose Agency HTML Template
+
+block topbar
+  include ../../components/topbar-2.pug
+
+block header
+  include ../../components/header.pug
+
+block content
+  aside.table-of-contents.mt-4.mb-5.my-md-5.ps-xl-3.mb-lg-5.text-muted
+    strong.d-block.h6 On this page
+    nav#TableOfContents
+      ul
+        li
+          a(href='#overview') Overview
+        li
+          a(href='#majors') Majors
+        li
+          a(href='#minors') Minors
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/index-4.html') Home
+            li
+              a(href='/programs/') Programs
+            li
+              span B.A. in Ministry
+  section.section-box
+    .banner-hero.banner-brand-light
+      .container.text-center
+        .row
+          .col-lg-12
+            h1.text-heading-2.color-gray-900.mb-20
+              | Bachelor of Arts in Ministry
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#overview.text-heading-4 Four Year College Degree
+            p.text-body-text
+              | The Bachelor of Arts in Ministry degree (B.A.Min.) is designed for persons who wish to gain a breadth of ministry skills and knowledge in order to serve as ministers, counselors, educators or in supportive roles for the mission of the church and the redemptive work of God in this world.
+            p.text-body-text
+              | The degree is based on a strong general studies component and advanced studies in Bible, theology, and ministry principles. Depending on the chosen major, the B.A.Min. degree is designed to prepare students for work as pastors, deacons, ministers of church music, counselors, and educators as well as prepare students for graduate work in the church.
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#majors.text-heading-4.mt-30 Majors
+            p.text-body-text
+              | The Bachelor of Arts in Ministry (B.A.Min.) degree is composed of three components: the General Education Core, the Bible and Theology Core, and a selected major. Students may choose from the following major areas of study
+            ul.list-group
+              li Bible and Theology
+              li Christian Educational Ministries
+              li Counseling for Christian Ministries
+              li Hispanic Pastoral Ministries
+              li Leadership and Ethics
+              li Pastoral Leadership
+              li Pastoral Ministries
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#minors.text-heading-4.mt-30 Minors
+            p.text-body-text
+              | In addition, a student may fulfill the requirements for one of the following minor areas of study:
+            ul.list-group
+              li Christian Educational Ministries
+              li Leadership and Ethics
+              li Pastoral Ministries
+            .border-bottom.mt-50.mb-50
+            .media-block
+              a.btn.btn-green-900.color-white.text-heading-6.icon-arrow-right-white.mr-20(href='page-signup.html') Apply Now
+              a.btn.btn-default.icon-arrow-right(href='page-contact.html') Contact Us
+              .float-start.float-lg-end.mt-30
+                a.btn.btn-media.mr-10(href='#')
+                  img(src='assets/imgs/template/icons/facebook-share.svg', alt='Agon')
+                  |  Share
+                a.btn.btn-media.mr-10(href='#')
+                  img(src='assets/imgs/template/icons/twitter-share.svg', alt='Agon')
+                  |  Tweet
+                a.btn.btn-media(href='#')
+                  img(src='assets/imgs/template/icons/pinterest-share.svg', alt='Agon')
+                  |  Pin
+  include ../../sections/section_newsletter_2.pug

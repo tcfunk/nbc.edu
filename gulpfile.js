@@ -12,7 +12,7 @@ const { src, dest, parallel, watch, series } = require("gulp"),
 const FilesPath = {
     sassFiles: "src/assets/scss/*.scss",
     jsFiles: "src/assets/js/*.js",
-    htmlFiles: "src/views/pages/*.pug"
+    htmlFiles: "src/views/pages/**/*.pug"
 };
 
 const { sassFiles, jsFiles, htmlFiles } = FilesPath;

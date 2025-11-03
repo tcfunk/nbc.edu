@@ -1,0 +1,35 @@
+extends ../../layouts/master.pug
+
+block title
+  title Programs - Nazarene Bible College
+
+block header
+  include ../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/index-4.html') Home
+            li
+              span Programs
+  include ../../sections/portfolio_page_title.pug
+  .container
+    //- .filter.filter-basic
+    //-   .filter-nav.text-center.mb-60
+    //-     button.btn.hover-up.mb-3.active(data-filter='') Show All
+    //-     button.btn.hover-up.mb-3(data-filter='bachelors') Website
+    //-     button.btn.hover-up.mb-3(data-filter='associates') Logos
+    //-     button.btn.hover-up.mb-3(data-filter='branding') Branding
+    //-     button.btn.hover-up.mb-3(data-filter='media') Media
+    //-     button.btn.hover-up.mb-3(data-filter='social') Social
+    .filter-gallery.g-8
+      .row
+        +ProgramCard('/assets/imgs/page/programs/200479219-001.jpg', 'Degree', 'Bachelors of Arts in Ministry', 'Four Year College Degree', '/programs/bachelor-of-arts-in-ministry.html')
+        +ProgramCard('/assets/imgs/page/programs/89142972.jpg', 'Degree', 'Assosiate of Arts in Ministry', 'Two Year College Degree','/programs/associate-of-arts-in-ministry.html')
+        +ProgramCard('/assets/imgs/page/programs/92825321.jpg', 'Certificate Program', 'Ministry Preparation Program', 'Fulfilling Education Requirements for Ordination Solely in the Church of the Nazarene', '/programs/ministry-preparation-program.html')
+        +ProgramCard('/assets/imgs/page/programs/87462551.jpg', 'Non-college Credit', 'Ministerial Training', 'Non-degree Course of Study','/programs/non-degree-course-of-study.html')
+  include ../../sections/shop_bottom_banner.pug

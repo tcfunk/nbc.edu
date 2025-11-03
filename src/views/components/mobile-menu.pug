@@ -1,13 +1,9 @@
 .mobile-header-active.mobile-header-wrapper-style.perfect-scrollbar
   .mobile-header-wrapper-inner
     .mobile-header-top
-      .user-account
-        img(src='assets/imgs/template/ava_1.png', alt='Agon')
-        .content
-          h6.user-name
-            | Hi 
-            span.text-brand Steven !
-          p.font-xs.text-muted You have 5 new messages
+      .header-logo
+        a.d-flex(href='index.html')
+          img(alt='Nazarene Bible College', src='assets/imgs/logos/logo-stacked-blue.svg', height='50')
     .mobile-header-content-area
       .perfect-scroll        
         .mobile-menu-wrap.mobile-header-border
@@ -15,124 +11,134 @@
           nav
             ul.mobile-menu.font-heading
               li.has-children
-                a.active(href='index.html') Home
+                a.active(href='/programs/') Programs
                 ul.sub-menu
                   li
-                    a(href='index.html') Homepage - 1
+                    a(href='programs/bachelor-of-arts-in-ministry.html')
+                      //- i.fi.fi-rr-home 
+                      | Bachelor of Arts in Ministry
                   li
-                    a(href='index-2.html') Homepage - 2
+                    a(href='programs/associate-of-arts-in-ministry.html')
+                      //- i.fi.fi-rr-home
+                      | Associate of Arts in Ministry
                   li
-                    a(href='index-3.html') Homepage - 3
+                    a(href='programs/ministry-preparation-program.html')
+                      //- i.fi.fi-rr-home
+                      | Ministry Preparation Program
                   li
-                    a(href='index-4.html') Homepage - 4
-                  li
-                    a(href='index-5.html') Homepage - 5
-                  li
-                    a(href='index-6.html') Homepage - 6
-                  li
-                    a(href='index-7.html') Homepage - 7
-                  li
-                    a(href='index-8.html') Homepage - 8
-              li.has-children
-                a(href='page-about-1.html') About
-                ul.sub-menu
-                  li
-                    a(href='page-about-1.html') About Us - 1
-                  li
-                    a(href='page-about-2.html') About Us - 2
-                  li
-                    a(href='page-about-3.html') About Us - 3
-              li.has-children
-                a(href='page-service-1.html') Company
-                ul.sub-menu
-                  li
-                    a.closer(href='page-service-1.html') Services - 1
-                  li
-                    a.closer(href='page-service-2.html') Services - 2
+                    a(href='programs/non-degree-course-of-study.html')
+                      //- i.fi.fi-rr-home
+                      | Non-Degree Course of Study
                   li.hr
                     span
                   li
-                    a.closer(href='page-pricing-1.html') Pricing - 1
+                    a(href='delivery.html')
+                      //- i.fi.fi-rr-home
+                      | Course Delivery
                   li
-                    a.closer(href='page-pricing-2.html') Pricing - 2
-                  li.hr
-                    span
+                    a(href='structures.html')
+                      //- i.fi.fi-rr-home
+                      | Structures
                   li
-                    a.closer(href='page-faqs-1.html') FAQs - 1
+                    a(href='majors.html')
+                      //- i.fi.fi-rr-home
+                      | Majors
                   li
-                    a.closer(href='page-faqs-2.html') FAQs - 2
-                  li.hr
-                    span
+                    a(href='minors.html')
+                      //- i.fi.fi-rr-home
+                      | Minors
                   li
-                    a.closer(href='page-career.html') Career
+                    a(href='concentrations.html')
+                      //- i.fi.fi-rr-home
+                      | Concentrations
                   li
-                    a.closer(href='page-career-detail.html') Career Detail
+                    a(href='tracks.html')
+                      //- i.fi.fi-rr-home
+                      | Tracks
               li.has-children
-                a(href='#') Pages
+                a(href='about.html') About
                 ul.sub-menu
                   li
-                    a(href='page-contact.html') Contact
+                    a(href='about/history.html')
+                      //- i.fi.fi-rr-star
+                      | History
                   li
-                    a(href='page-signup.html') Sign Up
+                    a(href='about/welcome.html')
+                      //- i.fi.fi-rr-star
+                      | Welcome
                   li
-                    a(href='page-login.html') Log In
+                    a(href='about/belief.html')
+                      //- i.fi.fi-rr-star
+                      | Belief
                   li
-                    a(href='page-reset.html') Reset Password
+                    a(href='about/our-mission.html')
+                      //- i.fi.fi-rr-star
+                      | Our Mission
                   li
-                    a(href='404.html') Error 404
+                    a(href='about/facts.html')
+                      //- i.fi.fi-rr-star
+                      | Facts
+                  li
+                    a(href='about/governance.html')
+                      //- i.fi.fi-rr-star
+                      | Governance
               li.has-children
-                a(href='blog-1.html') Blog
+                a(href='financialaid.html') Financial Aid
                 ul.sub-menu
                   li
-                    a.closer(href='blog-1.html') Blog 1
+                    a(href='financialaid/fafsa.html')
+                      //- i.fi.fi-rr-gem
+                      | FAFSA
                   li
-                    a.closer(href='blog-2.html') Blog 2
-                  li.hr
-                    span
+                    a(href='financialaid/scholarships.html')
+                      //- i.fi.fi-rr-gem
+                      | Scholarships
                   li
-                    a(href='blog-single.html') Blog Single
+                    a(href='financialaid/institutional-aid.html')
+                      //- i.fi.fi-rr-gem
+                      | Institutional Aid
+                  li
+                    a(href='financialaid/student-loans.html')
+                      //- i.fi.fi-rr-gem
+                      | Student Loans
+                  li
+                    a(href='financialaid/tax-credit.html')
+                      //- i.fi.fi-rr-gem
+                      | Tax Credit
+                  li
+                    a(href='financialaid/tuition-and-fees.html')
+                      //- i.fi.fi-rr-gem
+                      | Tuition and Fees
+                  li
+                    a(href='financialaid/crrsaa.html')
+                      //- i.fi.fi-rr-gem
+                      | HEERF Grants
+                  li
+                    a(href='offices/financial-aid.html')
+                      //- i.fi.fi-rr-gem
+                      | Contact Us
+              li
+                a(href='mynbc.html') MyNBC
               li.has-children
-                a(href='#') Shop
+                a(href='give.html') Give
                 ul.sub-menu
                   li
-                    a.closer(href='page-shop-grid-1.html') Shop Grid 1
+                    a(href='give/annual-offering.html')
+                      //- i.fi.fi-rr-edit
+                      | Annual Offering
                   li
-                    a.closer(href='page-shop-grid-2.html') Shop Grid 2
+                    a(href='give/presidential-partners.html')
+                      //- i.fi.fi-rr-edit
+                      | Presidential Partners
                   li
-                    a.closer(href='page-shop-single.html') Product Details
-              li.has-children
-                a(href='#') Portfolio
-                ul.sub-menu
+                    a(href='give/donate.html')
+                      //- i.fi.fi-rr-edit
+                      | Donate
                   li
-                    a.closer(href='page-portfolio-grid-1.html')
-                      | Grid 4 columns
+                    a(href='give/student-account.html')
+                      //- i.fi.fi-rr-edit
+                      | Student Account
                   li
-                    a.closer(href='page-portfolio-grid-2.html')
-                      | Grid 3 columns
-                  li
-                    a(href='page-portfolio-single.html')
-                      | Portfolio Single
-          // mobile menu end
-        .mobile-account
-          h6.mb-10 Your Account
-          ul.mobile-menu.font-heading
-            li
-              a(href='#') Profile
-            li
-              a(href='#') Work Preferences
-            li
-              a(href='#') My Boosted Shots
-            li
-              a(href='#') My Collections
-            li
-              a(href='#') Account Settings
-            li
-              a(href='#') Go Pro
-            li
-              a(href='page-login.html') Sign Out
-        
-        .site-copyright.color-gray-400
-          | Copyright 2025 &copy; Agon - Agency Template. 
-          br
-          | Designed by
-          a(href='http://alithemes.com') &nbsp; AliThemes
+                    a(href='give/share-your-story.html')
+                      //- i.fi.fi-rr-edit
+                      | Share Your Story

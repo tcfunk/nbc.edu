@@ -121,3 +121,18 @@ mixin PortfolioCard-2(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Bra
                     span.color-gray-500=date
                     a(href='page-portfolio-single.html')
                         h3.text-body-lead.color-gray-900= name
+
+mixin ProgramCard(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Branding', name='Brand Identity for Global JSC', subtitle='August 25, 2025', cardHref="page-portfolio-single.html")
+    .col-lg-6.col-md-6.col-sm-6.col-12.mb-24
+        .card
+            .row.g-0
+                .col-sm-5(style='background-image: url(' + img + '); background-size: cover; background-position: center; min-height: 250px;')
+                .col-sm-7.position-relative
+                    .card-body.h-100.d-flex.flex-column.justify-content-between
+                        .p-2
+                            span.text-body-small.color-gray-500.font-bold= cat
+                            h5.card-title.mt-10= name
+                            p.card-text.mt-10= subtitle
+                        .p-2
+                            a.btn.btn-sm.btn-black(href=cardHref) Learn More
+                            a.hover-up.ml-10.btn.btn-sm.btn-brand(href="/apply/") Apply Now
