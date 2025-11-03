@@ -700,6 +700,10 @@ a:hover {
   line-height: 28px;
 }
 
+.content-detail ul ul {
+  list-style: circle;
+}
+
 .border-bottom {
   border-bottom: 1px solid #061224;
   width: 100%;
@@ -2993,6 +2997,11 @@ label {
 .nav-right li button.active {
   color: #ffffff;
   background-color: #FFF3EA;
+}
+
+.box-info {
+  border-radius: 18px;
+  padding: 36px 48px;
 }
 
 .box-newsletter {
@@ -6680,10 +6689,21 @@ label {
   float: right;
   font-size: 19px;
 }
-.list-category li a {
+.list-category li .total {
+  text-align: center;
+  line-height: 43px;
+  color: var(--color-brand-black);
+  float: right;
+  font-size: 19px;
+  font-weight: bold;
+}
+.list-category li a,
+.list-category li .title {
   font-size: 19px;
   line-height: 30px;
   color: #667085;
+}
+.list-category div {
   display: inline-block;
   vertical-align: text-top;
 }

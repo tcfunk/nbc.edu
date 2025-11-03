@@ -9,17 +9,18 @@ block topbar
 block header
   include ../../components/header.pug
 
+  //- aside.table-of-contents.mt-4.mb-5.my-md-5.ps-xl-3.mb-lg-5.text-muted
+  //-   strong.d-block.h6 On this page
+  //-   nav#TableOfContents
+  //-     ul
+  //-       li
+  //-         a(href='#overview') Overview
+  //-       li
+  //-         a(href='#majors') Majors
+  //-       li
+  //-         a(href='#minors') Minors
+
 block content
-  aside.table-of-contents.mt-4.mb-5.my-md-5.ps-xl-3.mb-lg-5.text-muted
-    strong.d-block.h6 On this page
-    nav#TableOfContents
-      ul
-        li
-          a(href='#overview') Overview
-        li
-          a(href='#majors') Majors
-        li
-          a(href='#minors') Minors
   section.section-box
     .banner-hero.nav-breadcrums.bg-gray-100
       .container
@@ -55,27 +56,62 @@ block content
             h2#majors.text-heading-4.mt-30 Majors
             p.text-body-text
               | The Bachelor of Arts in Ministry (B.A.Min.) degree is composed of three components: the General Education Core, the Bible and Theology Core, and a selected major. Students may choose from the following major areas of study
-            ul.list-group
-              li Bible and Theology
-              li Christian Educational Ministries
-              li Counseling for Christian Ministries
-              li Hispanic Pastoral Ministries
-              li Leadership and Ethics
-              li Pastoral Leadership
-              li Pastoral Ministries
+            ul
+              li
+                a(href='/majors/bible-and-theology/') Bible and Theology
+              li
+                a(href='/majors/christian-educational-ministries/') Christian Educational Ministries
+              li
+                a(href='/majors/counseling-for-christian-ministries/') Counseling for Christian Ministries
+              li
+                a(href='/majors/hispanic-pastoral-ministries/') Hispanic Pastoral Ministries
+              li
+                a(href='/majors/leadership-and-ethics/') Leadership and Ethics
+              li
+                a(href='/majors/pastoral-leadership/') Pastoral Leadership
+              li
+                a(href='/majors/pastoral-ministries/') Pastoral Ministries
         .row
           .col-lg-2
           .col-lg-8
             h2#minors.text-heading-4.mt-30 Minors
             p.text-body-text
               | In addition, a student may fulfill the requirements for one of the following minor areas of study:
-            ul.list-group
-              li Christian Educational Ministries
-              li Leadership and Ethics
-              li Pastoral Ministries
-            .border-bottom.mt-50.mb-50
-  include ../../sections/section_newsletter_2.pug
-  section.section-box.my-50
+            ul
+              li
+                a(href='/minors/christian-educational-ministries/') Christian Educational Ministries
+              li
+                a(href='/minors/leadership-and-ethics/') Leadership and Ethics
+              li
+                a(href='/minors/pastoral-ministries/') Pastoral Ministries
+            .border-bottom.mt-50
+
+  section.section-box.overflow-visible.mb-50
+    .container
+      .row
+        .col-lg-10.mx-auto
+          .bg-6.box-newsletter.position-relative
+            .content-detail
+              span.text-body-capitalized.color-gray-500.text-uppercase degree requirements
+              h4.text-heading-2.mb-10.mt-10 Traditional Degree Structure
+              p.text-body-text.color-gray-500
+              | The baccalaureate degree in the traditional degree structure at Nazarene Bible College contains the following degree requirements:
+              ul
+                li Completion of a minimum of 120 semester hours depending on the major.
+                li At least 25% of the semester hours must be in residence, with at least 50% of the final 25% of the program hours in residence. Online classes are considered "in residence."
+                li A cumulative GPA of at least 2.0 on a 4.0 scale.
+                li A 2.0 GPA in the major with the following program additions/exceptions:
+                li Counseling (CC/CCM): 3.0 cumulative GPA for all courses specific to the major.
+                li Completion of the required hours in the following areas:
+                li General Education Core
+                li Bible and Theology Core
+                li Major Courses
+                li Electives or Minor Courses—Elective courses are courses supplemental to those required for the completion of a degree program. Elective courses can be courses from NBC’s General Education core, Bible and Theology core, AdVantage core, the college’s major and minor programs, or comparable courses transferred from accredited institutions. Career and technical courses from accredited institutions may be applicable as electives for some of NBC’s degree programs.
+                li Completion of NBC Experience.
+                li Completion of the Ministry Progress Review.
+                li Completion of Graduating Colloquium.
+
+  section.section-box.mb-50
     .container
       .content-detail
         .row
@@ -92,7 +128,7 @@ block content
               | Through General Education, Nazarene Bible College encourages the acquisition of foundational knowledge, skills, and values essential for Lifelong Learning and preparation for in-depth study within chosen majors. Students will experience courses in four areas of study: Spiritual Foundations, Communication, Basic Knowledge, and Social Science/Humanities
             p.text-body-text
               | Completion of the General Education core should enable students to:
-              ul.list-group
+              ul
                 li Engage in intentional spiritual growth toward a Christ-like character and life of service.
                 li Demonstrate effective communication skills.
                 li Exhibit an understanding of the scientific method and mathematical principles.
@@ -105,8 +141,6 @@ block content
             h4.text-heading-5.mb-20 General Education Core Courses
             p.text-body-text
               | The student will take either the English Composition I and II sequence or the Basic English Skills courses* followed by the English Composition I and II sequence after placement testing.
-        .row
-          .col-lg-12
             table.table.table-striped
               thead
                 tr
@@ -135,8 +169,12 @@ block content
                   td
                   td
                     strong 45 hours
+        .row
+          .box-info.col-lg-10.bg-gray-100.mx-auto
+            p.text-body-text
+              | *The Basic English Skills sequence is not included in the requirements for a degree program. Students who are required to take Basic English Skills courses will complete a minimum of 123 or 131 hours for a degree, depending on the major.
 
-  section.section-box.my-50
+  section.section-box.mb-50
     .container
       .content-detail
         .row
@@ -149,15 +187,13 @@ block content
             h4.text-heading-5.mb-20 Objectives
             p.text-body-text
               | Completion of the Bible and Theology core should enable students to:
-              ul.list-group
-                li Identify the basic content of the Bible.
-                li Utilize sound methods and resources for interpreting the Bible.
-                li Articulate the essentials of the Christian faith.
-                li Nurture the Christlike life as informed by Scripture and Christian thought.
-                li Apply a Christian worldview to contemporary critical issues.
+            ul.mb-20
+              li Identify the basic content of the Bible.
+              li Utilize sound methods and resources for interpreting the Bible.
+              li Articulate the essentials of the Christian faith.
+              li Nurture the Christlike life as informed by Scripture and Christian thought.
+              li Apply a Christian worldview to contemporary critical issues.
             h4.text-heading-5.mb-20 Bible and Theology Core Courses
-        .row
-          .col-lg-12
             table.table.table-striped
               thead
                 tr
@@ -183,3 +219,160 @@ block content
                   td 
                   td 
                     strong 30 hours
+        .row
+          .box-info.col-lg-10.bg-gray-100.mx-auto
+            p.text-body-text
+              | In addition to the Bible and Theology Core Courses, traditional degree students are to complete the ABHE Bible Content Exam at the beginning and at the end of their degree. The exam results are used to assess student learning in the area of Bible content.
+          //- .border-bottom.mt-50
+
+  section.section-box.overflow-visible.mb-50
+    .container
+      .row
+        .col-lg-10.mx-auto
+          .bg-6.box-newsletter.position-relative
+            .content-detail
+              span.text-body-capitalized.color-gray-500.text-uppercase degree requirements
+              h4.text-heading-2.mb-10.mt-10 AdVantage Accelerated Degree Structure
+              p.text-body-text
+              | The Advantage Program Bachelor of Arts in Ministry degree contains the following degree requirements:
+              ul
+                li Completion of a minimum of 120 semester hours.
+                li At least 30 semester hours in residence.
+                li A cumulative GPA of 2.0 on a 4.0 scale with the following program additions/exceptions:
+                  ul
+                    li Christian School Education: 3.0 cumulative GPA for all EDU courses.
+                    li Counseling (CC/CCM): 3.0 cumulative GPA for all courses specific to the major.
+                li Completion of the required hours in the following areas:
+                  ul
+                    li General Education - 45 semester hours
+                    li Electives - 15 semester hours
+                    li Bible and Theology - 20 semester hours
+                    li Foundational - 8 semester hours
+                    li Major Courses - 32 semester hours
+                li Completion of the capstone project (Leadership and Ethics), student teaching (Christian School Education), Internship, Orientation/Capstone Intensives (Counseling for Christian Ministries).
+                li Completion of NBC Experience.
+                li Completion of Ministry Progress Review.
+                li Completion of Graduating Colloquium.
+
+  section.section-box.mb-50
+    .container
+        .row
+          .col-lg-8.content-detail.mx-auto
+            h4.text-heading-5.mb-20 Objectivesfor the AdVantage Program
+            p.text-body-text
+            | Completion of the AdVantage core should enable students to:
+            ul
+              li Become familiar with the basic content and themes of the Bible.
+              li Become acquainted with the essential doctrines of the Christian faith.
+              li Nurture personal spiritual development.
+              li Identify sound methods and resources for interpreting the Bible.
+              li Understand the basic principles of biblically-based leadership.
+
+        .row.mt-50
+          .col-lg-2
+          .col-lg-8
+            h4.text-heading-5.mb-20 Core Requirements
+            p.text-body-text
+            | Sixty hours of college credit through prior college work (2.0 GPA), CLEP or other recognized testing service, military training, and/or Prior Learning Assessment is required for entrance into the Advantage program. A student may enter the program conditionally with 45 semester hours but must complete the final 15 hours before a degree will be granted. This credit must fulfill the following requirements:
+
+        .row.mt-50
+          .col-lg-10.col-sm-12.col-12.mx-auto
+            .list-categories-number.box-bdr-2.mb-30
+              .header-list-category
+                h3.text-body-lead-large.font-bold General Education
+              ul.list-category
+                li
+                  div
+                    p.title English Language/Communication
+                    p.text-body-small Must include at least one English Composition course; includes courses in English Composition, writing, literature, speech, etc.
+                  span.number 6
+                li
+                  div
+                    p.title Social Sciences
+                    p.text-body-small Includes courses in Psychology, Political Science, Economics, Sociology, Cultural Anthropology, Cultural Diversity, Developmental Psychology, etc.
+                  span.number 6
+                li
+                  div
+                    p.title Humanities
+                    p.text-body-small Includes courses in Art, Music, Visual Art, Theater, Film, Literature, Philosophy, Ethics, History of Civilization, etc.
+                  span.number 3
+                li
+                  div
+                    p.title Science/Math
+                    p.text-body-small Includes courses in Biology, Physics, Chemistry, Geology, Astronomy, Environmental Science, Math, Algebra, Computer Science, Physical Geography, Physiology, Statistics, Symbolic Logic, Health, Accounting, etc.
+                  span.number 6
+                li
+                  div
+                    p.title History
+                    p.text-body-small Includes courses in American, World, Art History, etc.
+                  span.number 3
+                li
+                  div
+                    p.title General Studies Electives
+                    p.text-body-small Includes any courses in the areas listed above.
+                  span.number 21
+                li
+                  span.total 45 hours
+                li
+                  div
+                    p.title Electives
+                    p.text-body-small Includes college level courses from any area of study.
+                  span.number 15
+                li
+                  span.total 60 hours
+
+  section.section-box.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h3.text-heading-4.mb-20 First Year-Core Courses
+            p.text-body-small Bible and Theology 20 hours; Foundational 8 hours
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BLE-3604	', 'Adult & Professional Development', '4')
+                +CourseTableRow('BIB-3604	', 'Survey of the Old Testament/Pentateuch', '4')
+                +CourseTableRow('BIB-3614	', 'Survey of the New Testament/Gospels', '4')
+                +CourseTableRow('BIB-3624	', 'Bible and Life Application', '4')
+                +CourseTableRow('BIB-3634	', 'Biblical Leadership Principles', '4')
+                +CourseTableRow('THE-3614	', 'Survey of Christian Theology', '4')
+                +CourseTableRow('THE-3624	', 'Holiness and the Life of the Believer', '4')
+              tfoot
+                tr
+                  td 
+                  td 
+                  td 
+                    strong 28 hours
+
+  section.section-box.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h3.text-heading-4.mb-20 Academic Assessment Report (Student Outcomes)
+            p.text-body-text Nazarene Bible College annually assesses the effectiveness of its academic programs. A report of the annual academic assessment process is accessible below.
+
+            Annual Assessment Report (Student Outcomes)
+            Click above to open the file or right-click and select "Save Target As" to save the file.
+
+            Download Adobe ReaderTrouble Opening?
+            Nazarene Bible College Downloadable Documents require Adobe Acrobat Reader.
+            Get Acrobat Reader for Free
+
+  .section-box
+  .banner-hero.banner-breadcrums
+    .container
+      .row
+        .col-lg-7
+          h1.text-heading-4.color-gray-900.mb-20 Academic Assessment Report (Student Outcomes)
+          p.text-body-text.color-gray-500 Nazarene Bible College annually assesses the effectiveness of its academic programs. A report of the annual academic assessment process is accessible below.
+        .col-lg-5.d-flex.justify-content-evenly.align-items-center
+          a.text-heading-6.btn.btn-square(type='submit', value='Download Report') Download Report
+          a.text-heading-6.btn.btn-square(type='submit', value='Get Adobe Reader') Get Adobe Reader
