@@ -74,17 +74,112 @@ block content
               li Leadership and Ethics
               li Pastoral Ministries
             .border-bottom.mt-50.mb-50
-            .media-block
-              a.btn.btn-green-900.color-white.text-heading-6.icon-arrow-right-white.mr-20(href='page-signup.html') Apply Now
-              a.btn.btn-default.icon-arrow-right(href='page-contact.html') Contact Us
-              .float-start.float-lg-end.mt-30
-                a.btn.btn-media.mr-10(href='#')
-                  img(src='assets/imgs/template/icons/facebook-share.svg', alt='Agon')
-                  |  Share
-                a.btn.btn-media.mr-10(href='#')
-                  img(src='assets/imgs/template/icons/twitter-share.svg', alt='Agon')
-                  |  Tweet
-                a.btn.btn-media(href='#')
-                  img(src='assets/imgs/template/icons/pinterest-share.svg', alt='Agon')
-                  |  Pin
   include ../../sections/section_newsletter_2.pug
+  section.section-box.my-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h3.text-heading-4.mb-20 Core Requirements and Objectives
+        .row
+          .col-lg-2
+          .col-lg-8
+            h4.text-heading-5.mb-20 General Education Core
+            p.text-body-text
+              strong Objectives
+            p.text-body-text
+              | Through General Education, Nazarene Bible College encourages the acquisition of foundational knowledge, skills, and values essential for Lifelong Learning and preparation for in-depth study within chosen majors. Students will experience courses in four areas of study: Spiritual Foundations, Communication, Basic Knowledge, and Social Science/Humanities
+            p.text-body-text
+              | Completion of the General Education core should enable students to:
+              ul.list-group
+                li Engage in intentional spiritual growth toward a Christ-like character and life of service.
+                li Demonstrate effective communication skills.
+                li Exhibit an understanding of the scientific method and mathematical principles.
+                li Analyze traditional and evolving views of women, race, and ethnicity in the US. and abroad.
+                li Examine civilization in a global context with emphasis on the history of Christianity and evangelism.
+                li Apply the basic principles of Christian ethics in modern society.
+        .row
+          .col-lg-2
+          .col-lg-8
+            h4.text-heading-5.mb-20 General Education Core Courses
+            p.text-body-text
+              | The student will take either the English Composition I and II sequence or the Basic English Skills courses* followed by the English Composition I and II sequence after placement testing.
+        .row
+          .col-lg-12
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('PAS-1013', 'Introduction to Christian Service', '3')
+                +CourseTableRow('PAS-1023', 'Spiritual Formation', '3')
+                +CourseTableRow('THE-3013', 'Introduction to Christian Thought', '3')
+                +CourseTableRow('ENG-1013', 'English Composition I', '3')
+                +CourseTableRow('ENG-1023', 'English Composition II', '3')
+                +CourseTableRow('SPE-1003', 'Principles of Public Speaking', '3')
+                +CourseTableRow('GEN-1003', 'Lifelong Learning Skills', '3')
+                +CourseTableRow('MTH-1003', 'General Mathematics', '3')
+                +CourseTableRow('SCI-2013', 'General Physical Science', '3')
+                +CourseTableRow('PSY-1013', 'Introduction to Psychology', '3')
+                +CourseTableRow('HIS-2013', 'Western World/Ancient & Medieval Times', '3')
+                +CourseTableRow('HIS-2023', 'Western World/Emerging Modern Society', '3')
+                +CourseTableRow('PHI-3013', 'Philosophy and Christian Ethics', '3')
+                +CourseTableRow('ENG-1043', 'Classical Literature', '3')
+                +CourseTableRow('SOC-1003', 'Introduction to Sociology', '3')
+              tfoot
+                tr
+                  td
+                  td
+                  td
+                    strong 45 hours
+
+  section.section-box.my-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h3.text-heading-4.mb-20 Bible and Theology Core
+        .row
+          .col-lg-2
+          .col-lg-8
+            h4.text-heading-5.mb-20 Objectives
+            p.text-body-text
+              | Completion of the Bible and Theology core should enable students to:
+              ul.list-group
+                li Identify the basic content of the Bible.
+                li Utilize sound methods and resources for interpreting the Bible.
+                li Articulate the essentials of the Christian faith.
+                li Nurture the Christlike life as informed by Scripture and Christian thought.
+                li Apply a Christian worldview to contemporary critical issues.
+            h4.text-heading-5.mb-20 Bible and Theology Core Courses
+        .row
+          .col-lg-12
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+                +CourseTableRow('BIB-1023', 'Introduction to the New Testament', '3')
+                +CourseTableRow('BIB-2003', 'Biblical Interpretation', '3')
+                +CourseTableRow('BIB-2013', 'Pentateuch', '3')
+                +CourseTableRow('BIB-2033', 'New Testament Gospels', '3')
+                +CourseTableRow('BIB-3013', 'Hebrew Prophets <strong>or<strong>', '')
+                +CourseTableRow('BIB-3023', 'Poetic & Wisdom Literature <strong>or</strong>', '')
+                +CourseTableRow('BIB-3123', 'O.T. Historical Books', '3')
+                +CourseTableRow('BIB-3053', 'Pauline Epistles or BIB 3063 Book of Acts', '3')
+                +CourseTableRow('THE-2013', 'Doctrine of Holiness', '3')
+                +CourseTableRow('THE-3023', 'Systematic Theology I', '3')
+                +CourseTableRow('THE-3033', 'Systematic Theology II', '3')
+              tfoot
+                tr
+                  td 
+                  td 
+                  td 
+                    strong 30 hours

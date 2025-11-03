@@ -189,6 +189,10 @@ table {
   border-spacing: 0;
 }
 
+.table thead tr th {
+  border-bottom: 1px solid var(--color-brand-black);
+}
+
 img {
   max-width: 100%;
 }

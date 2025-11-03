@@ -136,3 +136,9 @@ mixin ProgramCard(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Brandin
                         .p-2
                             a.btn.btn-sm.btn-black(href=cardHref) Learn More
                             a.hover-up.ml-10.btn.btn-sm.btn-brand(href="/apply/") Apply Now
+
+mixin CourseTableRow(courseCode, courseDescription, courseHours)
+    tr
+        td= courseCode
+        td= courseDescription
+        td= courseHours
