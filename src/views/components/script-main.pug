@@ -1,1 +1,2 @@
-script(src='/assets/js/main.js?v=1.0')
+- var PREFIX = process.env.ASSET_PREFIX ? process.env.ASSET_PREFIX : ''
+script(src=`${PREFIX}/assets/js/main.js?v=1.0`)

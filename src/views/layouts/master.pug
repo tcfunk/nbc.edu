@@ -5,6 +5,7 @@ block mixins
 doctype html
 html(lang='en')
   head
+  - var PREFIX = process.env.ASSET_PREFIX ? process.env.ASSET_PREFIX : ''
     //- Meta
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
@@ -23,8 +24,8 @@ html(lang='en')
       meta(name='author' content='')
 
     //- Favicons
-    link(rel='shortcut icon' type='image/x-icon' href='/assets/imgs/template/favicon.svg')
-    link(href='/assets/css/style.css', rel='stylesheet')
+    link(rel='shortcut icon' type='image/x-icon' href=`${PREFIX}/assets/imgs/template/favicon.svg`)
+    link(href=`${PREFIX}/assets/css/style.css`, rel='stylesheet')
 
     //- Title
     block title

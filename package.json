@@ -3,7 +3,7 @@
   "version": "6.0.0",
   "description": "Gulp development tasks by AliThemes",
   "scripts": {
-    "dev": "gulp serve",
+    "dev": "gulp --env-file=.env.local serve",
     "build": "gulp"
   },
   "author": "AliThemes",
