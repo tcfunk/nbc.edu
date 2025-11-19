@@ -6,11 +6,12 @@ const { src, dest, parallel, watch, series } = require("gulp"),
     sass = require("gulp-sass")(require("sass")),
     pug = require("gulp-pug"),
     autoprefixer = require("gulp-autoprefixer"),
+    sourcemaps = require("gulp-sourcemaps"),
     browserSync = require("browser-sync").create();
 
 /** Files Path */
 const FilesPath = {
-    sassFiles: "src/assets/scss/*.scss",
+    sassFiles: "src/assets/scss/**/*.scss",
     jsFiles: "src/assets/js/*.js",
     htmlFiles: "src/views/pages/**/*.pug"
 };
@@ -20,10 +21,12 @@ const { sassFiles, jsFiles, htmlFiles } = FilesPath;
 /** Sass Task */
 function sassTask() {
     return src(sassFiles, { sourcemaps: true })
+        .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer())
-        .pipe(concat("style.css"))
-        .pipe(dest("dist/assets/css", { sourcemaps: "." }))
+        // .pipe(concat("style.css"))
+        .pipe(sourcemaps.write())
+        .pipe(dest("./dist/assets/css"))
         .pipe(browserSync.stream());
 }
 
@@ -70,5 +73,6 @@ function watchTask() {
         series(sassTask, jsTask, pugTask, assetsTask));
 }
 
-exports.default = series(parallel(pugTask, sassTask, jsTask, assetsTask));
-exports.serve = series(browsersyncServe, watchTask, parallel(pugTask, sassTask, jsTask, assetsTask));
+exports.default = series(parallel(assetsTask, pugTask, sassTask, jsTask));
+exports.serve = series(browsersyncServe, watchTask, parallel(assetsTask, pugTask, sassTask, jsTask));
+exports.sass = sassTask;

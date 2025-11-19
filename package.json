@@ -4,7 +4,8 @@
   "description": "Gulp development tasks by AliThemes",
   "scripts": {
     "dev": "gulp --env-file=.env.local serve",
-    "build": "gulp"
+    "build": "gulp",
+    "sass": "gulp sass"
   },
   "author": "AliThemes",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.56.1"
   }
 }
