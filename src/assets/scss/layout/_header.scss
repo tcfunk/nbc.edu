@@ -80,7 +80,7 @@
                 text-decoration: none;
                 position: relative;
                 &:hover {
-                    color: $color-green-900;
+                    color: $color-brand-blue;
                     i {
                         opacity: 1;
                         transition: 0.2s;
@@ -150,7 +150,7 @@
         font-weight: 500;
         font-size: $font-md;
         line-height: 150%;
-        color: $color-green-900;
+        color: $color-brand-blue;
         display: inline-block;
         position: relative;
         padding-left: 13px;
@@ -159,7 +159,7 @@
         }
         &::before {
             content: "";
-            background: $color-green-900;
+            background: $color-brand-blue;
             width: 6px;
             height: 6px;
             border-radius: 50%;
@@ -279,7 +279,7 @@
     }
     &.header-top-green
     {
-        background-color: $color-green-900;
+        background-color: $color-brand-blue;
         a
         {
             color: $color-green-100;
@@ -299,15 +299,21 @@
     {
         &.stick
         {
-            background-color: $color-green-900;
-            border-bottom: 1px solid #008c99;
+            background-color: $color-brand-blue;
+            border-bottom: 1px solid $color-brand-dark-blue;
         }
     }
     .burger-icon.burger-icon-white > span::before,
     .burger-icon.burger-icon-white > span::after {
         background-color: $color-gray-200;
     }
-    background-color: $color-green-900;
+    .burger-icon.burger-icon-white.burger-close {
+        & > span::before,
+        & > span::after {
+            background-color: $color-brand-blue;
+        }
+    }
+    background-color: $color-brand-blue;
     .main-menu
     {
         > li
@@ -324,7 +330,7 @@
     }
     .btn-default
     {
-        background-color: $color-green-900;
+        background-color: $color-brand-blue;
         color: $color-white;
         border: 1px solid $color-white;
         background-image: url(../imgs/template/icons/arrow-small-right-w.svg);
@@ -380,7 +386,7 @@
     {
         &.stick
         {
-            background-color: $color-green-900;
+            background-color: $color-brand-blue;
             border-bottom: 1px solid #008c99;
         }
     }

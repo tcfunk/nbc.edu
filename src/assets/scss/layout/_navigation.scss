@@ -80,7 +80,7 @@
                                     height: 30px;
                                     line-height: 38px;
                                     top: 5px;
-                                    color: $color-gray-900;
+                                    color: $color-brand-blue;
                                     i {
                                         font-size: 18px;
                                         font-weight: 300;
@@ -184,7 +184,7 @@
                         font-size: $font-sm;
                         display: block;
                         font-weight: 500;
-                        color: $color-green-900;
+                        color: $color-brand-blue;
                         &:hover {
                             color: $color-gray-900;
                         }
@@ -265,6 +265,7 @@
     }
     &.burger-close {
         position:fixed;
+        top: 27px;
         & > span {
             &.burger-icon-top {
                 display: none;
@@ -378,7 +379,7 @@
             &:hover a {
                 padding-left: 3px;
                 transition-duration: 0.2s;
-                color: $color-green-900;
+                color: $color-brand-blue;
             }
         }
     }
