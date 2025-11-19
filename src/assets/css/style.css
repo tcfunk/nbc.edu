@@ -3948,7 +3948,7 @@ label {
 }
 .header-style-2.sticky-bar.stick {
   background-color: var(--color-brand-blue);
-  border-bottom: 1px solid #008c99;
+  border-bottom: 1px solid var(--color-brand-dark-blue);
 }
 .header-style-2 .burger-icon.burger-icon-white > span::before,
 .header-style-2 .burger-icon.burger-icon-white > span::after {
