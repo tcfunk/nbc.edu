@@ -618,6 +618,9 @@ a {
         font-size: $font-md;
         font-family: $font-heading;
         line-height: 28px;
+        ul {
+            list-style: circle;
+        }
     }
 }
 .border-bottom
@@ -681,3 +684,9 @@ a {
     border-radius: 16px;
 }
 // End Agon
+
+.table {
+    thead tr th {
+        border-bottom: 1px solid $color-brand-black;
+    }
+}
