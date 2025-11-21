@@ -126,7 +126,8 @@
     }
 
     &.banner-4 {
-        background-color: $color-brand-blue;
+        // background-color: $color-brand-blue;
+        background-color: $color-brand-light-blue;
         padding: 120px 0px 0px 0px;
         .banner-imgs
         {
@@ -432,6 +433,10 @@
                 height: 100%;
             }
         }
+    }
+    &.banner-brand-light {
+        background-color: $color-brand-light-blue;
+        color: $color-brand-dark-blue;
     }
 }
 @keyframes hero-thumb-animation {

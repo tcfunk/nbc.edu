@@ -1,0 +1,148 @@
+extends ../layouts/master.pug
+
+block title
+  title NBC - About Us
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.bg-about-3
+      .container
+        .row
+          .col-lg-12.text-center
+            h1.text-display-2.color-gray-900 Why NBC
+            p.text-heading-4.color-gray-600.mt-40
+              | Purpose, Affiliation, and Quality
+            p.text-body-text.color-gray-600.mt-10
+              | Nazarene Bible College has a clear purpose, has a strong affiliation to the church, and provides quality education.
+
+  .section-box.mt-40
+    .container
+      .row
+        .col-lg-1
+        .col-lg-10
+          .box-image
+            img.img-responsive.bdrd-16(src='assets/imgs/stock/AdobeStock_620157294.jpeg', alt="Smiling man standing in front of rows of books")
+        .col-lg-1
+
+  section.section-box.mt-100
+    .container
+      .row
+        .col-lg-1.col-sm-1.col-12
+        .col-lg-10.col-sm-10.col-12.text-center
+          h2.text-heading-1.color-gray-900.mb-10 Reasons to Choose Nazarene Bible College
+          p.text-body-lead-large.color-gray-600.mt-20
+            | Nazarene Bible College is accessible, affordable, and accountable.
+        .col-lg-1.col-sm-1.col-12
+    .container.mt-40
+      .row
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-50
+            .item-icon.none-bd
+              span.icon-left
+                img(src='assets/imgs/page/homepage2/icon-acquis.svg', alt='Agon')
+              h4.text-heading-4 1. Accessible
+              p.text-body-text.color-gray-600.mt-15
+                | NBC is accessible to students around the world through an online delivery system.
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-50
+            .item-icon.none-bd
+              span.icon-left
+                img(src='assets/imgs/page/homepage2/icon-active.svg', alt='Agon')
+              h4.text-heading-4 2. Affordable
+              p.text-body-text.color-gray-600.mt-15
+                | NBC is affordable due to the broader support of the Church of the Nazarene. This support from the denomination and many local churches enables the cost of tuition for students to be substantially lower than tuition found at other private colleges and universities.
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-50
+            .item-icon.none-bd
+              span.icon-left
+                img(src='assets/imgs/page/homepage2/icon-retent.svg', alt='Agon')
+              h4.text-heading-4 3. Accountable
+              p.text-body-text.color-gray-600.mt-15
+                | NBC is accountable to the denomination it serves. All members of the Board of Trustees are elected by the USA caucus during the denomination's quadrennial General Assembly.
+
+  section.section-box.pt-100.pb-100.mt-100.bg-6
+    .container
+      .row
+        .col-lg-5.mb-30
+          h3.text-heading-1.mt-30 Stories from NBC Students and Alumni
+          p.text-body-lead-large.color-gray-600.mt-30
+            | Hear stories about the impact NBC has had on students, alumni, and leaders within the Church of the Nazarene.
+          .mt-40
+            a.btn.btn-default.btn-white.icon-arrow-right(href='/stories.html') More Stories
+        .col-lg-7
+          .row(data-masonry='{"percentPosition": true }')
+            .col-lg-6.col-md-12.col-sm-12
+              .card-grid-style-2.card-square.hover-up.mb-20
+                p.text-body-text.color-gray-600.text-comment
+                  | &quot;I am blessed to pastor a small (and growing!) church in southwest Colorado. My church board has graciously budgeted to cover the costs of my classes at NBC so receiving these scholarships is an enormous blessing for our entire church family!&quot;
+                .box-img-user
+                  .img-user.img-user-round
+                    img(src='assets/imgs/user-stories/photo-10106-100x100.jpg', alt='User portrait')
+                  h4.text-body-lead.color-gray-900.mb-5 JanElle H.
+                  p.text-body-text-md Cortez, CO
+            .col-lg-6.col-md-12.col-sm-12
+              .card-grid-style-2.card-square.hover-up.mb-20
+                p.text-body-text.color-gray-600.text-comment
+                  | &quot;I wish to thank the Covenant Partner Scholarship fund, for the funds applied to my classes for the Winter Sessions. It will help greatly. May the LORD bless everyone involved with the Covenant Partner Scholarship Fund ...&quot;
+                .box-img-user
+                  .img-user.img-user-round
+                    img(src='assets/imgs/user-stories/photo-10105-100x100.jpg', alt='User portrait')
+                  h4.text-body-lead.color-gray-900.mb-5 Michael B.
+                  p.text-body-text-md Angus, NM
+            .col-lg-6.col-md-12.col-sm-12
+              .card-grid-style-2.card-square.hover-up.mb-20
+                p.text-body-text.color-gray-600.text-comment
+                  | &quot;My experience at NBC has left a permanent imprint on my life. The high-quality curriculum, the knowledgeable and caring faculty and staff, and the spiritual, intellectual, and biblical engagement with other students have better prepared me for the harvest field ...&quot;
+                .box-img-user
+                  .img-user.img-user-round
+                    img(src='assets/imgs/user-stories/photo-10103-100x100.jpg', alt='User portrait')
+                  h4.text-body-lead.color-gray-900.mb-5 Carla P.
+                  p.text-body-text-md N. Chesterfield, VA
+            .col-lg-6.col-md-12.col-sm-12
+              .card-grid-style-2.card-square.hover-up.mb-20
+                p.text-body-text.color-gray-600.text-comment
+                  | &quot;I would like to thank the people behind The Stanley Family Scholarship Endowment Fund, for taking the time to invest in my future in becoming a Pastor in the Church of the Nazarene ...&quot;
+                .box-img-user
+                  .img-user.img-user-round
+                    img(src='assets/imgs/user-stories/photo-10102-100x100.jpg', alt='User portrait')
+                  h4.text-body-lead.color-gray-900.mb-5 George F.
+                  p.text-body-text-md Lacrosse, WI
+
+  section.section-box.mt-90.mb-mobile.mb-150
+    .container
+      .row
+        .col-lg-2.col-sm-1.col-12
+        .col-lg-8.col-sm-10.col-12.text-center.mt-40
+          h2.text-heading-1.color-gray-900.mb-10
+            | We Take Your Education Personally
+          p.text-body-lead-large.color-gray-600.mt-20
+            | Nazarene Bible College has talented faculty members that are available to help.
+        .col-lg-2.col-sm-1.col-12
+
+    .container.mt-90.mb-90
+      .row
+        .col-lg-6.col-sm-12
+          .bg-2.box-square.hover-up
+            h4.text-heading-4.color-gray-900.mb-15 Talented Faculty
+            p.text-body-text-md.color-gray-600
+              | Faculty members at NBC are practitioners as well as educators, with full-time faculty bringing more than 150 years of practical experience in pastoral or staff roles.
+            .box-image-inner.bg-color-1
+              img(src='assets/imgs/stock/AdobeStock_116912183.jpeg', alt='NBC faculty members')
+        .col-lg-6.col-sm-12
+          .bg-6.box-square.hover-up
+            h4.text-heading-4.color-gray-900.mb-15 Here to Help
+            p.text-body-text-md.color-gray-600
+              | Nazarene Bible College invests in its students’ success. The college's academic advisors, staff, faculty and administrators support students as they pursue their studies and achieve their goals through their education at NBC.
+            .box-image-inner.bg-color-2
+              img(src='assets/imgs/stock/AdobeStock_427311342.jpeg', alt='NBC students and faculty')
+
+    .container.mt-30
+      .row
+        .col-lg-8
+          h3.text-heading-3.mb-10 Our People
+          p.text-body-lead-large.color-gray-600 Learn more about our administration and faculty
+        .col-lg-4.text-lg-end.text-start.pt-30
+          a.btn.btn-black.icon-arrow-right-white(href='people.html') Learn more
