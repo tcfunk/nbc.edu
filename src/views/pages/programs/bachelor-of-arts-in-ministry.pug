@@ -1,24 +1,13 @@
 extends ../../layouts/master.pug
 
 block title
-  title Agon - Multipurpose Agency HTML Template
+  title NBC - Bachelor of Arts in Ministry
 
 block topbar
   include ../../components/topbar-2.pug
 
 block header
   include ../../components/header.pug
-
-  //- aside.table-of-contents.mt-4.mb-5.my-md-5.ps-xl-3.mb-lg-5.text-muted
-  //-   strong.d-block.h6 On this page
-  //-   nav#TableOfContents
-  //-     ul
-  //-       li
-  //-         a(href='#overview') Overview
-  //-       li
-  //-         a(href='#majors') Majors
-  //-       li
-  //-         a(href='#minors') Minors
 
 block content
   section.section-box
@@ -33,12 +22,11 @@ block content
             li
               span B.A. in Ministry
   section.section-box
-    .banner-hero.banner-brand-light
-      .container.text-center
-        .row
-          .col-lg-12
-            h1.text-heading-2.color-gray-900.mb-20
-              | Bachelor of Arts in Ministry
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_332409626.jpeg); background-size: cover; background-position: center bottom;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Bachelor of Arts in Ministry
   section.section-box.mt-50.mb-50
     .container
       .content-detail
@@ -47,44 +35,44 @@ block content
           .col-lg-8
             h2#overview.text-heading-4 Four Year College Degree
             p.text-body-text
-              | The Bachelor of Arts in Ministry degree (B.A.Min.) is designed for persons who wish to gain a breadth of ministry skills and knowledge in order to serve as ministers, counselors, educators or in supportive roles for the mission of the church and the redemptive work of God in this world.
-            p.text-body-text
               | The degree is based on a strong general studies component and advanced studies in Bible, theology, and ministry principles. Depending on the chosen major, the B.A.Min. degree is designed to prepare students for work as pastors, deacons, ministers of church music, counselors, and educators as well as prepare students for graduate work in the church.
         .row
-          .col-lg-2
-          .col-lg-8
-            h2#majors.text-heading-4.mt-30 Majors
-            p.text-body-text
-              | The Bachelor of Arts in Ministry (B.A.Min.) degree is composed of three components: the General Education Core, the Bible and Theology Core, and a selected major. Students may choose from the following major areas of study
-            ul
-              li
-                a(href='/majors/bible-and-theology/') Bible and Theology
-              li
-                a(href='/majors/christian-educational-ministries/') Christian Educational Ministries
-              li
-                a(href='/majors/counseling-for-christian-ministries/') Counseling for Christian Ministries
-              li
-                a(href='/majors/hispanic-pastoral-ministries/') Hispanic Pastoral Ministries
-              li
-                a(href='/majors/leadership-and-ethics/') Leadership and Ethics
-              li
-                a(href='/majors/pastoral-leadership/') Pastoral Leadership
-              li
-                a(href='/majors/pastoral-ministries/') Pastoral Ministries
-        .row
-          .col-lg-2
-          .col-lg-8
-            h2#minors.text-heading-4.mt-30 Minors
-            p.text-body-text
-              | In addition, a student may fulfill the requirements for one of the following minor areas of study:
-            ul
-              li
-                a(href='/minors/christian-educational-ministries/') Christian Educational Ministries
-              li
-                a(href='/minors/leadership-and-ethics/') Leadership and Ethics
-              li
-                a(href='/minors/pastoral-ministries/') Pastoral Ministries
-            .border-bottom.mt-50
+          .col-lg-12
+            .row
+              .col-lg-6
+                h2#majors.text-heading-4.mt-30 Majors
+                p.text-body-text
+                  | The Bachelor of Arts in Ministry (B.A.Min.) degree is composed of three components: the General Education Core, the Bible and Theology Core, and a selected major. Students may choose from the following major areas of study
+                ul
+                  li
+                    a(href='/majors/bible-and-theology/') Bible and Theology
+                  li
+                    a(href='/majors/christian-educational-ministries/') Christian Educational Ministries
+                  li
+                    a(href='/majors/counseling-for-christian-ministries/') Counseling for Christian Ministries
+                  li
+                    a(href='/majors/hispanic-pastoral-ministries/') Hispanic Pastoral Ministries
+                  li
+                    a(href='/majors/leadership-and-ethics/') Leadership and Ethics
+                  li
+                    a(href='/majors/pastoral-leadership/') Pastoral Leadership
+                  li
+                    a(href='/majors/pastoral-ministries/') Pastoral Ministries
+                h2#minors.text-heading-4.mt-30 Minors
+                p.text-body-text
+                  | In addition, a student may fulfill the requirements for one of the following minor areas of study:
+                ul
+                  li
+                    a(href='/minors/christian-educational-ministries/') Christian Educational Ministries
+                  li
+                    a(href='/minors/leadership-and-ethics/') Leadership and Ethics
+                  li
+                    a(href='/minors/pastoral-ministries/') Pastoral Ministries
+
+              .col-lg-6.d-flex.justify-content-center.flex-column
+                img.img-responsive.bdr-10.mt-10.ml-10(src='/assets/imgs/stock/AdobeStock_554620518.jpeg', alt='Agon')
+
+              .border-bottom.mt-50
 
   section.section-box.overflow-visible.mb-50
     .container
@@ -111,7 +99,39 @@ block content
                 li Completion of the Ministry Progress Review.
                 li Completion of Graduating Colloquium.
 
-  section.section-box.mb-50
+  section.section-box
+    .container.mt-120
+      .row
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_356337517.jpeg', alt='Agon')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-6.color-green-900 Core Requirements and Objectives
+          h3.text-heading-1.mt-30 General Education Core
+          p.text-body-text.color-gray-600.mt-30
+            | Through General Education, Nazarene Bible College encourages the acquisition of foundational knowledge, skills, and values essential for Lifelong Learning and preparation for in-depth study within chosen majors. Students will experience courses in four areas of study: Spiritual Foundations, Communication, Basic Knowledge, and Social Science/Humanities.
+          h4.text-heading-4.mt-30 Faculty
+          ul
+            li Dr. Sandra Palm, Director
+            li Dr. Robbin Trumble
+      .row.mt-50.mb-50
+        .col-lg-12
+          p.text-body-lead-large.color-gray-600
+            | Completion of the General Education core should enable students to:
+          .line-bd-green.mt-30.mb-30
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Engage in intentional spiritual growth toward a Christ-like character and life of service.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Demonstrate effective communication skills.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Exhibit an understanding of the scientific method and mathematical principles.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Analyze traditional and evolving views of women, race, and ethnicity in the US and abroad.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Examine civilization in a global context with emphasis on the history of Christianity and evangelism.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Apply the basic principles of Christian ethics in modern society.
+
+  section.section-box.mt-50.mb-50
     .container
       .content-detail
         .row
@@ -174,26 +194,40 @@ block content
             p.text-body-text
               | *The Basic English Skills sequence is not included in the requirements for a degree program. Students who are required to take Basic English Skills courses will complete a minimum of 123 or 131 hours for a degree, depending on the major.
 
-  section.section-box.mb-50
+  section.section-box
+    .container.mt-120
+      .row
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_554620960.jpeg', alt='Agon')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-6.color-green-900 Objectives
+          h3.text-heading-1.mt-30 Bible and Theology Core
+          h4.text-heading-4.mt-30 Faculty
+          ul
+            li Dr. Thomas King, Director
+      .row.mt-50.mb-50
+        .col-lg-12
+          p.text-body-lead-large.color-gray-600
+            | Completion of the Bible and Theology core should enable students to:
+          .line-bd-green.mt-30.mb-30
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Identify the basic content of the Bible.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Utilize sound methods and resources for interpreting the Bible.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Articulate the essentials of the Christian faith.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Nurture the Christlike life as informed by Scripture and Christian thought.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Apply a Christian worldview to contemporary critical issues.
+
+  section.section-box.mb-50.mt-50
     .container
       .content-detail
         .row
           .col-lg-2
           .col-lg-8
-            h3.text-heading-4.mb-20 Bible and Theology Core
-        .row
-          .col-lg-2
-          .col-lg-8
-            h4.text-heading-5.mb-20 Objectives
-            p.text-body-text
-              | Completion of the Bible and Theology core should enable students to:
-            ul.mb-20
-              li Identify the basic content of the Bible.
-              li Utilize sound methods and resources for interpreting the Bible.
-              li Articulate the essentials of the Christian faith.
-              li Nurture the Christlike life as informed by Scripture and Christian thought.
-              li Apply a Christian worldview to contemporary critical issues.
-            h4.text-heading-5.mb-20 Bible and Theology Core Courses
+            h4.text-heading-5.mb-20.text-center Bible and Theology Core Courses
             table.table.table-striped
               thead
                 tr
