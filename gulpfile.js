@@ -70,9 +70,9 @@ function watchTask() {
             "src/assets/fonts/**/*.+(eot|woff|woff2)",
             "src/views/**/*.pug"
         ],
-        series(sassTask, jsTask, pugTask, assetsTask));
+        series(assetsTask, sassTask, jsTask, pugTask));
 }
 
-exports.default = series(parallel(assetsTask, pugTask, sassTask, jsTask));
-exports.serve = series(browsersyncServe, watchTask, parallel(assetsTask, pugTask, sassTask, jsTask));
+exports.default = series(assetsTask, parallel(pugTask, sassTask, jsTask));
+exports.serve = series(browsersyncServe, watchTask, assetsTask, parallel(pugTask, sassTask, jsTask));
 exports.sass = sassTask;

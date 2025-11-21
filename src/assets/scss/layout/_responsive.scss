@@ -877,10 +877,13 @@
 @include media-breakpoint-up(xl) {
     //min-width: 1200px
     .mb-lg-100 {
-        margin-bottom: 100px;
+        margin-bottom: 100px !important;
     }
     .mt-lg-100 {
-        margin-top: 100px;
+        margin-top: 100px !important;
+    }
+    .mt-lg-180 {
+        margin-top: 180px !important;
     }
 }
 
