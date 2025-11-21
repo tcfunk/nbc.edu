@@ -1,0 +1,175 @@
+extends ../layouts/master.pug
+
+block title
+  title NBC - Administration and Faculty
+
+block header
+  include ../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.banner-breadcrums
+      .container.text-center
+        h1.text-heading-2.color-gray-1000.mb-20 Administration and Faculty
+        p.text-body-text.color-gray-500
+          | Meet the team of dedicated professionals at Nazarene Bible College.
+
+  section.section-box
+    .container.mt-110
+      .row
+        .col-lg-9.col-sm-8
+          h3.text-heading-1.mb-10 Administration
+    .container.mt-40
+        .row
+            +PeopleCard('assets/imgs/people/181952.jpg', 'Dr. John C. Bowling', 'President with faculty rank', 'Lorem ipsum dolor sit amet consectetur imp adipiscing elit justo')
+            +PeopleCard('assets/imgs/people/21.jpg', 'Dr. Alan D. Lyke', 'Provost with faculty rank', 'Lorem ipsum dolor sit amet consectetur imp adipiscing elit justo')
+            +PeopleCard('assets/imgs/people/138577.jpg', 'Rev. Duane A. Mathias', 'Registrar', 'Lorem ipsum dolor sit amet consectetur imp adipiscing elit justo')
+            +PeopleCard('assets/imgs/people/192026.jpg', 'Mr. Tim R. Keeton', 'Vice President for Development', 'Lorem ipsum dolor sit amet consectetur imp adipiscing elit justo')
+            +PeopleCard('assets/imgs/people/141179.jpg', 'Mr. Scott C. Laird', 'Vice President for Finance', 'Lorem ipsum dolor sit amet consectetur imp adipiscing elit justo')
+            +PeopleCard('assets/imgs/people/120114.jpg', 'Rev. Will E. Mackey', 'Vice President for Enrollment Management', 'Lorem ipsum dolor sit amet consectetur imp adipiscing elit justo')
+
+  section.section-box
+    .container.mt-110
+      .row
+        .col-lg-9.col-sm-8
+          h3.text-heading-1.mb-10 Resident Faculty
+    .container.mt-40
+        .row
+            +PeopleCard('assets/imgs/people/faculty/379.jpg', 'Dr. Thomas J. King', '', 'Bible, Theology, Director Bible and Theology Core Program (1996)')
+            +PeopleCard('assets/imgs/people/faculty/123883.jpg', 'Dr. Timothy E. McKeithen', '', 'Hispanic Pastoral Ministries, Director Hispanic Pastoral Ministries Program (2012)')
+            +PeopleCard('assets/imgs/people/faculty/4022.jpg', 'Dr. Sandra L. Palm', '', 'English, Director General Education Core Program (2007)')
+            +PeopleCard('assets/imgs/people/faculty/13.jpg', 'Dr. Daniel G. Powers', '', 'Advantage, Bible, Director Advantage and Bible Theology Core Programs (2001)')
+            +PeopleCard('assets/imgs/people/faculty/140997.jpg', 'Dr. Robbin G. Trumble', '', 'Director, Counseling for Christian Ministries Program (2022)')
+
+  section.section-box
+    .container.mt-110
+      .row
+        .col-lg-9.col-sm-8
+          h3.text-heading-1.mb-10 Adjunct Faculty
+    .container.mt-40
+      .box-swiper
+        .swiper-container.swiper-group-1
+          .swiper-wrapper.pb-70.pt-5
+            .swiper-slide.active
+                .row
+                    +PeopleCard('', 'Dr. Stephen J. Bennett', '', '')
+                    +PeopleCard('', 'Dr. Daniel A. Berry', '', '')
+                    +PeopleCard('', 'Dr. Mark D. Berry', '', '')
+                    +PeopleCard('', 'Dr. Elizabeth Bjorling-Poest', '', '')
+                    +PeopleCard('', 'Dr. Todd A. Bowman', '', '')
+                    +PeopleCard('', 'Ms. Cassie M. Brooks', '', '')
+                    +PeopleCard('', 'Dr. Kenneth L. Bryant', '', '')
+                    +PeopleCard('', 'Rev. Thomas W. Cahill', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Dr. Blake I. Campbell', '', '')
+                    +PeopleCard('', 'Dr. David M. Church', '', '')
+                    +PeopleCard('', 'Dr. Jeanene M. Coleson', '', '')
+                    +PeopleCard('', 'Dr. Hector J. Corraliza', '', '')
+                    +PeopleCard('', 'Dr. Howard R. Culbertson', '', '')
+                    +PeopleCard('', 'Prof. Patricia L. Culbertson', '', '')
+                    +PeopleCard('', 'Dr. Joseph A. Dagostino', '', '')
+                    +PeopleCard('', 'Mrs. Rachel L. DeMerchant', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Dr. Harold M. DeMott', '', '')
+                    +PeopleCard('', 'Dr. Ramesh K. Deosarran', '', '')
+                    +PeopleCard('', 'Dr. Janice L. Duce', '', '')
+                    +PeopleCard('', 'Dr. S. Alan Duce', '', '')
+                    +PeopleCard('', 'Rev. Todd M. Ferring', '', '')
+                    +PeopleCard('', 'Rev. Annette F. Fraser', '', '')
+                    +PeopleCard('', 'Dr. Peter E. Gantz', '', '')
+                    +PeopleCard('', 'Dr. Walter N. Gessner', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Nathanael T. Gilmore', '', '')
+                    +PeopleCard('', 'Rev. Leray D. Glendenning', '', '')
+                    +PeopleCard('', 'Dr. John M. Hanna', '', '')
+                    +PeopleCard('', 'Dr. Virginia D. Hayes', '', '')
+                    +PeopleCard('', 'Dr. Philip J. Heap', '', '')
+                    +PeopleCard('', 'Dr. Tracy D. Hoskins', '', '')
+                    +PeopleCard('', 'Comm. David E. Hudson', '', '')
+                    +PeopleCard('', 'Dr. Ismael Joaquin', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Rev. Roy F. Joshua', '', '')
+                    +PeopleCard('', 'Prof. J Ramiro Juarez', '', '')
+                    +PeopleCard('', 'Dr. John A. Juneman', '', '')
+                    +PeopleCard('', 'Dr. Larry J. King', '', '')
+                    +PeopleCard('', 'Prof. Javier Kosacki', '', '')
+                    +PeopleCard('', 'Prof. M. Silvina Kosacki', '', '')
+                    +PeopleCard('', 'Dr. Lawrence A. Lacher', '', '')
+                    +PeopleCard('', 'Dr. Frank R. Laci', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Mrs. Loris B. Laci', '', '')
+                    +PeopleCard('', 'Dr. Karen A. Lea', '', '')
+                    +PeopleCard('', 'Dr. Richard J. Lewis', '', '')
+                    +PeopleCard('', 'Dr. Anna Marie Lockard', '', '')
+                    +PeopleCard('', 'Dr. Peter N. Lundell', '', '')
+                    +PeopleCard('', 'Ms. Abbey E. Marra', '', '')
+                    +PeopleCard('', 'Mr. Andrew J. Marra', '', '')
+                    +PeopleCard('', 'Dr. Scott A. Marsee', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Prof. Maria Teresa Martinez', '', '')
+                    +PeopleCard('', 'Prof. Paul Martinez', '', '')
+                    +PeopleCard('', 'Dr. Laurel L. Matson', '', '')
+                    +PeopleCard('', 'Mr. David W. McKeithen', '', '')
+                    +PeopleCard('', 'Dr. Kenneth L. Mills', '', '')
+                    +PeopleCard('', 'Dr. Donald M. Minter', '', '')
+                    +PeopleCard('', 'Rev. Lisa M. Morrison', '', '')
+                    +PeopleCard('', 'Dr. John W. Nielson', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Prof. Kenneth H. Niles', '', '')
+                    +PeopleCard('', 'Dr. Mark K. Olson', '', '')
+                    +PeopleCard('', 'Rev. Kenneth R. Paynter', '', '')
+                    +PeopleCard('', 'Prof. Carlos R. Peña', '', '')
+                    +PeopleCard('', 'Prof. Natalia E. Pesado', '', '')
+                    +PeopleCard('', 'Mr. Matthew T. Phillips', '', '')
+                    +PeopleCard('', 'Dr. Andrew J. Pottenger', '', '')
+                    +PeopleCard('', 'Rev. Kristopher L. Powell', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Rev. Jonathan M. Privett', '', '')
+                    +PeopleCard('', 'Dr. William A. Proulx', '', '')
+                    +PeopleCard('', 'Dr. Michael E. Reagan', '', '')
+                    +PeopleCard('', 'Dr. Steven G. Redmond', '', '')
+                    +PeopleCard('', 'Dr. Edgardo Rosado', '', '')
+                    +PeopleCard('', 'Dr. Arthur T. Roxby', '', '')
+                    +PeopleCard('', 'Dr. Steven W. Ruby', '', '')
+                    +PeopleCard('', 'Dr. James R. Russom', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Dr. Elwood E. Sanders', '', '')
+                    +PeopleCard('', 'Mr. John A. Scherer', '', '')
+                    +PeopleCard('', 'Dr. John D. Scott', '', '')
+                    +PeopleCard('', 'Dr. Orlando R. Serrano', '', '')
+                    +PeopleCard('', 'Dr. C. Jeanne Serrao', '', '')
+                    +PeopleCard('', 'Maj. Victoria O. Shiroma', '', '')
+                    +PeopleCard('', 'Dr. Geneva J. Silvernail', '', '')
+                    +PeopleCard('', 'Rev. Harold Gordon Smith', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Dr. Henry W. Spaulding', '', '')
+                    +PeopleCard('', 'Dr. Jerry W. Storz', '', '')
+                    +PeopleCard('', 'Dr. Michael A. Taylor', '', '')
+                    +PeopleCard('', 'Dr. L. Alan Thompson', '', '')
+                    +PeopleCard('', 'Dr. Veora L. Tressler', '', '')
+                    +PeopleCard('', 'Rev. Quentin Miles Trumble', '', '')
+                    +PeopleCard('', 'Dr. W. Thomas Umbel', '', '')
+                    +PeopleCard('', 'Dr. Robert R. Vaughan', '', '')
+            .swiper-slide
+                .row
+                    +PeopleCard('', 'Prof. Nick E. Vernier', '', '')
+                    +PeopleCard('', 'Dr. Jerry W. Warren', '', '')
+                    +PeopleCard('', 'Dr. Joseph R. Warrington', '', '')
+                    +PeopleCard('', 'Dr. Dale V. Wayman', '', '')
+                    +PeopleCard('', 'Dr. David G. Woods', '', '')
+                    +PeopleCard('', 'Dr. Lester Gayle Woods', '', '')
+                    +PeopleCard('', 'Rev. Lora A. Wooster', '', '')
+                    +PeopleCard('', 'Dr. Mark A. York', '', '')
+            .swiper-pagination.swiper-pagination3
+        .swiper-button-next.swiper-button-next-4
+        .swiper-button-prev.swiper-button-prev-4
