@@ -1,0 +1,92 @@
+extends ../../layouts/master.pug
+
+block title
+  title NBC - AdVantage Accelerated Degree Program
+
+block header
+  include ../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row
+          .col-lg-12.text-center
+            h1.text-display-2
+              | AdVantage
+              span.color-green-900 Accelerated
+              |  Degree Program
+          .col-lg-12.d-none.d-lg-block
+            .row
+              .col-lg-2
+              .col-lg-8
+                .banner-imgs
+                  img(src='/assets/imgs/stock/AdobeStock_523952347.jpeg', alt='Woman smiling and looking optimistically toward the sky')
+              .col-lg-2
+  section.section-box.mt-90
+    .container
+      .row
+        .col-lg-2.col-sm-1.col-12
+        .col-lg-8.col-sm-10.col-12.text-center.mt-40
+          h2.text-heading-1.color-gray-900.mb-10
+            | Discover NBC's AdVantage Accelerated Degree Program
+          p.text-body-lead-large.color-gray-600.mt-20
+            | Have you ever wondered how your life might be different if you finished your college degree? A new job? A promotion? Or maybe just the satisfaction of finishing what you started years ago?
+          p.text-body-lead-large.color-gray-600.mt-20
+            | If you are considering completing your degree, Nazarene Bible College is ready to help!
+          p.text-body-lead-large.color-gray-600.mt-20
+            | NBC’s AdVantage Accelerated Degree Program is designed for busy adults just like you. In as little as two years, you can finish your degree by taking one class at a time via NBC Online. 
+        .col-lg-2.col-sm-1.col-12
+  section.section-box.pt-140.pb-50
+    .container
+      .row
+        .col-lg-5.mb-40
+          h3.text-heading-1 Frequently asked questions
+          p.text-body-text.color-gray-600.mt-30
+            | You may have some questions. We understand. You aren't alone.
+          p.text-body-text.color-gray-600.mt-30
+            | Learn more about the AdVantage Program at NBC by contacting the Admissions Office at admissions@nbc.edu or 800-873-3873, ext. 5060.
+          .mt-60
+            a.btn.btn-border.inverse(href='tel:800-873-3873,5060')
+              i.fi-rr-phone-call.mr-20
+              | Phone
+            a.btn.btn-border.ml-40(href='mailto:admissions@nbc.edu')
+              i.fi-rr-envelope.mr-20
+              | Email
+        .col-lg-7
+          #accordionFAQ.accordion
+            .accordion-item
+              h2#headingOne.accordion-header
+                button.accordion-button.text-heading-5(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                  | Is it possible for me to succeed even though I’ve been away from school for many years?
+              #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | More than 45% of students in college today are non-traditional adult students over 25 years of age. At NBC, students’ average age is 41.5. For more than 50 years, NBC has been specializing in meeting the needs of the adult student!
+            .accordion-item
+              h2#headingTwo.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                  | My prior college credit is so old. Will those hours even count?
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | The AdVantage program at NBC is designed for adults with any prior college credit. In addition, NBC accepts credit by exam, military experience, and even credit for prior learning from life experience.
+            .accordion-item
+              h2#headingThree.accordion-header
+                button.accordion-button.text-heading-5.collapsed.text-heading-5(class='type=', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                  | How can I even afford to pay for my education?
+              #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | More than 85% of NBC students receive some form of financial aid. Funds for college come from a variety of sources, including grants, scholarships, low-cost student loans and more. 
+                .accordion-body
+                  | After a brief interview, an AdVantage counselor can provide you with the information you need about how to finance your education and invest in your future.
+
+            .accordion-item
+              h2#headingFour.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                  | What's different about NBC’s AdVantage program?
+              #collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | At Nazarene Bible College, education, faith and life go hand in hand. Completion of the AdVantage program leads to a Bachelor of Arts in Ministry (B.A.Min.) degree with your choice of a major: Counseling for Christian Ministries or Leadership and Ethics. 
+                .accordion-body
+                  | This program is taught by experienced professionals with an educational model that focuses on experiential learning, practical skills and life application. You will learn tools to help you succeed. You will also be challenged to integrate your faith with your everyday life.
+
+  include ../../sections/section_apply_now_2.pug

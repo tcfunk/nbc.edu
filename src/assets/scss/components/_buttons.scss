@@ -304,6 +304,16 @@
             border-color: $color-green-1000;
             color: $color-green-1000;
         }
+
+        &.inverse {
+            color: $color-white;
+            border-color: $color-brand-dark-blue;
+            background-color: $color-brand-dark-blue;
+
+            &:hover {
+                background-color: $color-brand-blue;
+            }
+        }
     }
     &.btn-sm {
         padding: .25rem .5rem;
