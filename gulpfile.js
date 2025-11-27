@@ -41,6 +41,7 @@ function pugTask() {
         // .pipe(cache("pug"))
         .pipe(pug({ pretty: true, doctype: "HTML" }))
         // .pipe(remember("pug"))
+        .pipe(data(function (file) { return { require: require } }))
         .pipe(dest("dist"))
         .pipe(browserSync.stream());
 }

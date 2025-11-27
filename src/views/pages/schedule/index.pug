@@ -1,0 +1,158 @@
+extends ../../../layouts/master.pug
+
+- var scheduleData = require('../../../data/schedule.json')
+
+block title
+  title Academic Calendar & Important Dates | Nazarene Bible College
+  meta(name='description', content='View Nazarene Bible College’s academic calendar, including semester start and end dates, registration deadlines, breaks and other key dates for ministry students.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              span Academic Calendar
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_233516145.jpeg); background-size: cover; background-position: center bottom;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Academic Calendar
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            p.text-body-lead-large.color-gray-600.mt-20
+              | The Academic Calendar at Nazarene Bible College outlines important dates and deadlines for each term—including registration, classes, breaks and commencement—so that ministry-focused students can plan their academic journey with clarity and confidence.
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Upcoming Terms & Key Dates
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Fall Trimester
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Winter Trimester
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Spring Trimester
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Summer Term
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Spring 2025-26 Session Schedule
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session A - Starts March 2nd, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+        .row
+          .col-lg-12
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session B - Starts April 13th, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Summer 2026 Session Schedule
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session A - Starts May 25th, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+        .row
+          .col-lg-12
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session B - Starts June 22nd, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Getting Started & Next Steps
+            p.text-body-lead-large.color-gray-600.mt-20
+              | Explain registration, orientation, and support services
+            h2.text-heading-4.color-gray-900.mb-10
+              | Frequently Asked Questions
+            p.text-body-lead-large.color-gray-600.mt-20
+              | Cover typeical queries...

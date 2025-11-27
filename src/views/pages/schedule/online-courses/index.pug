@@ -1,0 +1,130 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Nazarene Bible College Online Courses | Ministry-Focused - 2025-2026
+  meta(name='description', content='Explore the online courses offered by Nazarene Bible College for the 2025-26 year. Flexible, ministry-centered classes designed for adult learners preparing for service in Christian leadership.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/schedule/') Schedule
+            li
+              span Online Courses
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_233516145.jpeg); background-size: cover; background-position: center bottom;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Online Courses at Nazarene Bible College
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Why Choose Online Courses at NBC?
+            p.text-body-lead-large.color-gray-600.mt-20
+              | NBC's online courses are designed to help you grow in your faith and prepare for service in Christian leadership.
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Winter 2025-26 Session Schedule
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session B - Starts January 12th, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Spring 2025-26 Session Schedule
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session A - Starts March 2nd, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+        .row
+          .col-lg-12
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session B - Starts April 13th, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Summer 2026 Session Schedule
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session A - Starts May 25th, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+        .row
+          .col-lg-12
+            h3.text-heading-5.color-brand-blue.mb-10
+              | Session B - Starts June 22nd, 2026
+            table.table.table-striped
+              thead
+                tr
+                  th Course
+                  th Course Description
+                  th Hours
+              tbody
+                +CourseTableRow('BIB-1013', 'Introduction to the Old Testament', '3')
+
+  section.section-box
+    .container
+      .content-detail
+        .row
+          .col-lg-12
+            h2.text-heading-4.color-gray-900.mb-10
+              | Getting Started & Next Steps
+            p.text-body-lead-large.color-gray-600.mt-20
+              | Explain registration, orientation, and support services
+            h2.text-heading-4.color-gray-900.mb-10
+              | Frequently Asked Questions
+            p.text-body-lead-large.color-gray-600.mt-20
+              | Cover typeical queries...
