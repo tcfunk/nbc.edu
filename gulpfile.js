@@ -1,4 +1,5 @@
-"use strict";
+// "use strict";
+const data = require("./src/views/data/data.json");
 
 /** Declare module */
 const { src, dest, parallel, watch, series } = require("gulp"),
@@ -39,9 +40,12 @@ function jsTask() {
 function pugTask() {
     return src(htmlFiles)
         // .pipe(cache("pug"))
-        .pipe(pug({ pretty: true, doctype: "HTML" }))
-        // .pipe(remember("pug"))
-        .pipe(data(function (file) { return { require: require } }))
+        .pipe(pug({
+            pretty: true, doctype: "HTML",
+            locals: {
+                nbcData: data
+            }
+        }))
         .pipe(dest("dist"))
         .pipe(browserSync.stream());
 }

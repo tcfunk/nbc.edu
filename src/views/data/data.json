@@ -1,0 +1,257 @@
+{
+    "academic_calendar": {
+        "fall": [
+            {
+                "date": "June 23",
+                "title": "Fall Term Registration Begins"
+            },
+            {
+                "date": "July 28",
+                "title": "Fall A Payment Due"
+            },
+            {
+                "date": "August 4",
+                "title": "Fall A Classes Begin"
+            },
+            {
+                "date": "August 6",
+                "title": "Last Day to Add/Drop Class"
+            },
+            {
+                "date": "August 24",
+                "title": "Last Day to Withdraw from Class"
+            },
+            {
+                "date": "September 1 - September 14",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "September 14",
+                "title": "Fall A Classes End"
+            },
+            {
+                "date": "September 15 - 21",
+                "title": "Break Week"
+            },
+            {
+                "date": "September 15",
+                "title": "Fall B Payment Due"
+            },
+            {
+                "date": "September 22",
+                "title": "Fall B Classes Begin"
+            },
+            {
+                "date": "September 24",
+                "title": "Last Day to Add/Drop Class"
+            },
+            {
+                "date": "October 12",
+                "title": "Last Day to Withdraw from Class"
+            },
+            {
+                "date": "October 20 - November 2",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "November 2",
+                "title": "Fall B Classes End"
+            },
+            {
+                "date": "November 3 - 9",
+                "title": "Break Week"
+            },
+            {
+                "date": "November 10",
+                "title": "Fall Graduates’ Degrees Posted"
+            }
+        ],
+        "winter": [
+            {
+                "date": "September 29",
+                "title": "Winter Term Registration Begins"
+            },
+            {
+                "date": "November 3",
+                "title": "Winter A Payment Due"
+            },
+            {
+                "date": "November 10",
+                "title": "Winter A Classes Begin"
+            },
+            {
+                "date": "November 12",
+                "title": "Last Day to Add/Drop Class"
+            },
+            {
+                "date": "November 30",
+                "title": "Last Day to Withdraw from Class"
+            },
+            {
+                "date": "December 1 - 14",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "December 21",
+                "title": "Winter A Classes End"
+            },
+            {
+                "date": "December 22 - Jan 11, 2025",
+                "title": "Break Weeks"
+            },
+            {
+                "date": "January 5",
+                "title": "Winter B Payment Due"
+            },
+            {
+                "date": "January 12",
+                "title": "Winter B Classes Begin"
+            },
+            {
+                "date": "January 14",
+                "title": "Last Day to Add/Drop Class"
+            },
+            {
+                "date": "February 1",
+                "title": "Last Day to Withdraw from Class"
+            },
+            {
+                "date": "February 9 - 22",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "February 22",
+                "title": "Winter B Classes End"
+            },
+            {
+                "date": "February 23 - March 1",
+                "title": "Break Week"
+            },
+            {
+                "date": "March 2",
+                "title": "Winter Graduates’ Degrees Posted"
+            }
+        ],
+        "spring": [
+            {
+                "date": "",
+                "title": ""
+            },
+            {
+                "date": "January 19",
+                "title": "Spring Term Registration Begins"
+            },
+            {
+                "date": "February 23",
+                "title": "Spring A Payment Due"
+            },
+            {
+                "date": "March 2",
+                "title": "Spring A Classes Begin"
+            },
+            {
+                "date": "March 4",
+                "title": "Last Day to Add/Drop Class"
+            },
+            {
+                "date": "March 22",
+                "title": "Last Day to Withdraw from Class"
+            },
+            {
+                "date": "March 23 - April 5",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "April 6",
+                "title": "Spring B Payment Due"
+            },
+            {
+                "date": "April 12",
+                "title": "Spring A Classes End"
+            },
+            {
+                "date": "April 13",
+                "title": "Spring B Classes Begin"
+            },
+            {
+                "date": "April 15",
+                "title": "Last Day to Add/Drop Class"
+            },
+            {
+                "date": "May 3",
+                "title": "Last Day to Withdraw from Class"
+            },
+            {
+                "date": "May 4 - 17",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "May 24",
+                "title": "Spring B Classes End"
+            },
+            {
+                "date": "June 1",
+                "title": "Spring Graduates’ Degrees Posted"
+            }
+        ],
+        "summer": [
+            {
+                "date": "April 20",
+                "title": "Summer Term Registration Begins"
+            },
+            {
+                "date": "May 18",
+                "title": "Summer A Payment Due"
+            },
+            {
+                "date": "May 25",
+                "title": "Summer A Classes Begin"
+            },
+            {
+                "date": "May 27",
+                "title": "Last Day to Add/Drop a Class"
+            },
+            {
+                "date": "June 1 - June 14",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "June 14",
+                "title": "Last Day to Withdraw from a Class"
+            },
+            {
+                "date": "July 5",
+                "title": "Summer A Classes End"
+            },
+            {
+                "date": "June 15",
+                "title": "Summer B Payment Due"
+            },
+            {
+                "date": "June 22",
+                "title": "Summer B Classes Begin"
+            },
+            {
+                "date": "June 24",
+                "title": "Last Day to Add/Drop a Class"
+            },
+            {
+                "date": "July 12",
+                "title": "Last Day to Withdraw from a Class"
+            },
+            {
+                "date": "July 13 - 26",
+                "title": "Introduction to Online Learning"
+            },
+            {
+                "date": "August 2",
+                "title": "Summer B Classes End"
+            },
+            {
+                "date": "August 10",
+                "title": "Summer Graduates’ Degrees Posted"
+            }
+        ]
+    }
+}
+
