@@ -134,12 +134,21 @@
 }
 .list-icons
 {
+    display: block;
+    height: 100%;
+
     .item-icon
     {
+        height: 100%;
+        display: block;
         position: relative;
-        padding: 0px 0px 40px 80px;
+        padding: 0px 0px 10px 80px;
         margin-bottom: 40px;
         border-bottom: 2px solid $color-gray-200;
+
+        &:hover {
+            border-color: $color-brand-blue;
+        }
         &.none-bd
         {
             border-bottom: 0px;
@@ -152,7 +161,16 @@
             top: 0px;
             left: 0px;
             width: 64px;
+            img {
+                aspect-ratio: 1/1;
+                width: 50px;
+                height: 50px;
+            }
         }
+    }
+
+    a.item-icon.hover {
+        border-bottom: 2px solid $color-gray-200 !important;
     }
 }
 .box-square
