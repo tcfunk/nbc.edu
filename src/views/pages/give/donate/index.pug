@@ -1,0 +1,170 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Donate - NBC
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.banner-breadcrums
+      .container.text-center
+        h1.text-heading-2.color-gray-1000.mb-20 Online Donation
+        p.text-body-text.color-gray-500
+          | At Nazarene Bible College, we are committed to preparing faithful leaders for lives of service and ministry. Your gift - no matter the size - makes a lasting impact on our students and our ability to equip the next generation of servant leaders.
+  section.section-box
+    .container.mb-20.mt-60
+      .bdrd-58.box-gray-100
+        .row
+          .col-lg-12.mb-60
+            span.text-body-capitalized.text-uppercase Give
+            h2.text-heading-3.color-gray-900.mt-10 Make an Immediate Impact
+            p.text-body-text.color-gray-600.mt-20
+              | Make a one-time annual gift to make an immediate impact allowing students to pursue God's call as they prepare for ministry. Your support provides vital scholarship support and fuels new academic initiatives and programs.
+          .col-lg-12
+            fieldset
+              legend.fs-4.mb-20 Contact Information
+              .row
+                .col-lg-5
+                  .form-group
+                    label.form-label(for='first_name') First Name
+                    input.form-control(name='first_name', type='text', id='first_name', value='')
+                .col-lg-2
+                  .form-group
+                    label.form-label(for='middle_name') M.I.
+                    input.form-control(name='middle_name', type='text', id='middle_name', value='')
+                .col-lg-5
+                  .form-group
+                    label.form-label(for='last_name') Last Name
+                    input.form-control(name='last_name', type='text', id='last_name', value='')
+                .col-lg-12
+                  .form-group
+                    label.form-label(for='address') Street Address
+                    input.form-control(name='address', type='text', id='address', value='')
+                .col-lg-4
+                  .form-group
+                    label.form-label(for='city') City
+                    input.form-control(name='city', type='text', id='city', value='')
+                .col-lg-4
+                  .form-group
+                    label.form-label(for='state') State
+                    select.form-control(name='state', id='state', value='')
+                      option(value='') Select State
+                      option(value='AL') Alabama
+                      option(value='AK') Alaska
+                      option(value='AZ') Arizona
+                      option(value='AR') Arkansas
+                      option(value='CA') California
+                      option(value='CO') Colorado
+                      option(value='CT') Connecticut
+                      option(value='DE') Delaware
+                      option(value='DC') District of Columbia
+                      option(value='FL') Florida
+                      option(value='GA') Georgia
+                      option(value='HI') Hawaii
+                      option(value='ID') Idaho
+                      option(value='IL') Illinois
+                      option(value='IN') Indiana
+                      option(value='IA') Iowa
+                      option(value='KS') Kansas
+                      option(value='KY') Kentucky
+                      option(value='LA') Louisiana
+                      option(value='ME') Maine
+                      option(value='MD') Maryland
+                      option(value='MA') Massachusetts
+                      option(value='MI') Michigan
+                      option(value='MN') Minnesota
+                      option(value='MS') Mississippi
+                      option(value='MO') Missouri
+                      option(value='MT') Montana
+                      option(value='NE') Nebraska
+                      option(value='NV') Nevada
+                      option(value='NH') New Hampshire
+                      option(value='NJ') New Jersey
+                      option(value='NM') New Mexico
+                      option(value='NY') New York
+                      option(value='NC') North Carolina
+                      option(value='ND') North Dakota
+                      option(value='OH') Ohio
+                      option(value='OK') Oklahoma
+                      option(value='OR') Oregon
+                      option(value='PA') Pennsylvania
+                      option(value='RI') Rhode Island
+                      option(value='SC') South Carolina
+                      option(value='SD') South Dakota
+                      option(value='TN') Tennessee
+                      option(value='TX') Texas
+                      option(value='UT') Utah
+                      option(value='VT') Vermont
+                      option(value='VA') Virginia
+                      option(value='WA') Washington
+                      option(value='WV') West Virginia
+                      option(value='WI') Wisconsin
+                      option(value='WY') Wyoming
+                .col-lg-4
+                  .form-group
+                    label.form-label(for='zip') Zip
+                    input.form-control(name='zip', type='text', id='zip', value='')
+                .col-lg-6
+                  .form-group
+                    label.form-label(for='phone') Phone
+                    input.form-control(name='phone', type='tel', id='phone', value='')
+                .col-lg-6
+                  .form-group
+                    label.form-label(for='email') Email
+                    input.form-control(name='email', type='email', id='email', value='')
+                .col-lg-6
+                  .form-group
+                    label.form-label(for='local_church') Local Church (complete for Church gifts only)
+                    input.form-control(name='local_church', type='text', id='local_church', value='')
+                .col-lg-6
+                  .form-group
+                    label.form-label(for='local_church_city') Church City
+                    input.form-control(name='local_church_city', type='text', id='local_church_city', value='')
+            fieldset
+              legend.fs-4.mb-20 Donation
+              .row
+                .col-lg-6
+                  .form-group
+                    label.form-label(for='donation_type') Donation Type
+                    select.form-control(name='donation_type', id='donation_type', value='')
+                      option(value='') Select Donation Type
+                      option(value='1') One-Time Donation
+                      option(value='2') Monthly Donation
+                      option(value='3') One-Time Donation
+                      option(value='4') One-Time Donation
+                      option(value='5') One-Time Donation
+                      option(value='6') One-Time Donation
+                .col-lg-6
+                  .form-group
+                    label.form-label(for='affiliation') Affiliation
+                    select.form-control(name='affiliation', id='affiliation', value='')
+                      option(value='') Select Affiliation
+                      option(value='1') One-Time Donation
+                      option(value='2') Monthly Donation
+                      option(value='3') One-Time Donation
+                      option(value='4') One-Time Donation
+                      option(value='5') One-Time Donation
+                      option(value='6') One-Time Donation
+                .col-lg-5
+                  .form-group
+                    label.form-label(for='amount') Amount
+                    input.form-control(name='amount', type='number', id='amount', value='25')
+                .col-lg-7
+                  .form-group
+                    label &nbsp;
+                    .btn-toolbar
+                      .btn-group.btn-group-sm
+                        button.btn.btn-primary $25
+                        button.btn.btn-secondary $50
+                        button.btn.btn-secondary $100
+                        button.btn.btn-secondary $250
+                        button.btn.btn-secondary $500
+              .row.mt-40
+                .col-lg-2
+                .col-lg-8
+                  .d-grid.gap-2
+                    button.btn.btn-success(name='paypal_monthly', type='submit') Give Monthly Using PayPal
+                    button.btn.btn-primary(name='paypal', type='submit') PayPal
+                    button.btn.btn-black(name='debit_credit_card', type='submit') Debit or Credit Card
