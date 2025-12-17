@@ -317,6 +317,16 @@
         background: url(../imgs/page/faqs/1/bg-banner.png) no-repeat center top;
         background-size: auto;
     }
+    &.banner-financial-aid
+    {
+        padding-top: 172px;
+        padding-bottom: 120px;
+        // min-height: 675px;
+        margin-top: -140px;
+        margin-bottom: 50px;
+        background: url(../imgs/page/faqs/1/bg-banner.png) no-repeat center -150px;
+        background-size: auto;
+    }
     &.banner-breadcrums
     {
         background-color: $background-bg-2;
