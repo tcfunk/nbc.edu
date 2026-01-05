@@ -152,3 +152,11 @@ mixin PeopleCard(img='assets/imgs/page/about/1/team-1.png', name='Theresa Webb',
         span.text-body-text-md.color-gray-500= title
         h3.text-heading-5.mb-5.mt-5= name
         p.text-body-excerpt.text-desc.color-gray-500.mt-15.mb-20= description
+
+mixin ContentLeftImageRight(img)
+    .row
+        .col-lg-6
+            if block
+                block
+        .col-lg-6.d-flex.justify-content-center.flex-column
+            img.img-responsive.bdr-10.mt-10.ml-10(src= img, alt='Agon')
