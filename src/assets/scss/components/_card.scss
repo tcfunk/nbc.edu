@@ -280,6 +280,27 @@
     }
 }
 
+.grid-cards {
+    display: grid;
+    margin-bottom: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        padding: 48px;
+        border-radius: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
 // End New Agin
 // New Agon
 .block-pricing {
