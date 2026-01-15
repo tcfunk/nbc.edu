@@ -1,0 +1,56 @@
+extends ../../../layouts/master.pug
+
+block title
+  title NBC - Non-Degree Course of Study
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/index-4.html') Home
+            li
+              a(href='/programs/') Programs
+            li
+              span Non-Degree Course of Study
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_332409626.jpeg); background-size: cover; background-position: center bottom;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Non-Degree Course of Study
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            p.text-body-text.mb-30
+              | Are you preparing for ordination in the Church of the Nazarene or another denomination? Do you want to learn more about the Christian faith than what you learned in VBS? Take college-level courses now to pave the way into your future.
+            p.text-body-text.mb-30
+              | The Non-Degree Course of Study (NCOS) is a video-based ministerial training curriculum designed especially for those seeking ordination in the USA/Canada Region of the Church of the Nazarene. This course may also benefit students who are preparing for ordination in other denominations.
+            p.text-body-text.mb-30
+              | This easily accessible, high-quality program is also for those who are ministering now, especially in diverse contexts. Anyone seeking education in Christian studies (16 years or older, proficient in English) is eligible to enroll.
+            p.text-body-text.mb-30
+              | The NCOS curriculum consists of 21 8-week courses developed by the Church of the Nazarene's educational office. Every course is presented through online instruction in the Canvas Learning Management system and is facilitated by a qualified instructor. This instruction is built with flexibility in delivery formats and assessments of learning throughout the program.
+            p.text-body-text.mb-30
+              | Does this sound like what you've been searching for? NBC is ready to be your education partner for now and the future.
+
+  section.section-box.overflow-visible.mb-50
+    .container.mt-50
+      .row
+        .col-lg-10.mx-auto
+          .bg-6.box-newsletter.position-relative
+            .row
+              .col-lg-5.col-md-7
+                span.text-body-capitalized.color-gray-500.text-uppercase application
+                h4.text-heading-2.mb-10.mt-10 Start your journey with NBC today.
+                a.btn.btn-black.mt-50.mr-20(href='https://ncos.nbc.edu/') Learn More
+                a.btn.btn-black.mt-50.icon-arrow(href='/apply/') Apply
+              .col-lg-7.col-md-5.mt-30.mt-lg-0.mt-md-30.mt-sm-30.position-relative.text-end
+                img.img-responsive.img-newsletter(src='/assets/imgs/stock/AdobeStock_968974436_vertical.jpeg', alt='Man sitting on stairs using a laptop')
