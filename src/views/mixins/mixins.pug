@@ -153,13 +153,21 @@ mixin PeopleCard(img='assets/imgs/page/about/1/team-1.png', name='Theresa Webb',
         h3.text-heading-5.mb-5.mt-5= name
         p.text-body-excerpt.text-desc.color-gray-500.mt-15.mb-20= description
 
-mixin ContentLeftImageRight(img)
-    .row
+mixin ContentLeftImageRight(img, extraClass='')
+    .row(class=extraClass)
         .col-lg-6
             if block
                 block
         .col-lg-6.d-flex.justify-content-center.flex-column
             img.img-responsive.bdr-10.mt-10.ml-10(src= img, alt='Agon')
+
+mixin ContentRightImageLeft(img, extraClass='')
+    .row(class=extraClass)
+        .col-lg-6.d-flex.justify-content-center.flex-column
+            img.img-responsive.bdr-10.mt-10.ml-10(src= img, alt='Agon')
+        .col-lg-6
+            if block
+                block
 
 mixin NewsCard(title, image, link, date='01/01/2026')
     .col-lg-4.col-sm-12.pr-30

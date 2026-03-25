@@ -13,19 +13,23 @@ block content
 
   section.section-box.mtb-60
     .container
-      +ContentLeftImageRight('/assets/imgs/stock/NBC working web 7.png')
-        .d-flex.flex-column
+      +ContentLeftImageRight('/assets/imgs/stock/NBC working web 7.png', 'mb-100')
+        .d-flex.flex-column.p-40
           p.text-body-lead-large.text-gray-600.mb-20
             | Accredited. Affordable. Accessible.
-          h2.text-heading-1.color-gray-900.mb-40
+          h2.text-heading-2.color-gray-900.mb-40
             | Preparing leaders for service in the Church and the world.
           .d-flex
             a.btn.btn-brand(href='/about/') About NBC
             a.ml-20.btn.btn-default.hover-up.icon-arrow-right(href='/give/') Give
-  //- include ../sections/home_4_section_1.pug
-  //- include ../sections/home_4_section_2.pug
-  //- include ../sections/home_4_section_3.pug
-  //- include ../sections/home_2_section_2.pug
-  //- include ../sections/section_price_2.pug
-  //- include ../sections/home_1_section_6.pug
-  //- include ../sections/section_newsletter_2.pug
+
+      +ContentRightImageLeft('/assets/imgs/stock/AdobeStock_286503364.jpeg', 'bg-gray-100 p-20 rounded-4')
+        .d-flex.flex-column.p-40
+          .text-heading-2.color-gray-900.mb-20
+            | Turn Your Calling Into a Reality
+          p.text-body-text.text-gray-600.mb-40
+            | If you feel God's calling on your life to become a Christian leader or minister of the Gospel, Nazarene Bible College's 100% online training programs can help you reach your goals.
+          p.text-body-text.text-gray-600.mb-40
+            | We are an accredited Institution that provides academic and practical programs. We provide clear guidelines and plenty of support to all of our students.
+          .d-flex
+            a.btn.btn-brand(href='/about/') Explore Programs
