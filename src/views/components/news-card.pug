@@ -1,0 +1,7 @@
+mixin NewsCard(title, image, link)
+  .col-lg-4.col-sm-12.pr-30
+    .card-grid-style-4
+      a.text-heading-4(href=link)= title
+      .grid-4-img
+        a(href=link)
+          img(src=image, alt=title)

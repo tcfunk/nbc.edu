@@ -8,10 +8,24 @@ block header
 
 block content
   include ../sections/section_hero_4.pug
-  include ../sections/home_4_section_1.pug
-  include ../sections/home_4_section_2.pug
-  include ../sections/home_4_section_3.pug
-  include ../sections/home_2_section_2.pug
-  include ../sections/section_price_2.pug
-  include ../sections/home_1_section_6.pug
-  include ../sections/section_newsletter_2.pug
+  include ../sections/latest_news.pug
+  include ../sections/home_section_nav_grid.pug
+
+  section.section-box.mtb-60
+    .container
+      +ContentLeftImageRight('/assets/imgs/stock/NBC working web 7.png')
+        .d-flex.flex-column
+          p.text-body-lead-large.text-gray-600.mb-20
+            | Accredited. Affordable. Accessible.
+          h2.text-heading-1.color-gray-900.mb-40
+            | Preparing leaders for service in the Church and the world.
+          .d-flex
+            a.btn.btn-brand(href='/about/') About NBC
+            a.ml-20.btn.btn-default.hover-up.icon-arrow-right(href='/give/') Give
+  //- include ../sections/home_4_section_1.pug
+  //- include ../sections/home_4_section_2.pug
+  //- include ../sections/home_4_section_3.pug
+  //- include ../sections/home_2_section_2.pug
+  //- include ../sections/section_price_2.pug
+  //- include ../sections/home_1_section_6.pug
+  //- include ../sections/section_newsletter_2.pug
