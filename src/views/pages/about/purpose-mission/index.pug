@@ -1,0 +1,107 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Our Mission, Vision, and Values | Nazarene Bible College
+  meta(name='description', content='Learn about Nazarene Bible College’s mission, vision, identity, and core values rooted in Wesleyan-Holiness theology and ministry preparation.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/about/') About
+            li
+              span Purpose &amp; Mission
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_560002892.jpeg); background-size: cover; background-position: center center;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Purpose &amp; Mission
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8.text-center
+          h2#mission.text-heading-2.color-gray-900 Mission
+          p.text-body-lead-large.color-gray-600.mt-30
+            | Nazarene Bible College exists to glorify Jesus Christ as Lord by preparing adults to evangelize, disciple, and minister to the world.
+        .col-lg-2
+
+  .section-box.mt-40
+    .container
+      .row
+        .col-lg-1
+        .col-lg-10
+          .box-image
+            img.img-responsive.bdrd-16(src='/assets/imgs/stock/AdobeStock_809103813.jpeg', alt='Supporting image for mission and vision')
+        .col-lg-1
+
+  section.section-box.mt-80.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8.text-center
+          h2#vision.text-heading-2.color-gray-900 Vision
+          p.text-body-lead-large.color-gray-600.mt-30
+            | To be widely regarded by alumni, pastors, districts and churches as a trustworthy partner providing the highest-quality, most-accessible, lowest-cost ministry preparation to adults.
+        .col-lg-2
+
+  section.section-box.mt-50.mb-50
+    .container
+      +ContentRightImageLeft('/assets/imgs/stock/AdobeStock_116912183.jpeg')
+        .content-detail
+          h2#identity.text-heading-2 Identity
+          p.text-body-text.mt-30
+            | Nazarene Bible College is an undergraduate, professional school of Christian ministry committed to academic and practical programs designed to educate students for service and leadership in a diverse world.
+          p.text-body-text.mt-20
+            | Founded and sponsored by the Church of the Nazarene in 1967, the college has a unique place among the institutions of higher learning in the denomination. The college provides ministerial preparation for a diverse community of adult learners primarily within the United States. The college is committed to a strong program of academic excellence offering baccalaureate and associate degrees supported by appropriate student development programs and strategies.
+          p.text-body-text.mt-20
+            | Nazarene Bible College views truth through the Wesleyan-Holiness perspective and affirms the Bible as the cornerstone for a proper understanding of God&rsquo;s redemptive plan for humankind. The college especially emphasizes the biblical doctrine of entire sanctification and living a holy, Christlike life.
+
+  section.section-box.mt-50.mb-30
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8.text-center
+          h2#core-values.text-heading-2.color-gray-900 Core Values
+          p.text-body-lead-large.color-gray-600.mt-30
+            | The following core values express our finest aspirations and serve as guiding principles in the pursuit of our mission to equip students for effective Christian ministry.
+        .col-lg-2
+
+  section.section-box.pt-20.pb-50
+    .container
+      .row
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-acquis.svg', alt='')
+              h3.text-heading-4 Learning and Instruction
+              p.text-body-text.color-gray-600.mt-15
+                | We acknowledge the inspired truth of Scripture as the reference point for our educational process. We seek to develop lifelong learners with a Christian worldview. We are committed to academic and professional excellence. We desire to achieve balance in our curriculum through the integration of intellectual, spiritual and practical studies with a foundation in the Wesleyan-Holiness theology.
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-active.svg', alt='')
+              h3.text-heading-4 Personal Development
+              p.text-body-text.color-gray-600.mt-15
+                | We hold that theological education involves shaping the whole person. Therefore, we value the development of moral and ethical integrity, physical and emotional health, and spiritual maturity, all as the demonstration of character through a holy lifestyle.
+        .col-lg-4.col-md-12.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-retent.svg', alt='')
+              h3.text-heading-4 Service and Mission
+              p.text-body-text.color-gray-600.mt-15
+                | We prepare students to engage in practical ministry. We value the demonstration of leadership and servanthood to meet the spiritual and social needs of our world and therefore, our curriculum emphasizes a multicultural awareness in missional service. We encourage interdependence with local churches and diverse ministry contexts where our students can utilize their gifts and graces for service to the church and to the world.
