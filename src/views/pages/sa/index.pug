@@ -1,0 +1,106 @@
+extends ../../layouts/master.pug
+
+block title
+  title Salvation Army Degree Partnership | AdVantage Program at NBC
+  meta(name='description', content='Salvation Army officers can complete a Bachelor of Arts in Ministry through Nazarene Bible College’s AdVantage Accelerated Degree Program.')
+block header
+  include ../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row
+          .col-lg-12.text-center
+            h1.text-display-2 Benefits for Salvation Army Officers
+
+  section.section-box
+    .container
+      .row
+        .col-lg-2.col-sm-1.col-12
+        .col-lg-8.col-sm-10.col-12
+            p.text-body-lead-large.color-gray-600.mt-20
+              | Are you currently serving with The Salvation Army? Have you been considering earning or completing your bachelor’s degree?
+            p.text-body-text.color-gray-600.mt-20
+              | Nazarene Bible College has a cooperative relationship with all four Salvation Army USA territories to provide additional education opportunities for you.
+            p.text-body-text.color-gray-600.mt-20
+              | NBC’s AdVantage Accelerated Degree Completion Program is designed to meet your needs. This program offers the Bachelor of Arts in Ministry (B.A.Min.) degree with your choice of major from four options: Leadership and Ethics, Bible and Theology, Counseling for Christian Ministries, and Hispanic Pastoral Ministries.
+            p.text-body-text.color-gray-600.mt-20
+              | Questions about your choice of major or about entering this degree program? Contact the Admissions Office at admissions@nbc.edu or 800-873-3873, ext. 5060.
+            p.text-body-text.color-gray-600.mt-20
+              | Apply for NBC’s AdVantage Accelerated Degree Completion Program by clicking on one of the following links based on your current Territory assignment.
+
+  section.section-box.pt-140.pb-50
+    .container
+      .row
+        .col-lg-5.mb-40
+          h3.text-heading-1 Apply
+          p.text-body-text.color-gray-600.mt-30
+            | To apply through our AdVantage Accelerated Degree Completion Program, please click on one of the the following links based on your current Territory.
+        .col-lg-7
+          #accordionFAQ.accordion
+            .accordion-item
+              h2#headingOne.accordion-header
+                button.accordion-button.text-heading-5(type='button', data-bs-toggle='collapse', data-bs-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                  | USA Southern Territory
+              #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  | The USA Southern Territory Officer's Education application form will need to be completed and processed through your Command Headquarters. These forms may be obtained from:
+                  blockquote.text-body-text.color-gray-600.mt-10
+                    b.font-bold Evangeline Booth College
+                    br
+                    | Continuing Education Center
+                    br
+                    | 1032 Metropolitan Parkway SW
+                    br
+                    | Atlanta, GA 30310
+                  p Complete our Salvation-Army-specific NBC 
+                    a(href='https://nbc.edu/application/login/?prog=3') admission application.
+            .accordion-item
+              h2#headingTwo.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                  | USA Western Territory
+              #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  p
+                    | Complete our Salvation-Army-specific NBC 
+                    a(href='https://nbc.edu/application/login/?prog=4') admission application.
+                  p
+                    | Officers wanting to take classes at NBC need to complete and submit the Preliminary Higher Education Application on TSAMM. For further instruction, please contact the Continuing Education Department at 310-265-6123.
+            .accordion-item
+              h2#headingThree.accordion-header
+                button.accordion-button.text-heading-5.collapsed.text-heading-5(class='type=', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                  | USA Central Territory
+              #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  p
+                    | The USA Central Territory Officer's Education application form will need to be completed and processed through your Command Headquarters. These forms may be obtained from:
+                  blockquote.text-body-text.color-gray-600.mt-10
+                    b.font-bold Officer Resource and Development Secretary or the Resource Coordinator in ORD
+                    br
+                    | 5550 Prairie Stone Parkway
+                    br
+                    | Hoffman Estates, IL 60192
+                    br
+                    | (847) 294-2061
+                  p
+                    | Complete our Salvation-Army-specific NBC 
+                    a(href='https://nbc.edu/application/login/?prog=5') admission application.
+            .accordion-item
+              h2#headingFour.accordion-header
+                button.accordion-button.text-heading-5.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                  | USA Eastern Territory
+              #collapseFour.accordion-collapse.collapse(aria-labelledby='headingFour', data-bs-parent='#accordionFAQ')
+                .accordion-body
+                  p
+                    | The USA Eastern Territory Officer's Degree Proposal application will need to be completed. The application can be obtained from: 
+                  blockquote
+                    b.font-bold Office of the Territorial Education Sectary at THQ
+                    br
+                    | 440 West Nyack Road
+                    br
+                    | West Nyack, NY 10994
+                  p or through an email to the Territorial Education Secretary. The completed application is processed with your command head and then forwarded on to THQ for the review of the Territorial Education Council.
+                  p.mt-10
+                    | Complete our Salvation-Army-specific NBC 
+                    a(href='https://nbc.edu/application/login/?prog=6') admission application.

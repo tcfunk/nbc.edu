@@ -141,3 +141,13 @@ h6 {
 .text-muted{
     color: $color-gray-500 !important;
 }
+
+blockquote {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-right: none;
+  border-left: .25rem solid $color-gray-300;
+  border-inline-start: .25rem solid $color-gray-300;
+  border-inline-end: none;
+}
