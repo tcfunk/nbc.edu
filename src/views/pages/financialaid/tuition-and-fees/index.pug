@@ -1,0 +1,296 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Tuition and Fees | Nazarene Bible College
+  meta(name='description', content='Current tuition, fees, refund policy, Title IV return of funds, and cost of attendance information for Nazarene Bible College degree programs.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/financialaid/') Financial Aid
+            li
+              span Tuition and Fees
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_233516145.jpeg); background-size: cover; background-position: center bottom;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Tuition and Fees
+
+  section.section-box.mt-50.mb-50
+    .container
+      +ContentLeftImageRight('/assets/imgs/stock/AdobeStock_1340627459.jpeg')
+        .content-detail
+          h2#investing.text-heading-4 Investing in Your Future
+          p.text-body-text.mt-30
+            | Your college education is definitely one of the biggest investments of your life. Nazarene Bible College is ready to work with you and your family as you plan for this investment. Our goal is the same as your goal: To make sure you receive a quality college education at the most affordable cost possible. We are here to partner with you as you work toward your educational goals.
+          p.text-body-text.mt-20
+            | Following are current details about your investment when you enroll in a degree program at NBC.
+          p.text-body-text.mt-20
+            | For more information, contact the Financial Aid Office at 
+            a(href='mailto:financialaid@nbc.edu') financialaid@nbc.edu
+            |  or (800) 873-3873 Ext. 5050.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#tuition-and-fees.text-heading-4 Tuition and Fees
+            p.text-body-text.mt-30
+              | Tuition and fees are billed each trimester. Payment in full is required one week prior to the beginning of each session within the trimester. Eight (8) hours per trimester is considered a full load for financial aid purposes. The following fees and charges are current but are subject to change.
+            .table-responsive.mt-30
+              table.table.table-striped
+                thead
+                  tr
+                    th(scope='col') Amount
+                    th(scope='col') Description
+                tbody
+                  tr
+                    td $418.00**
+                    td Tuition per Credit Hour
+                  tr
+                    td $209.00
+                    td Audit per Credit Hour
+                  tr
+                    td $75.00
+                    td Library Fee per Term
+                  tr
+                    td $75.00
+                    td Technology Fee per Term
+                  tr
+                    td $50.00
+                    td Tuition Deposit
+            p.text-body-small.color-gray-600.mt-20
+              | (This deposit is applied to a student’s first course attempt and is nonrefundable. Tuition deposits not utilized within twelve (12) months of receipt are subject to forfeiture.)
+            p.text-body-small.color-gray-600.mt-15
+              | **Students with a Merit Scholarship letter agreement in effect should contact their advisor to determine their tuition and fees.
+            h3.text-heading-5.mt-40 Additional Fees for Students in Ministry Preparation Program (MPP) or El Programa de Preparación Ministerial (PPM)
+            .table-responsive.mt-20
+              table.table.table-striped
+                tbody
+                  tr
+                    td $50.00
+                    td MPP/PPM Orientation
+                  tr
+                    td $238.00
+                    td MPP/PPM Tuition per Credit Hour
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#special-fees.text-heading-4 Special Fees
+            h3.text-heading-5.mt-30 Intervention Course Fees
+            .table-responsive.mt-20
+              table.table.table-striped
+                tbody
+                  tr
+                    td $60.00
+                    td NBC Experience
+                  tr
+                    td $60.00
+                    td Ministry Progress Review
+                  tr
+                    td $60.00
+                    td Graduating Colloquium
+                  tr
+                    td $60.00
+                    td Tutorials (Math/English)
+            h3.text-heading-5.mt-30 Counseling for Christian Ministries Fees
+            .table-responsive.mt-20
+              table.table.table-striped
+                tbody
+                  tr
+                    td $60.00
+                    td Weekend Intensive Resource Fee (PSY-4602)
+                  tr
+                    td $60.00
+                    td Weekend Intensive Resource Fee (PSY-4612)
+            h3.text-heading-5.mt-30 Directed and Independent Study Fees
+            p.text-body-text.mt-20
+              | An additional one-half the tuition charge for the regular course.
+            .table-responsive.mt-20
+              table.table.table-striped
+                tbody
+                  tr
+                    td $50.00
+                    td Senior Ministry Integration (per credit hour in addition to tuition)
+                  tr
+                    td $50.00
+                    td Supervised Ministry Experience (per credit hour in addition to tuition)
+                  tr
+                    td $100.00
+                    td Graduation Fee (see Academic Policy)
+            h3.text-heading-5.mt-30 Posting and Evaluation Fees
+            .table-responsive.mt-20
+              table.table.table-striped
+                tbody
+                  tr
+                    td $20.00
+                    td per credit hour for examination, military, and Alliance portfolio credit (No fee for official military transcripts.)
+                  tr
+                    td $75.00
+                    td per credit hour for PLA Portfolio Posting Fee (Prior Learning Assessment)
+                  tr
+                    td $10.00
+                    td per credit hour for evaluation of research paper for transfer of English Composition II
+                  tr
+                    td $8.00
+                    td Transcripts
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#refund-policy.text-heading-4 Refund Policy
+            p.text-body-text.mt-30
+              | Nazarene Bible College refunds tuition according to the following withdrawal schedule:
+            .table-responsive.mt-30
+              table.table.table-striped
+                thead
+                  tr
+                    th(scope='col') Refund
+                    th(scope='col') Online
+                tbody
+                  tr
+                    td 100%
+                    td Days 1–3
+                  tr
+                    td 75%
+                    td Days 4–6
+                  tr
+                    td 50%
+                    td Days 7–9
+                  tr
+                    td 25%
+                    td Days 10–12
+                  tr
+                    td None
+                    td Days 13–21
+            p.text-body-text.mt-30
+              | All monies due to a student shall be refunded within 60 days from the last day of attendance or within 60 days from the receipt of payment if the date of receipt of payment is after the student&apos;s last day of attendance. Fees and other charges are non-refundable.
+            p.text-body-text.mt-20
+              strong MPP/PPM:
+              |  Due to the special pricing for MPP/PPM courses, no refunds of tuition or fees are provided for withdrawals.
+            p.text-body-text.mt-20
+              strong GEN1001 or MPP1000 Introduction to Online Learning:
+              |  A student enrolled in either of the two-week prerequisite orientation classes may drop the course during the first five days (until 5 p.m., CST, of day 5) and receive a full refund. However, there is no refund or withdrawal after the fifth day.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#return-of-title-iv.text-heading-4 Return of Title IV Funds
+            p.text-body-text.mt-30
+              | Nazarene Bible College follows the federal return of Title IV funds provisions for federal aid recipients. Under these provisions, when a recipient of federal Student Financial Aid (SFA) funds withdraws from the college, the college must determine the amount of SFA funds earned as of the student&apos;s official withdrawal date. If the day the student withdrew occurs after the student has completed more than 60% of the payment period or period of enrollment, the percentage earned is 100%.
+            p.text-body-text.mt-20
+              | If the total amount of funds earned is less than the amount disbursed, non-need based aid will be returned to the appropriate SFA programs prior to need based aid within 45 days of the date that the school determined that the student withdrew.
+            p.text-body-text.mt-20
+              | If the total amount of SFA funds earned is greater than the total amount of funds disbursed, the difference between these amounts may be treated as a post-withdrawal disbursement. If eligible, a post-withdrawal disbursement of grant funds will be made within 45 days of the date the school determined that the student withdrew. Any offer of a post-withdrawal disbursement of student loan funds will be made within 30 days of the date the school determined that the student withdrew, with an additional 14-day timeframe for the student to accept or decline all or part of the loan offer.
+            p.text-body-text.mt-20
+              | If a student withdraws from any or all classes in a term or drops below half-time status, the business office will determine, based on refund policies, if any refund of tuition is due on the student&apos;s account. At that time, it will be determined if any portion of Title IV funds must be returned to the federal aid programs. The student is responsible for paying any balance due resulting from the return of funds to the Title IV Federal Aid programs upon their withdrawal. If a credit balance exists on the student&apos;s account at the time of withdrawal, the school will disburse the credit balance to the student after 14 calendar days of the return calculation. If a credit balance occurs after the return calculation, the school will disburse the credit balance to the student within 14 calendar days of the return calculation.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#unofficial-withdrawal.text-heading-4 Unofficial Withdrawal
+            p.text-body-text.mt-30
+              | Students who leave school and cease to attend all courses within a term, without completing the official withdrawal process, are also subject to a return of funds calculation. In this case, the financial aid office will use the last day of class attendance recorded in the school database to calculate the amount of SFA funds earned.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#forfeiture.text-heading-4 Forfeiture
+            p.text-body-text.mt-30
+              | A student placed on probation because of disciplinary or academic reasons may forfeit all rights to financial assistance. The suspension process includes three steps: warning, suspension with opportunity for appeal, and removal from aid eligibility. The entirety of this process can be found in the Satisfactory Academic Progress policy on the 
+              a(href='/financialaid/') Financial Aid
+              |  page. During any given term, if a student falls below four credit hours because of a dropped or withdrawn course, institutional scholarship aid is also forfeited at the rate of refund listed in the Policy on Refunds section. Graduating seniors may be given special consideration.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#billing-information.text-heading-4 Billing Information
+            p.text-body-text.mt-30
+              | Your student bill can be viewed and paid online through the student portal at 
+              a(href='https://portal.nbc.edu', target='_blank', rel='noopener noreferrer') https://portal.nbc.edu
+              | . For specific questions about your student account, contact the Business Office.
+
+  section.section-box.mt-50.mb-50
+    .container.bg-9.p-65.rounded-4
+      +ContentLeftImageRight('/assets/imgs/stock/NBC working web 4.png')
+        .content-detail
+          h2#net-price-calculator.text-heading-4 Net Price Calculator
+          p.text-body-text.mt-30
+            | In accordance with new government regulations for higher education institutions, Nazarene Bible College has provided the following tool to help students estimate their educational costs. These numbers are subject to change from year to year.
+          .mt-30
+            a.btn.btn-secondary.shape-square(href='#', target='_blank', rel='noopener noreferrer') Net Price Calculator
+
+  section.section-box.mt-50.mb-100
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#cost-of-attendance.text-heading-4 Cost of Attendance
+            p.text-body-text.mt-30
+              | The U.S. Department of Education defines Cost of Attendance as the amount it will cost a student to go to school. Cost of Attendance is made up of both direct and indirect costs and varies across institutions.
+            p.text-body-text.mt-20
+              | Provided below is an example of the Cost of Attendance for an independent student enrolled in 6 credits in a given term (three-quarter time). Indirect Costs reflect a 3 month (length of term) budget.
+            h3.text-heading-5.mt-40 Direct Costs
+            .table-responsive.mt-20
+              table.table.table-striped
+                tbody
+                  tr
+                    td Tuition
+                    td $2,388.00
+                  tr
+                    td Library and Technology Fees
+                    td $150.00
+                  tr
+                    td Books, materials, supplies, equipment
+                    td $330.00
+            h3.text-heading-5.mt-40 Indirect Costs
+            .table-responsive.mt-20
+              table.table.table-striped
+                tbody
+                  tr
+                    td Housing and Food
+                    td $3,150.00
+                  tr
+                    td Transportation
+                    td $450.00
+                  tr
+                    td Loan Fees
+                    td $32.00
+                  tr
+                    td Personal/Miscellaneous Expenses
+                    td $675.00
+            p.text-body-text.mt-30
+              | The initial Financial Aid offer from Nazarene Bible College is intended to cover only Direct Costs as demonstrated in the example above. However, a student may inquire about additional aid eligibility by submitting a request through the Financial Aid Office by email or written, signed statement.
