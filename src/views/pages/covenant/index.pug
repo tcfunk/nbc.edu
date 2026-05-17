@@ -1,8 +1,8 @@
 extends ../../layouts/master.pug
 
 block title
-  title NBC Covenant Partner Scholarship Initiative | Nazarene Bible College
-  meta(name='description', content='Learn about Covenant Partner district scholarships for NBC degree and certificate programs, eligibility, benefits, and how these scholarships are funded.')
+  title NBC Covenant Partner Scholarship | Ministry Tuition Assistance
+  meta(name='description', content='Students from Covenant Partner districts may qualify for up to full tuition for Spanish programs or half tuition for English programs at NBC.')
 
 block header
   include ../../components/header.pug
@@ -34,6 +34,8 @@ block content
             .card-grid-style-2.card-square.mt-40.mb-30
               p.text-body-text.color-gray-600.text-comment
                 | &quot;This is a life-changing blessing for me and the churches I will someday serve.&quot;
+                br
+                strong.text-bold.text-heading-5 [REPLACE WITH STUDENT TESTIMONY]
               .box-img-user
                 .img-user.img-user-round
                   img(src='/assets/imgs/user-stories/photo-10105-100x100.jpg', alt='NBC student')
@@ -73,6 +75,8 @@ block content
             .card-grid-style-2.card-square.mt-40.mb-30
               p.text-body-text.color-gray-600.text-comment
                 | &quot;When our churches invest faithfully in the NBC Annual Offering, we are not only supporting the college—we are opening doors for men and women called to ministry. The Covenant Partner Scholarship strengthens our district and our future pastors.&quot;
+                br
+                strong.text-bold.text-heading-5 [REPLACE WITH CHURCH LEADER TESTIMONY]
               .box-img-user
                 .img-user.img-user-round
                   img(src='/assets/imgs/user-stories/photo-10106-100x100.jpg', alt='Church leader')
@@ -116,3 +120,7 @@ block content
               li
                 | Be prepared to supplement church giving as necessary from individual donors or district funds in order to meet the district&rsquo;s annual offering goal.
           .col-lg-2
+          .col-lg-2
+          .col-lg-4
+            .text-center.mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/covenant/partners/', target='_blank') View Covenant Partner Districts
