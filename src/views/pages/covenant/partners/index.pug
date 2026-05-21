@@ -1,8 +1,8 @@
 extends ../../../layouts/master.pug
 
 block title
-  title NBC Covenant Partners| Ministry Tuition Assistance
-  meta(name='description', content='List of Covenant Partner districts at NBC.')
+  title NBC Covenant Partners | Ministry Tuition Assistance
+  meta(name='description', content='View current NBC Covenant Partner districts and learn how these partnerships support ministry tuition assistance.')
 
 block header
   include ../../../components/header.pug
@@ -14,81 +14,112 @@ block content
         .row
           .col-lg-12.text-center
             h1.text-display-2.color-gray-900 NBC Covenant Partners
+            p.text-body-lead-large.color-gray-600.mt-30
+              | Districts partnering with NBC to make ministry preparation more affordable.
 
   section.section-box.mt-60.mb-50
     .container
       .content-detail
         .row
-          .col-lg-12
-            h2.text-heading-4.mt-50 Covenant Partner Districts
+          .col-lg-2
+          .col-lg-8
+            h2.text-heading-4 Covenant Partner Districts
             p.text-body-text.mt-30
-              | NBC has covenant partnership agreements with the following districts:
-            table.table-bordered.table-striped.table-hover.mt-20
-              thead
-                tr
-                  th District
-                  th 2025-2026
-              tbody
-                tr
-                  td Alabama North
-                  td ✅
-                tr
-                  td Chicago Central
-                  td ✅
-                tr
-                  td Colorado
-                  td ✅
-                tr
-                  td Eastern Kentucky
-                  td ✅
-                tr
-                  td Illinois
-                  td ✅
-                tr
-                  td Indianapolis
-                  td ✅
-                tr
-                  td Iowa
-                  td ✅
-                tr
-                  td Kentucky
-                  td ✅
-                tr
-                  td Maine
-                  td ✅
-                tr
-                  td Nebraska
-                  td ✅
-                tr
-                  td North Arkansas
-                  td ✅
-                tr
-                  td Northeastern Indiana
-                  td ✅
-                tr
-                  td Northern Michigan
-                  td ✅
-                tr
-                  td Northwestern Illinois
-                  td ✅
-                tr
-                  td Prairie Lakes
-                  td ✅
-                tr
-                  td South Central Ohio
-                  td ✅
-                tr
-                  td Southwest Indiana
-                  td ✅
-                tr
-                  td Southwest Native American
-                  td ✅
-                tr
-                  td Virginia
-                  td ✅
-                tr
-                  td West Virginia North
-                  td ✅
-                tr
-                  td Wisconsin
-                  td ✅
+              | NBC has covenant partnership agreements with the following districts for the 2025-2026 academic year. Students from churches in these districts may be eligible for Covenant Partner Scholarship support.
+
+            .row.mt-40
+              .col-lg-4.col-md-6.col-sm-12
+                .card-grid-style-3.bd-bg-6.pb-40.mb-30
+                  h3.text-heading-5 21 Partner Districts
+                  p.text-body-text.color-gray-600.mt-15
+                    | Districts across the United States are participating in the current academic year.
+              .col-lg-4.col-md-6.col-sm-12
+                .card-grid-style-3.bd-bg-9.pb-40.mb-30
+                  h3.text-heading-5 Tuition Support
+                  p.text-body-text.color-gray-600.mt-15
+                    | Eligible students may receive scholarship help for NBC degree and certificate programs.
+              .col-lg-4.col-md-6.col-sm-12
+                .card-grid-style-3.bd-bg-10.pb-40.mb-30
+                  h3.text-heading-5 Shared Mission
+                  p.text-body-text.color-gray-600.mt-15
+                    | Covenant partnerships connect local church giving with preparation for future ministry.
+
+            .card-grid-style-2.card-square.mt-20
+              .d-flex.justify-content-between.align-items-center.flex-wrap
+                h3.text-heading-5.mb-10 2025-2026 Partner List
+                p.text-body-small.color-gray-600.mb-10
+                  | Current as listed by NBC
+              .table-responsive.mt-20
+                table.table.table-striped
+                  thead
+                    tr
+                      th(scope='col') District
+                      th(scope='col') Status
+                  tbody
+                    tr
+                      td Alabama North
+                      td Confirmed
+                    tr
+                      td Chicago Central
+                      td Confirmed
+                    tr
+                      td Colorado
+                      td Confirmed
+                    tr
+                      td Eastern Kentucky
+                      td Confirmed
+                    tr
+                      td Illinois
+                      td Confirmed
+                    tr
+                      td Indianapolis
+                      td Confirmed
+                    tr
+                      td Iowa
+                      td Confirmed
+                    tr
+                      td Kentucky
+                      td Confirmed
+                    tr
+                      td Maine
+                      td Confirmed
+                    tr
+                      td Nebraska
+                      td Confirmed
+                    tr
+                      td North Arkansas
+                      td Confirmed
+                    tr
+                      td Northeastern Indiana
+                      td Confirmed
+                    tr
+                      td Northern Michigan
+                      td Confirmed
+                    tr
+                      td Northwestern Illinois
+                      td Confirmed
+                    tr
+                      td Prairie Lakes
+                      td Confirmed
+                    tr
+                      td South Central Ohio
+                      td Confirmed
+                    tr
+                      td Southwest Indiana
+                      td Confirmed
+                    tr
+                      td Southwest Native American
+                      td Confirmed
+                    tr
+                      td Virginia
+                      td Confirmed
+                    tr
+                      td West Virginia North
+                      td Confirmed
+                    tr
+                      td Wisconsin
+                      td Confirmed
+
+            .text-center.mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/covenant/') Learn About the Scholarship
+          .col-lg-2
