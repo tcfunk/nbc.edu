@@ -1,0 +1,81 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Counseling for Christian Ministries | B.A. in Ministry at NBC
+  meta(name='description', content='Develop practical counseling skills grounded in faith through NBC’s Bachelor of Arts in Ministry in Counseling for Christian Ministries.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/programs/') Programs
+            li
+              a(href='/programs/bachelor-of-arts-in-ministry/') B.A. in Ministry
+            li
+              span Counseling for Christian Ministries
+
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row.align-items-center
+          .col-lg-6
+            span.tag-1.bg-6.color-green-900 Bachelor of Arts in Ministry Major
+            h1.text-display-3.mt-30 Counseling for Christian Ministries
+            p.text-body-lead-large.color-gray-600.mt-30
+              | Combine the study of psychology, human relationships, and the Bible in a dynamic degree program designed to help you become a more effective leader.
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/programs/bachelor-of-arts-in-ministry/') Learn More
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='/apply/') Apply
+          .col-lg-6.d-none.d-lg-block
+            .banner-imgs
+              img.img-responsive(src='/assets/imgs/stock/AdobeStock_195492859.jpeg', alt='Students in conversation')
+
+  section.section-box.mt-60.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          .content-detail
+            p.text-body-lead-large.color-gray-600
+              | As a leader in the helping professions, you will find what you need to grow at Nazarene Bible College.
+            p.text-body-text.mt-30
+              | The Bachelor of Arts in Ministry (B.A.Min.) degree program with a Counseling for Christian Ministries major presents counseling theory and principles in practical, useful ways. Those in pastoral ministries, parachurch organizations, and occupations involving human management will benefit from this track designed specifically for professionals who aren’t professional counselors.
+        .col-lg-2
+
+  section.section-box.mt-70.mb-50
+    .container
+      .row.align-items-center
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_116912183.jpeg', alt='Leader listening in conversation')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-5.color-green-900 Built for Ministry Leadership
+          h2.text-heading-1.mt-30 Practical counseling preparation for real relationships
+          p.text-body-text.color-gray-600.mt-30
+            | Students work together in a cohort model in this all online program, challenging one another to stretch and grow.
+          p.text-body-text.color-gray-600.mt-20
+            | When they come together for the two required in-person weekend intensive courses, they experience many of the interpersonal dynamics they have been studying.
+
+  section.section-box.mt-50.mb-100
+    .container
+      .row
+        .col-lg-12
+          p.text-body-lead-large.color-gray-600
+            | Graduates continue to say that they are more prepared to relate with people in their congregations, workplaces, and communities because of what they learned during their completion of this program.
+          .line-bd-green.mt-30.mb-30
+      .row
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Study counseling theory through a biblical and ministry-centered lens.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Learn with a cohort that challenges you to stretch and grow.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Practice deeper care for people in churches, workplaces, and communities.
+
+  +BreadcrumbSection('Is this the right time for you to grow in empathy and effectiveness as a leader?', 'NBC is waiting to welcome you.', [{ href: '/programs/bachelor-of-arts-in-ministry/', text: 'Learn More', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])

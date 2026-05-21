@@ -215,3 +215,17 @@ mixin ProgramSection(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Bran
             a.btn.btn-default.btn-brand.icon-arrow-right.text-body-text(href="/apply/") Apply
         .col-lg-7.col-md-5.position-relative
             img.img-responsive.img-program(src=img, alt=name)
+           
+         
+mixin BreadcrumbSection(title, subtitle, buttonData = [{ href: '/programs/', text: 'Explore Programs', class: 'btn-square' }])
+  section.section-box
+    .banner-hero.banner-breadcrums
+      .container
+        .row
+          .col-lg-7
+            h1.text-heading-4.color-gray-900.mb-20= title
+            p.text-body-text.color-gray-500= subtitle
+            if buttonData
+                .col-lg-7.d-flex.justify-content-between.align-items-center.mt-40
+                    each button in buttonData
+                        a.text-heading-6.btn(class=button.class, href=button.href)= button.text
