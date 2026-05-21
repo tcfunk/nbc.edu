@@ -122,21 +122,6 @@ mixin PortfolioCard-2(img='assets/imgs/page/portfolio/portfolio-1.png', name='Br
                     a(href=link)
                         h3.text-body-lead.color-gray-900= name
 
-mixin ProgramCard(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Branding', name='Brand Identity for Global JSC', subtitle='August 25, 2025', cardHref="page-portfolio-single.html")
-    .col-lg-6.col-md-6.col-sm-6.col-12.mb-24
-        .card
-            .row.g-0
-                .col-sm-5(style='background-image: url(' + img + '); background-size: cover; background-position: center; min-height: 250px;')
-                .col-sm-7.position-relative
-                    .card-body.h-100.d-flex.flex-column.justify-content-between
-                        .p-2
-                            span.text-body-small.color-gray-500.font-bold= cat
-                            h5.card-title.mt-10= name
-                            p.card-text.mt-10= subtitle
-                        .p-2
-                            a.btn.btn-sm.btn-black(href=cardHref) Learn More
-                            a.hover-up.ml-10.btn.btn-sm.btn-brand(href="/apply/") Apply Now
-
 mixin CourseTableRow(courseCode, courseDescription, courseHours)
     tr
         td= courseCode
@@ -193,3 +178,37 @@ mixin HomeSectionNavGridItem-2(title, image, position='')
             img(src=image, alt=title)                    
         .grid-nav-content.no-background
             .heading= title
+
+mixin ProgramCard(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Branding', name='Brand Identity for Global JSC', subtitle='August 25, 2025', cardHref="page-portfolio-single.html")
+    .col-lg-6.col-md-6.col-sm-6.col-12.mb-24
+        .card
+            .row.g-0
+                .col-sm-5(style='background-image: url(' + img + '); background-size: cover; background-position: center; min-height: 250px;')
+                .col-sm-7.position-relative
+                    .card-body.h-100.d-flex.flex-column.justify-content-between
+                        .p-2
+                            span.text-body-small.color-gray-500.font-bold= cat
+                            h5.card-title.mt-10= name
+                            p.card-text.mt-10= subtitle
+                            if block
+                                block
+                        .p-2
+                            a.btn.btn-sm.btn-black(href=cardHref) Learn More
+                            a.hover-up.ml-10.btn.btn-sm.btn-brand(href="/apply/") Apply Now
+
+mixin ProgramSection(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Branding', name='Brand Identity for Global JSC', subtitle='August 25, 2025', cardHref="page-portfolio-single.html", containerExtraClass='bg-orange-100')
+  section.section-box.mtb-50
+    .container.p-50.border-radius-20(class=containerExtraClass)
+      .row
+        .col-lg-5.col-md-7.mb-30
+          span.tag-1.bg-gray-100.color-gray-900= cat
+          h3.text-heading-1.mt-30= name
+          p.text-body-lead-large.color-gray-600.mt-30= subtitle
+          if block
+            .mt-30
+                block
+          .mt-40
+            a.btn.btn-default.btn-white.icon-arrow-right.text-body-text.mr-30(href=cardHref) Learn More
+            a.btn.btn-default.btn-brand.icon-arrow-right.text-body-text(href="/apply/") Apply
+        .col-lg-7.col-md-5
+            img.imge-responsive.img-newsletter(src=img, alt=name)
