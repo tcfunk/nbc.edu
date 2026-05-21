@@ -1,5 +1,6 @@
 // "use strict";
 const data = require("./src/views/data/data.json");
+const path = require("path");
 
 /** Declare module */
 const { src, dest, parallel, watch, series } = require("gulp"),
@@ -18,6 +19,20 @@ const FilesPath = {
 };
 
 const { sassFiles, jsFiles, htmlFiles } = FilesPath;
+const pagesBase = "src/views/pages";
+
+function getPageTemplatePath(filePath) {
+    if (typeof filePath !== "string") {
+        return null;
+    }
+
+    const normalizedPath = path.isAbsolute(filePath)
+        ? path.relative(process.cwd(), filePath)
+        : filePath;
+    const relativePath = normalizedPath.replace(/\\/g, "/");
+
+    return relativePath.startsWith(`${pagesBase}/`) ? relativePath : null;
+}
 
 /** Sass Task */
 function sassTask() {
@@ -37,8 +52,13 @@ function jsTask() {
 }
 
 /** PUG Task */
-function pugTask() {
-    return src(htmlFiles)
+function pugTask(filePath) {
+    const pageTemplatePath = getPageTemplatePath(filePath);
+    const sourceFiles = pageTemplatePath
+        ? pageTemplatePath
+        : htmlFiles;
+
+    return src(sourceFiles, { base: pagesBase })
         // .pipe(cache("pug"))
         .pipe(pug({
             pretty: true, doctype: "HTML",
@@ -67,15 +87,17 @@ function browsersyncServe(cb) {
 
 /** Watch Task */
 function watchTask() {
+    watch("src/assets/scss/**/*.scss", series(assetsTask, sassTask));
     watch([
-            "src/assets/scss/**/*.scss",
-            "src/assets/imgs/*.+(png|jpeg|jpg|gif|svg)",
-            "src/assets/imgs/*/*.+(png|jpeg|jpg|gif|svg)",
-            "src/assets/js/**/*.js",
-            "src/assets/fonts/**/*.+(eot|woff|woff2)",
-            "src/views/**/*.pug"
-        ],
-        series(assetsTask, sassTask, jsTask, pugTask));
+        "src/assets/imgs/*.+(png|jpeg|jpg|gif|svg)",
+        "src/assets/imgs/*/*.+(png|jpeg|jpg|gif|svg)",
+        "src/assets/fonts/**/*.+(eot|woff|woff2)"
+    ], assetsTask);
+    watch("src/assets/js/**/*.js", series(assetsTask, jsTask));
+
+    const pugWatcher = watch("src/views/**/*.pug");
+    pugWatcher.on("add", pugTask);
+    pugWatcher.on("change", pugTask);
 }
 
 exports.default = series(assetsTask, parallel(pugTask, sassTask, jsTask));
