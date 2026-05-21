@@ -1,3 +1,58 @@
+.program-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+}
+.box-program {
+    border-radius: 18px;
+    padding: 52px 74px;
+
+    .img-program
+    {
+        box-shadow: $box-shadow-3;
+        border-radius: 16px;
+        max-width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        display: inline-block;
+        z-index: 1;
+
+        @media (max-width: 768px) {
+            display: none;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: start;
+        
+        a {
+            margin-right: 30px;
+        }
+        @media (max-width: 768px) {
+            justify-content: space-between;
+
+            a {
+                margin-right: 0;
+            }
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
 .box-newsletter {
     border-radius: 18px;
     padding: 52px 74px;

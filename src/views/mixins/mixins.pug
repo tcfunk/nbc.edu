@@ -197,18 +197,21 @@ mixin ProgramCard(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Brandin
                             a.hover-up.ml-10.btn.btn-sm.btn-brand(href="/apply/") Apply Now
 
 mixin ProgramSection(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Branding', name='Brand Identity for Global JSC', subtitle='August 25, 2025', cardHref="page-portfolio-single.html", containerExtraClass='bg-orange-100')
-  section.section-box.mtb-50
-    .container.p-50.border-radius-20(class=containerExtraClass)
+  section.program-section
+    .container.box-program(class=containerExtraClass)
       .row
         .col-lg-5.col-md-7.mb-30
-          span.tag-1.bg-gray-100.color-gray-900= cat
+          if containerExtraClass === 'bg-2'
+            .tag-1.bg-brand-light-blue.color-white= cat
+          else
+            .tag-1.bg-gray-100.color-gray-900= cat
           h3.text-heading-1.mt-30= name
           p.text-body-lead-large.color-gray-600.mt-30= subtitle
           if block
             .mt-30
                 block
-          .mt-40
-            a.btn.btn-default.btn-white.icon-arrow-right.text-body-text.mr-30(href=cardHref) Learn More
+          .mt-40.actions
+            a.btn.btn-default.btn-white.icon-arrow-right.text-body-text(href=cardHref) Learn More
             a.btn.btn-default.btn-brand.icon-arrow-right.text-body-text(href="/apply/") Apply
-        .col-lg-7.col-md-5
-            img.imge-responsive.img-newsletter(src=img, alt=name)
+        .col-lg-7.col-md-5.position-relative
+            img.img-responsive.img-program(src=img, alt=name)
