@@ -1,0 +1,102 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Online Education | Faith-Based Online Learning at NBC
+  meta(name='description', content='Experience accredited, faith-based online education at Nazarene Bible College, designed for adult learners worldwide.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/delivery/') Course Delivery
+            li
+              span Online Education
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_233516145.jpeg); background-size: cover; background-position: center bottom;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Online Education
+
+  section.section-box.mt-60.mb-50
+    .container
+      .content-detail
+        +ContentLeftImageRight('/assets/imgs/stock/AdobeStock_968974436_vertical.jpeg')
+          span.text-body-capitalized.color-brand-blue.text-uppercase NBC Online
+          h2.text-heading-2.mt-10
+            | A vibrant academic experience, delivered directly to you
+          p.text-body-text.mt-30
+            | Nazarene Bible College was the first Nazarene institution of higher education to offer electronically mediated course delivery and has been offering online education since 1998.
+          p.text-body-text.mt-20
+            | NBC continues to lead the way in offering courses available to anyone-anytime-anywhere in the world.
+
+  section.section-box.mt-30.mb-80
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            .card-grid-style-2.card-square.mb-30
+              h2.text-heading-4 Credentialed & Convenient
+              p.text-body-text.mt-30
+                | All the online classes are taught by faculty and adjunct faculty who possess both the appropriate academic credentials and the practical experience needed to provide the very best in ministerial preparation.
+              p.text-body-text.mt-20
+                | While the national average of those who begin an online class and finish it is only 47%, Nazarene Bible College has maintained a consistent 94% completion rate average since 1998.
+              p.text-body-text.mt-20
+                | Students may log in to classes, view materials and complete coursework 24/7 - totally convenient for our busy, adult learner population.
+              .mt-30
+                a.btn.btn-black.shape-square.icon-arrow-right-white(href='https://nbc.edu/online/good-practices/', target='_blank', rel='noopener') Learn more about our high standards
+
+  section.section-box.mt-40.mb-50
+    .container
+      .row
+        .col-lg-4.col-md-6.col-sm-12
+          .card-grid-style-3.bd-bg-6.pb-40.mb-30
+            h3.text-heading-5 Since 1998
+            p.text-body-text.color-gray-600.mt-15
+              | NBC has decades of experience in online course delivery for adult learners.
+        .col-lg-4.col-md-6.col-sm-12
+          .card-grid-style-3.bd-bg-9.pb-40.mb-30
+            h3.text-heading-5 94% Completion
+            p.text-body-text.color-gray-600.mt-15
+              | NBC has maintained a consistent 94% completion rate average for online classes.
+        .col-lg-4.col-md-6.col-sm-12
+          .card-grid-style-3.bd-bg-10.pb-40.mb-30
+            h3.text-heading-5 24/7 Access
+            p.text-body-text.color-gray-600.mt-15
+              | Students can log in, view materials, and complete coursework on a schedule that fits busy adult life.
+
+  section.section-box.mt-30.mb-80
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            .card-grid-style-2.card-square
+              h2.text-heading-4 Connected Community
+              p.text-body-text.mt-30
+                | NBC has purposefully designed our online courses to foster a high sense of community.
+              p.text-body-text.mt-20
+                | The majority of our students fall between 30-60 years old. Over 90% of our students are affiliated with the Church of the Nazarene, with an additional 11 represented denominations. Geographically, our students come from 45 states and six countries outside the United States.
+              p.text-body-text.mt-20
+                | Classes are highly interactive with regular communication between the students, and between the instructor and students. The learning process is enhanced by the contributions made by the entire learning community.
+          .col-lg-2
+
+  section.section-box
+    .banner-hero.banner-breadcrums
+      .container
+        .row
+          .col-lg-7
+            h1.text-heading-4.color-gray-900.mb-20 Ready to get started?
+            p.text-body-text.color-gray-500 Explore our programs and find the one that's right for you.
+          .col-lg-5.d-flex.justify-content-evenly.align-items-center
+            a.text-heading-6.btn.btn-square(href='/programs/') Explore Programs
