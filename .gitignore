@@ -3,3 +3,4 @@ node_modules
 dist
 .vs-code
 .env.local
+.idea

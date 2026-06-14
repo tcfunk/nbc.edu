@@ -13,20 +13,11 @@ block content
       .container.text-center
         .row
           .col-lg-12
-            h1.text-display-3.color-gray-900.mb-20 News & Updates
-            p.text-heading-6.color-gray-600.mb-20
-              | Nazarene Bible College News & Ministry Updates
+            h1.text-display-3.color-gray-900.mb-20 Nazarene Bible College News & Ministry Updates
   section.section-box
     .container.mt-130
       p.text-body-lead.color-gray-600.mb-20
         | Nazarene Bible College is committed to preparing adults for ministry, and our news updates highlight the stories, people, and events shaping our community. Explore student testimonies, faculty insights, ministry reflections, and important announcements that support your journey toward answering God’s call.
-    .container.mt-130
-      .row
-        .col-lg-1.col-sm-1.col-12
-        .col-lg-10.col-sm-10.col-12.text-center
-          h2.text-heading-1.color-gray-900.mb-10 Featured Articles
-          p.text-body-lead-large.color-gray-600.mt-20 From Our Blog And Event Fanpage
-        .col-lg-1.col-sm-1.col-12
     .container.mt-90
       .row
         // loop through the news items and display them in a card-grid-style-4
@@ -34,128 +25,52 @@ block content
           each item in nbcData.news.sort((a, b) => new Date(b.date) - new Date(a.date))
             .card-grid-style-4
               .grid-4-img.mb-20
-                a(href='blog-single.html')
-              a.text-heading-4(href='blog-single.html')= item.title
+                a(href='/news/sample-article/')
+              a.text-heading-4(href='/news/sample-article/')= item.title
               p.text-body-text.color-gray-500= item.excerpt
               p.text-body-small.color-gray-500.mt-20= new Date(item.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+          .paginations.mt-100
+            ul.pager
+              li
+                a.prev-page(href='#')
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li
+                a.page-dotted(href='#')
+              li
+                a.next-page(href='#')
 
         // news sidebar
         .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-list-style-1
-            a.text-heading-6(href='blog-single.html') Design Studios That Everyone Should Know About?
-            .blog-img-user
-              .img-user.img-user-round
-                img(src='assets/imgs/page/blog/2/user-3.png', alt='Agon')
-              h4.text-body-lead.color-gray-500 Jane Cooper
-              p.text-body-small.color-gray-500 August 25, 2025
-            .style-1-img.color-bg-10
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/blog/2/img-news-1.png', alt='Agon')
-          .card-list-style-1
-            a.text-heading-6(href='blog-single.html') Design Studios That Everyone Should Know About?
-            .blog-img-user
-              .img-user.img-user-round
-                img(src='assets/imgs/page/blog/2/user-4.png', alt='Agon')
-              h4.text-body-lead.color-gray-500 Wade Warren
-              p.text-body-small.color-gray-500 August 25, 2025
-            .style-1-img.color-bg-2
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/blog/2/img-news-1.png', alt='Agon')
-          .card-list-style-1
-            a.text-heading-6(href='blog-single.html') Design Studios That Everyone Should Know About?
-            .blog-img-user
-              .img-user.img-user-round
-                img(src='assets/imgs/page/blog/2/user-5.png', alt='Agon')
-              h4.text-body-lead.color-gray-500 Jenny Wilson
-              p.text-body-small.color-gray-500 August 25, 2025
-            .style-1-img.color-bg-5
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/blog/2/img-news-1.png', alt='Agon')
-          .card-list-style-1
-            a.text-heading-6(href='blog-single.html') Design Studios That Everyone Should Know About?
-            .blog-img-user
-              .img-user.img-user-round
-                img(src='assets/imgs/page/blog/2/user-6.png', alt='Agon')
-              h4.text-body-lead.color-gray-500 Robert Fox
-              p.text-body-small.color-gray-500 August 25, 2025
-            .style-1-img.color-bg-9
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/blog/2/img-news-1.png', alt='Agon')
-  section.section-box
-    .container.mt-100
-      .row
-        .col-lg-1.col-sm-1.col-12
-        .col-lg-10.col-sm-10.col-12.text-center
-          h2.text-heading-1.color-gray-900.mb-10 Latest News
-          p.text-body-lead-large.color-gray-600.mt-20 From Our blog and Event fanpage
-        .col-lg-1.col-sm-1.col-12
-    .container.mt-90
-      .row
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Company
-            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
-            .grid-4-img.color-bg-9
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-1.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Marketing Event
-            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
-            .grid-4-img.color-bg-6
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-2.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Customer Services
-            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
-            .grid-4-img.color-bg-4
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-3.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Company
-            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
-            .grid-4-img.color-bg-2
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-4.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Marketing Event
-            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
-            .grid-4-img.color-bg-8
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-5.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Customer Services
-            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
-            .grid-4-img.color-bg-1
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-6.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Company
-            a.text-heading-4(href='blog-single.html') We can blend colors multiple ways, the most common
-            .grid-4-img.color-bg-2
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-7.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Marketing Event
-            a.text-heading-4(href='blog-single.html') How To Blow Through Capital At An Incredible Rate
-            .grid-4-img.color-bg-8
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-8.png', alt='Agon')
-        .col-lg-4.col-sm-12.pr-30.mb-50
-          .card-grid-style-4
-            span.tag-dot Customer Services
-            a.text-heading-4(href='blog-single.html') Design Studios That Everyone Should Know About?
-            .grid-4-img.color-bg-1
-              a(href='blog-single.html')
-                img(src='assets/imgs/page/homepage1/img-news-9.png', alt='Agon')
-      .mt-20.mb-30.text-center
-        a.btn.btn-black.icon-arrow-right-white(href='blog-1.html') Load more posts
+          h2.text-heading-3.color-gray-900.mb-30.border-bottom.border-3.pb-5.border-primary-subtle Featured Ministry Stories
+          each item in nbcData.featuredNews.sort((a, b) => new Date(b.date) - new Date(a.date))
+            .card-list-style-1
+              a.text-heading-6(href='/news/sample-article/')= item.title
+              p.text-body-small.color-gray-500.mb-40= new Date(item.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+              .style-1-img.color-bg-8
+                a(href='/news/sample-article/')
+                  img(src='../../assets/imgs/page/blog/2/img-news-1.png', alt='Agon')
 
+          h2.text-heading-3.color-gray-900.mt-100.mb-30.border-bottom.border-3.border-danger-subtle.pb-5 Campus & Online Program Announcements
+          each item in nbcData.featuredNews.sort((a, b) => new Date(b.date) - new Date(a.date))
+            .card-list-style-1
+              a.text-heading-6(href='/news/sample-article/')= item.title
+              p.text-body-small.color-gray-500.mb-40= new Date(item.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+              .style-1-img.color-bg-3
+                a(href='/news/sample-article/')
+                  img(src='../../assets/imgs/page/blog/2/img-news-1.png', alt='Agon')
 
-  include ../../sections/section_newsletter.pug
+          h2.text-heading-3.color-gray-900.mt-100.mb-30.border-bottom.border-3.border-info-subtle.pb-5 Reflections & Devotionals
+          each item in nbcData.featuredNews.sort((a, b) => new Date(b.date) - new Date(a.date))
+            .card-list-style-1
+              a.text-heading-6(href='/news/sample-article/')= item.title
+              p.text-body-small.color-gray-500.mb-40= new Date(item.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+              .style-1-img.color-bg-6
+                a(href='/news/sample-article/')
+                  img(src='../../assets/imgs/page/blog/2/img-news-1.png', alt='Agon')
+
+  include ../../sections/section_newsletter_2.pug
