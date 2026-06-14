@@ -1,0 +1,79 @@
+﻿extends ../../../layouts/master.pug
+
+block title
+    title Annual Offering - NBC
+    meta(name='description', content='Support Nazarene Bible College through the Annual Offering and partner with NBC in preparing men and women for evangelism, discipleship, and ministry.')
+
+block header
+    include ../../../components/header.pug
+
+block content
+    section.section-box
+        .banner-hero.banner-breadcrums
+            .container.text-center
+                h1.text-heading-2.color-gray-1000.mb-20 Annual Offering
+                p.text-body-text.color-gray-500
+                    | Partner with Nazarene Bible College in preparing ministers for faithful service through local churches across the USA and Canada.
+                .mt-40
+                    a.btn.btn-black.icon-arrow-right-white(href='/give/donate/') Donate Online
+                    a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='#donate-by-check') Donate by Check
+
+    section.section-box.mt-70
+        .container
+            .row
+                .col-lg-2.col-sm-1.col-12
+                .col-lg-8.col-sm-10.col-12
+                    p.text-body-lead-large.color-gray-600.mb-30
+                        | Local churches and districts need trustworthy partners in preparing ministers for service. Since 1967, NBC has been preparing men and women for evangelism, discipleship, and ministry through local churches across the USA and Canada.
+
+                    .box-gray-100.bdrd-16.p-40.mb-40
+                        p.text-heading-5.color-gray-900.mb-0
+                            | “You will be enriched in every way so that you can be generous on every occasion, and through us your generosity will result in thanksgiving to God”
+                        p.text-body-text.color-gray-600.mt-10.mb-0
+                            | 2 Corinthians 9:11, NIV
+
+                    p.text-body-text.color-gray-600.mb-20
+                        | And for each of those 58 years, many local churches have faithfully supported NBC.
+
+                    p.text-body-text.color-gray-600.mb-20
+                        | Does your church currently participate in the NBC Annual Offering? If so, thank you! If not, will you consider presenting this giving opportunity to your people?
+
+                    p.text-body-text.color-gray-600.mb-20
+                        | For Nazarene churches, donations made to NBC through the Annual Offering qualify for 10% mission giving for your church. If you are giving on behalf of a local church, please indicate the city and name of your local church when you give.
+
+                    p.text-heading-5.color-gray-900.mb-20
+                        | Every dollar you send to NBC will be used to equip every student you send to NBC.
+
+                    p.text-body-text.color-gray-600.mb-20
+                        | NBC is committed to being a trustworthy partner with you in sharing the Gospel and growing the Church. Together, we are preparing enthusiastic advocates of Nazarene doctrine, ethics, and mission.
+
+                    p.text-body-lead-large.color-gray-900.mb-0
+                        | Start giving today! Then watch for more blessings to flow.
+                .col-lg-2.col-sm-1.col-12
+
+    section.section-box.mt-70.mb-100
+        .container
+            .row
+                .col-lg-6.col-md-12.col-sm-12.d-flex
+                    .card-grid-style-3.card-square.hover-up.mb-30.bd-bg-6.h-100.d-flex.flex-column
+                        h3.text-heading-4.mt-20 Donate Online
+                        p.text-body-text.color-gray-600.mt-15
+                            | Give securely online using Card or PayPal.
+                        .mt-30
+                            a.btn.btn-black.icon-arrow-right-white(href='/give/donate/') Card / PayPal
+
+                .col-lg-6.col-md-12.col-sm-12
+                    .card-grid-style-3.d-block.card-square.hover-up.mb-30.bd-bg-10.h-100#donate-by-check
+                        h3.text-heading-4.mt-20 Donate by Check
+                        p.text-body-text.color-gray-600.mt-15
+                            | Make checks payable to Nazarene Bible College and mail them to:
+                        p.text-body-text.color-gray-900.mt-15.mb-0
+                            | Nazarene Bible College
+                            br
+                            | Attn: Annual Offering
+                            br
+                            | 2020 N Academy Blvd, Suite 316
+                            br
+                            | Colorado Springs, CO 80909
+                        p.text-body-text.color-gray-600.mt-15
+                            | If you are giving on behalf of a local church, please include the city and name of your local church with your gift.
