@@ -1,0 +1,125 @@
+extends ../../layouts/master.pug
+
+block title
+  title Accreditation &amp; Academic Standards | Nazarene Bible College
+  meta(name='description', content='Learn about Nazarene Bible College’s accreditation through the Higher Learning Commission and the Association for Biblical Higher Education. NBC maintains rigorous academic and ministry preparation standards.')
+
+block header
+  include ../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              span Accreditation
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_560002892.jpeg); background-size: cover; background-position: center center;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Accreditation &amp; Academic Recognition
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8.text-center
+          p.text-body-lead-large.color-gray-600
+            | Nazarene Bible College is accredited by the Higher Learning Commission and is a member of the Association for Biblical Higher Education. This accreditation confirms the quality, integrity, and academic standards of our ministry-focused degree programs and ensures students receive a recognized, credible education.
+        .col-lg-2
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#accrediting-bodies.text-heading-4 Our Accrediting Bodies
+
+            h3.text-heading-5.mt-30 Higher Learning Commission (HLC)
+            p.text-body-text.mt-20
+              | Nazarene Bible College has been regionally accredited by the Higher Learning Commission (HLC), a commission of the North Central Association of Colleges and Schools, since 2006. HLC is recognized by the U.S. Department of Education as an institutional accreditor, evaluating the college against rigorous standards for academic quality, institutional integrity, and student outcomes.
+            p.text-body-text.mt-20
+              | Higher Learning Commission
+              br
+              | 230 South LaSalle Street, Suite 7-500
+              br
+              | Chicago, IL 60604
+              br
+              a(href='tel:+18006217440') (800) 621-7440
+              br
+              a(href='https://www.hlcommission.org/', target='_blank', rel='noopener noreferrer') www.hlcommission.org
+
+            h3.text-heading-5.mt-40 Association for Biblical Higher Education (ABHE)
+            p.text-body-text.mt-20
+              | Nazarene Bible College is accredited by the Association for Biblical Higher Education (ABHE) Commission on Accreditation to grant certificates and degrees at the Associate and Baccalaureate levels. ABHE is recognized by the Council for Higher Education Accreditation (CHEA) as a national, faith-related accreditor for institutions offering biblical and ministry-focused higher education.
+            p.text-body-text.mt-20
+              | Association for Biblical Higher Education
+              br
+              | 5850 T.G. Lee Blvd., Ste. 130
+              br
+              | Orlando, FL 32822
+              br
+              a(href='tel:+14072070808') (407) 207-0808
+              br
+              a(href='https://www.abhe.org/', target='_blank', rel='noopener noreferrer') www.abhe.org
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#additional-approvals.text-heading-4 Additional Approvals &amp; Recognition
+            p.text-body-text.mt-20
+              | In addition to its accreditation, Nazarene Bible College holds the following approvals and recognitions:
+            ul.mt-20
+              li Chartered by the State of Colorado (1967) as a non-profit educational institution.
+              li Approved by the Colorado Commission on Higher Education (1969) to grant degrees.
+              li Approved for training veterans and authorized under federal law to enroll non-immigrant alien students.
+              li Approved by the Church of the Nazarene International Board of Education for training leaders toward ordination or commission in the ministries of the Church of the Nazarene.
+              li Approved by the United States Department of Education for awarding federal aid to students (Title IV).
+              li Approved as a member of the Department of Defense Voluntary Education Partnership.
+              li Approved as an institutional participant in the National Council for State Authorization Reciprocity Agreements (NC-SARA).
+            p.text-body-small.color-gray-600.mt-20
+              | Accreditation documents may be reviewed by contacting the president&rsquo;s office.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#state-authorization.text-heading-4 State Authorization
+            p.text-body-text.mt-20
+              | Nazarene Bible College participates in the National Council for State Authorization Reciprocity Agreements (
+              a(href='https://nc-sara.org/', target='_blank', rel='noopener noreferrer') NC-SARA
+              | ) and is authorized to offer online education to students in every state in the U.S.
+            ul.row.mt-20.list-unstyled
+              each state in ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
+                li.col-6.col-sm-4.col-md-3.mb-10
+                  span.text-body-text.color-gray-600= state
+
+  section.section-box.mt-50.mb-100
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#academic-excellence.text-heading-4 Commitment to Academic Excellence
+            p.text-body-text.mt-20
+              | Accreditation is not a one-time achievement but an ongoing commitment. Nazarene Bible College regularly assesses student learning, program effectiveness, and institutional performance to ensure our degree programs remain rigorous, relevant, and aligned with our mission to prepare adults for ministry and Christian leadership.
+            p.text-body-text.mt-20
+              | Faculty and administration participate in continuous program review cycles, evaluating curriculum, learning outcomes, and graduate readiness for ministry service. This ongoing assessment allows NBC to adapt to the evolving needs of the Church of the Nazarene while maintaining the academic standards required by our accrediting bodies.
+            p.text-body-text.mt-20
+              | For questions about NBC&rsquo;s accreditation status, contact
+              a(href='mailto:info@nbc.edu') info@nbc.edu
+              |  or
+              a(href='tel:+18008733873') (800) 873-3873
+              | .
