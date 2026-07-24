@@ -1,0 +1,40 @@
+extends ../../layouts/master.pug
+
+block title
+  title Majors | Bachelor of Arts in Ministry at Nazarene Bible College
+  meta(name='description', content='Explore the major areas of study available in the Bachelor of Arts in Ministry program at Nazarene Bible College, from Bible and Theology to Pastoral Leadership.')
+
+block header
+  include ../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/programs/') Programs
+            li
+              span Majors
+
+  section.section-box
+    .banner-hero.banner-breadcrums
+      .container.text-center
+        h1.text-display-3.color-gray-900.mb-20 Majors
+        p.text-body-lead-large.color-gray-600.mx-auto(style='max-width: 720px;')
+          | The Bachelor of Arts in Ministry (B.A.Min.) degree is composed of the General Education Core, the Bible and Theology Core, and a selected major. Explore the major areas of study below to find the path that fits your calling.
+
+  section.section-box.mt-50.mb-100
+    .container
+      .row
+        +ProgramCard('/assets/imgs/stock/AdobeStock_620157294.jpeg', 'Bachelor of Arts in Ministry Major', 'Bible and Theology', 'The primary degree for students preparing for graduate theological study or for ministry in fields that support the mission of the Church.', '/majors/bible-and-theology/')
+        +ProgramCard('/assets/imgs/stock/AdobeStock_195492859.jpeg', 'Bachelor of Arts in Ministry Major', 'Counseling for Christian Ministries', 'Builds competence in counseling theory and principles for pastoral ministries, parachurch organizations, and other helping professions.', '/majors/counseling-for-christian-ministries/')
+        +ProgramCard('/assets/imgs/stock/AdobeStock_1517059274.jpeg', 'Bachelor of Arts in Ministry Major', 'Hispanic Pastoral Ministries', 'Prepares students to serve as a pastor, evangelist, or missionary to Spanish-speaking communities, fulfilling educational requirements for ordination.', '/majors/hispanic-pastoral-ministries/')
+        +ProgramCard('/assets/imgs/stock/AdobeStock_233516145.jpeg', 'Bachelor of Arts in Ministry Major', 'Leadership and Ethics', 'Designed for adults who want a ministry-focused degree for personal growth, increased training, and advancement in their workplace or volunteer setting.', '/majors/leadership-and-ethics/')
+        +ProgramCard('/assets/imgs/stock/AdobeStock_427311342.jpeg', 'Bachelor of Arts in Ministry Major', 'Pastoral Leadership', 'An accelerated degree completion path for adults with prior college credit who want to prepare for service as a pastor, evangelist, or missionary in as little as two years.', '/majors/pastoral-leadership/')
+        +ProgramCard('/assets/imgs/stock/AdobeStock_284525574.jpeg', 'Bachelor of Arts in Ministry Major', 'Pastoral Ministries', 'The primary degree for students who wish to prepare for service as a pastor, evangelist, or missionary, fulfilling educational requirements for ordination.', '/majors/pastoral-ministries/')
+
+  +BreadcrumbSection('Not sure which major is right for you?', 'Our admissions team can help you find the path that fits your calling.', [{ href: '/programs/bachelor-of-arts-in-ministry/', text: 'B.A. in Ministry', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])
