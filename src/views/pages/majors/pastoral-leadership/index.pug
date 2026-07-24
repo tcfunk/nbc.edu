@@ -1,0 +1,145 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Pastoral Leadership Degree | Bachelor of Arts in Ministry at NBC
+  meta(name='description', content='Prepare for pastoral ministry, evangelism, or missions with NBC’s Bachelor of Arts in Ministry in Pastoral Leadership. Flexible for adult learners.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalProgram",
+      "name": "Bachelor of Arts in Ministry – Pastoral Leadership",
+      "description": "The Bachelor of Arts in Ministry with a major in Pastoral Leadership at Nazarene Bible College prepares students for service as pastors, evangelists, and missionaries.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Nazarene Bible College",
+        "url": "https://nbc.edu"
+      },
+      "educationalCredentialAwarded": "Bachelor of Arts in Ministry",
+      "programType": "Undergraduate Degree",
+      "occupationalCategory": [
+        "Pastor",
+        "Evangelist",
+        "Missionary"
+      ],
+      "timeToComplete": "P2Y",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Adult learner"
+      },
+      "inLanguage": "en"
+    }
+
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/programs/') Programs
+            li
+              a(href='/programs/bachelor-of-arts-in-ministry/') B.A. in Ministry
+            li
+              span Pastoral Leadership
+
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row.align-items-center
+          .col-lg-6
+            span.tag-1.bg-6.color-green-900 Bachelor of Arts in Ministry Major
+            h1.text-display-3.mt-30 Pastoral Leadership
+            p.text-body-lead-large.color-gray-600.mt-30
+              | Is God calling you to lead and care for a local congregation? Or to share the Gospel in ways you never have before? Prepare and be equipped at Nazarene Bible College.
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/programs/bachelor-of-arts-in-ministry/') Learn More
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='/apply/') Apply
+          .col-lg-6.d-none.d-lg-block
+            .banner-imgs
+              img.img-responsive(src='/assets/imgs/stock/AdobeStock_427311342.jpeg', alt='Ministry leader caring for and counseling a congregation member')
+
+  section.section-box.mt-60.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          .content-detail
+            p.text-body-lead-large.color-gray-600
+              | The Bachelor of Arts in Ministry (B.A.Min.) degree program with a major in Pastoral Leadership is the ideal path for students who are ready to answer God’s call on their lives.
+            p.text-body-text.mt-30
+              | This track, offered online, is specifically designed to prepare those who are called to serve as pastors, evangelists or missionaries. Whether you have some experience, are new to ministry leadership, or are exploring the call to ministry, NBC is ready to equip you.
+        .col-lg-2
+
+  section.section-box.overflow-visible.mb-50
+    .container
+      .row
+        .col-lg-10.mx-auto
+          .bg-6.box-newsletter.position-relative
+            .content-detail
+              span.text-body-capitalized.color-gray-500.text-uppercase Flexible for Adult Learners
+              h4.text-heading-2.mb-10.mt-10 Complete Your Degree in as Little as Two Years
+              p.text-body-text.color-gray-500
+                | For adult students who have already earned college credit: you can enroll and complete this degree program in as little as two years.
+
+  section.section-box.mt-70.mb-50
+    .container
+      .row.align-items-center
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_554620960.jpeg', alt='Students studying Scripture together in fellowship')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-5.color-green-900 Equipped for Servant Leadership
+          h2.text-heading-1.mt-30 Grow in character, care, and calling
+          p.text-body-text.color-gray-600.mt-30
+            | Grow in Christ-like character and knowledge of God’s Word while you learn to care for hurting people more effectively and communicate the Gospel in more meaningful ways.
+          p.text-body-text.color-gray-600.mt-20
+            | Discover your heart for servant leadership, connect with other ministry leaders, and apply what you’re learning through directed field study.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-12
+          p.text-body-lead-large.color-gray-600
+            | As a student in this degree program, you will:
+          .line-bd-green.mt-30.mb-30
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Grow in Christ-like character and knowledge of God’s Word.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Learn how to care for hurting people more effectively.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Become a better communicator for sharing the Gospel in more meaningful ways.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Discover your heart for servant leadership and learn to lead as a servant of the Lord.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Connect and grow together with other ministry leaders as you develop leadership skills together.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Find trusted, reliable resources to support your ministry.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Study God’s Word in new and exciting ways.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Prepare to start, continue, and nurture various ministries led by the people you serve.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Apply what is being learned through directed field study.
+
+  section.section-box.mb-50
+    .container
+      .row
+        .box-info.col-lg-10.bg-gray-100.mx-auto
+          p.text-body-text
+            | Completion of the program for the Pastoral Leadership major fulfills the educational requirements for ordination as elder in the Church of the Nazarene. Individual districts in the Church of the Nazarene have autonomy in determining which courses fulfill the educational requirements for ordination. Consult with your respective district ministry board to determine what courses are required for ordination by that district.
+
+  section.section-box.mt-50.mb-100
+    .container
+      .row
+        .col-lg-8.mx-auto.text-center
+          p.text-body-text.color-gray-600
+            | Since 1967, Nazarene Bible College has fulfilled its mission of preparing men and women for ministry. NBC—one of ten Nazarene institutions of higher education in the United States—is one of the two institutions charged with the task of preparing students for ministry.
+          p.text-body-lead-large.color-gray-600.fst-italic.mt-30
+            | “For I have not hesitated to proclaim to you the whole will of God. Keep watch over yourselves and all the flock of which the Holy Spirit has made you overseers. Be shepherds of the church of God, which he bought with his own blood” (Acts 20:27&minus;28 NIV).
+
+  +BreadcrumbSection('Are you ready to move forward?', 'NBC is ready to move forward with you.', [{ href: '/programs/bachelor-of-arts-in-ministry/', text: 'Learn More', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])
