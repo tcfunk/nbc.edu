@@ -1,0 +1,130 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Pastoral Ministries Degree | Bachelor of Arts in Ministry at NBC
+  meta(name='description', content='Prepare for pastoral ministry, evangelism, or missions with NBC’s Bachelor of Arts in Ministry in Pastoral Ministries.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalProgram",
+      "name": "Bachelor of Arts in Ministry – Pastoral Ministries",
+      "description": "The Bachelor of Arts in Ministry with a major in Pastoral Ministries at Nazarene Bible College prepares students for service as pastors, evangelists, and missionaries through biblical, theological, and practical ministry training.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Nazarene Bible College",
+        "url": "https://nbc.edu"
+      },
+      "educationalCredentialAwarded": "Bachelor of Arts in Ministry",
+      "programType": "Undergraduate Degree",
+      "occupationalCategory": [
+        "Pastor",
+        "Evangelist",
+        "Missionary"
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Adult learner"
+      },
+      "inLanguage": "en"
+    }
+
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/programs/') Programs
+            li
+              a(href='/programs/bachelor-of-arts-in-ministry/') B.A. in Ministry
+            li
+              span Pastoral Ministries
+
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row.align-items-center
+          .col-lg-6
+            span.tag-1.bg-6.color-green-900 Bachelor of Arts in Ministry Major
+            h1.text-display-3.mt-30 Pastoral Ministries
+            p.text-body-lead.color-brand-blue.mt-20.fst-italic
+              | “So Christ himself gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip his people for works of service, so that the body of Christ may be built up” (Ephesians 4:11&minus;12 NIV).
+            p.text-body-lead-large.color-gray-600.mt-20
+              | Is pastoral ministry a calling God is giving you? Are you feeling unprepared for this calling? Do you want to grow as a ministry leader?
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/programs/bachelor-of-arts-in-ministry/') Learn More
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='/apply/') Apply
+          .col-lg-6.d-none.d-lg-block
+            .banner-imgs
+              img.img-responsive(src='/assets/imgs/stock/AdobeStock_284525574.jpeg', alt='Smiling man ready to answer a call to ministry')
+
+  section.section-box.mt-60.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          .content-detail
+            p.text-body-lead-large.color-gray-600
+              | Those who equip others need to be equipped, too. Those who build up others need to be built up, too. Those who share the Gospel need to sharpen what they’re sharing. Those God calls to lead need to grow into Godly leaders.
+            p.text-body-text.mt-30
+              | NBC comes alongside those whom God has called to ministry. NBC assists them in becoming the servant leaders God wants and needs them to be. NBC sends qualified, prepared ministry leaders into the harvest field.
+            p.text-body-text.mt-20
+              | The Bachelor of Arts in Ministry (B.A.Min.) degree program with a Pastoral Ministries major is designed to prepare students for service as a pastor, evangelist or missionary. Whether you have some experience, are new to ministry leadership, or are exploring the call to ministry, NBC is ready to equip you.
+        .col-lg-2
+
+  section.section-box.mt-70.mb-50
+    .container
+      .row.align-items-center
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_560002892.jpeg', alt='Ministry leaders connecting and mentoring one another')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-5.color-green-900 Equipped for Ministry Leadership
+          h2.text-heading-1.mt-30 Prepared to serve as a pastor, evangelist, or missionary
+          p.text-body-text.color-gray-600.mt-30
+            | Grow in Christ-like character and knowledge of God’s Word while you sharpen the practical skills every ministry leader needs, from caring for hurting people to leading relevant, God-centered worship.
+          p.text-body-text.color-gray-600.mt-20
+            | Connect and grow together with other ministry leaders as you develop leadership skills together, and find trusted, reliable resources to support your ministry along the way.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-12
+          p.text-body-lead-large.color-gray-600
+            | As a student in this degree program, you will:
+          .line-bd-green.mt-30.mb-30
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Grow in Christ-like character and knowledge of God’s Word.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Learn how to care for hurting people more effectively.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Develop skills for conducting relevant, God-centered worship.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Become a better communicator for sharing the Gospel in more meaningful ways.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Discover your heart for servant leadership and learn to lead as a servant of the Lord.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Learn administration skills for working with committees, elders, deacons, and other lay leaders.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Connect and grow together with other ministry leaders as you develop leadership skills together.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Find trusted, reliable resources to support your ministry.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Study God’s Word in new and exciting ways.
+        .col-lg-6.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Prepare to start, continue, and nurture various ministries led by the people you serve.
+
+  section.section-box.mt-50.mb-100
+    .container
+      .row
+        .col-lg-8.mx-auto.text-center
+          p.text-body-lead-large.color-gray-600.fst-italic
+            | “You show that you are a letter from Christ, the result of our ministry, written not with ink but with the Spirit of the living God, not on tablets of stone but on tablets of human hearts” (2 Corinthians 3:3).
+
+  +BreadcrumbSection('Churches need called, equipped, and enthusiastic ministry leaders who understand today’s world.', 'NBC stands ready to equip you and build you up for serving the Lord. Are you ready?', [{ href: '/programs/bachelor-of-arts-in-ministry/', text: 'Learn More', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])
