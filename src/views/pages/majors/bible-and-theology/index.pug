@@ -1,0 +1,118 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Bible and Theology Major | Nazarene Bible College
+  meta(name='description', content='Explore the Bible and Theology major in the Bachelor of Arts in Ministry program at Nazarene Bible College. Designed for students preparing for ministry, ordination, or graduate theological study.')
+  meta(property='og:title', content='Bible and Theology Major | Nazarene Bible College')
+  meta(property='og:description', content='Explore the Bible and Theology major in the Bachelor of Arts in Ministry program at Nazarene Bible College. Designed for students preparing for ministry, ordination, or graduate theological study.')
+  meta(property='og:type', content='website')
+  link(rel='canonical', href='https://nbc.edu/majors/bible-and-theology/')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalProgram",
+      "name": "Bachelor of Arts in Ministry – Bible and Theology",
+      "description": "The Bachelor of Arts in Ministry with a major in Bible and Theology at Nazarene Bible College prepares students for graduate theological study and ministry leadership through exegetical study of Scripture and theological training, including preparation for ordination as an elder in the Church of the Nazarene.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Nazarene Bible College",
+        "url": "https://nbc.edu"
+      },
+      "educationalCredentialAwarded": "Bachelor of Arts in Ministry",
+      "programType": "Undergraduate Degree",
+      "occupationalCategory": [
+        "Pastor",
+        "Theologian",
+        "Ministry Leader"
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Adult learner"
+      },
+      "programPrerequisites": "General admission requirements for Nazarene Bible College",
+      "educationalProgramMode": "online",
+      "inLanguage": "en"
+    }
+
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/programs/') Programs
+            li
+              a(href='/programs/bachelor-of-arts-in-ministry/') B.A. in Ministry
+            li
+              span Bible and Theology
+
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row.align-items-center
+          .col-lg-6
+            span.tag-1.bg-6.color-green-900 Bachelor of Arts in Ministry Major
+            h1.text-display-3.mt-30 Bible and Theology
+            p.text-body-lead-large.color-gray-600.mt-30
+              | If an advanced degree or a ministry leadership role is in your plan, partner with Nazarene Bible College to prepare for that future step.
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/programs/bachelor-of-arts-in-ministry/') Learn More
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='/apply/') Apply
+          .col-lg-6.d-none.d-lg-block
+            .banner-imgs
+              img.img-responsive(src='/assets/imgs/stock/AdobeStock_620157294.jpeg', alt='Student holding books in a library, studying Scripture and theology')
+
+  section.section-box.mt-60.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          .content-detail
+            h2.text-heading-4.color-gray-900 Program Purpose and Vision
+            p.text-body-lead-large.color-gray-600.mt-20
+              | Your skills in intensive study of the Bible and your knowledge about the Scriptures are sure to grow as you complete this degree program.
+            p.text-body-text.mt-30
+              | Designed for those who want to be equipped to succeed in their graduate studies or who want to advance the mission of the Church, the #[a(href='/programs/bachelor-of-arts-in-ministry/') Bachelor of Arts in Ministry (B.A.Min.) degree] with a Bible and Theology major is important preparation for that path.
+        .col-lg-2
+
+  section.section-box.mt-70.mb-50
+    .container
+      .row.align-items-center
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_678382560.jpeg', alt='Student studying online for ministry and graduate school preparation')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-5.color-green-900 Built for Ordination and Graduate Study
+          h2.text-heading-1.mt-30 Preparation for Ministry and Graduate Study
+          p.text-body-text.color-gray-600.mt-30
+            | This degree may also be an avenue for fulfilling education requirements for ordination as an elder in the Church of the Nazarene or ordination in another denomination.
+          p.text-body-text.color-gray-600.mt-20
+            | Additional courses may be required to meet education requirements for ordination as an elder in the Church of the Nazarene. Explore our #[a(href='/majors/pastoral-ministries/') Pastoral Ministries major] if you&rsquo;re also discerning a call to pastoral leadership.
+
+  section.section-box.mt-50.mb-100
+    .container
+      .row
+        .col-lg-12
+          h2.text-heading-4.color-gray-900 Program Focus and Learning Outcomes
+          p.text-body-lead-large.color-gray-600.mt-20
+            | As a student in this program, you will:
+          .line-bd-green.mt-30.mb-30
+      .row
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Learn the exegetical study of Christian Scripture.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Study theological content drawn from scriptural sources.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Develop an advanced understanding of biblical literature.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Gain greater theological insight into contemporary ministry and social issues.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Work toward fulfilling education requirements for ordination as an elder in the Church of the Nazarene or another denomination.
+
+  +BreadcrumbSection('Ready to grow in Scripture and prepare for what’s next?', 'NBC is waiting to welcome you.', [{ href: '/programs/bachelor-of-arts-in-ministry/', text: 'Learn More', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])
