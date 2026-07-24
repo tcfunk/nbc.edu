@@ -1,0 +1,111 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Hispanic Pastoral Ministries | B.A. in Ministry at NBC
+  meta(name='description', content='Prepare to serve Spanish-speaking communities through NBC’s Bachelor of Arts in Ministry in Hispanic Pastoral Ministries.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalProgram",
+      "name": "Bachelor of Arts in Ministry – Hispanic Pastoral Ministries",
+      "description": "The Bachelor of Arts in Ministry with a major in Hispanic Pastoral Ministries at Nazarene Bible College prepares students to serve Spanish-speaking communities through culturally relevant pastoral leadership, evangelism, and ministry training.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Nazarene Bible College",
+        "url": "https://nbc.edu"
+      },
+      "educationalCredentialAwarded": "Bachelor of Arts in Ministry",
+      "programType": "Undergraduate Degree",
+      "occupationalCategory": [
+        "Pastor",
+        "Evangelist",
+        "Missionary"
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Adult learner"
+      },
+      "inLanguage": [
+        "en",
+        "es"
+      ]
+    }
+
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/programs/') Programs
+            li
+              a(href='/programs/bachelor-of-arts-in-ministry/') B.A. in Ministry
+            li
+              span Hispanic Pastoral Ministries
+
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row.align-items-center
+          .col-lg-6
+            span.tag-1.bg-6.color-green-900 Bachelor of Arts in Ministry Major
+            h1.text-display-3.mt-30 Hispanic Pastoral Ministries
+            p.text-body-lead.color-brand-blue.mt-20.font-bold
+              | Vocaci&oacute;n singular. Misi&oacute;n singular.
+            p.text-body-lead-large.color-gray-600.mt-15
+              | Unique calling. Unique mission. Serving the Lord among the Hispanic community.
+            p.text-body-text.color-gray-600.mt-20
+              | Are you ready to answer God&rsquo;s call to serve as a pastor, evangelist, or missionary to Spanish-speaking people? Nazarene Bible College is ready to prepare you for service and for ordination.
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/programs/bachelor-of-arts-in-ministry/') Learn More
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='/apply/') Apply
+          .col-lg-6.d-none.d-lg-block
+            .banner-imgs
+              img.img-responsive(src='/assets/imgs/stock/AdobeStock_1517059274.jpeg', alt='Pastor leading worship in a Hispanic congregation')
+
+  section.section-box.mt-60.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          .content-detail
+            p.text-body-lead-large.color-gray-600
+              | Vocaci&oacute;n singular. Misi&oacute;n singular. Serving the Lord among the Hispanic community.
+            p.text-body-text.mt-30
+              | The Bachelor of Arts in Ministry (B.A.Min.) degree with a Hispanic Pastoral Ministries major is the primary degree for those who want to serve as a pastor, evangelist, or missionary to Hispanic people. Completion of this program fulfills the educational requirements for ordination as an elder in the Church of the Nazarene and for ordination in other denominations.
+        .col-lg-2
+
+  section.section-box.mt-70.mb-50
+    .container
+      .row.align-items-center
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_554620518.jpeg', alt='Ministry student studying with the Bible')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-5.color-green-900 Culturally Relevant Ministry Preparation
+          h2.text-heading-1.mt-30 Prepared to lead, preach, and care within Hispanic communities
+          p.text-body-text.color-gray-600.mt-30
+            | Learn how to conduct culturally relevant worship. Learn how to communicate the Gospel in contextually and culturally appropriate ways. Prepare to be a servant leader in a local church. Grow in pastoral care skills that will help those who are hurting in the congregation and the community.
+          p.text-body-text.color-gray-600.mt-20
+            | Be equipped for the realities of a culturally specific ministry. Develop an intentional vocation to supplement your income.
+
+  section.section-box.mt-50.mb-100
+    .container
+      .row
+        .col-lg-12
+          .line-bd-green.mt-30.mb-30
+      .row
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Learn to conduct culturally relevant worship and communicate the Gospel in contextually appropriate ways.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Grow in pastoral care skills to serve those who are hurting in the congregation and community.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Fulfill the educational requirements for ordination as an elder in the Church of the Nazarene or another denomination.
+
+  +BreadcrumbSection('Ready to respond? Ready to prepare? Ready to serve?', 'NBC is ready for you.', [{ href: '/programs/bachelor-of-arts-in-ministry/', text: 'Learn More', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])
