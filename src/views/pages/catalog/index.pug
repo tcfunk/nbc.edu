@@ -1,0 +1,159 @@
+extends ../../layouts/master.pug
+
+block title
+  title Academic Catalog | Nazarene Bible College Programs &amp; Requirements
+  meta(name='description', content='Download the Nazarene Bible College Academic Catalog to explore accredited online ministry programs, course descriptions, degree requirements, and important academic policies.')
+
+block header
+  include ../../components/header.pug
+
+block content
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              span Academic Catalog
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_286503364.jpeg); background-size: cover; background-position: center center;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Academic Catalog
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8.text-center
+          p.text-body-lead-large.color-gray-600
+            | The Nazarene Bible College Academic Catalog provides detailed information about our accredited ministry programs, course offerings, academic policies, and degree requirements. This resource helps students plan their academic path and understand the standards guiding their education and ministry preparation.
+        .col-lg-2
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#whats-inside.text-heading-4.text-center What&rsquo;s Inside the Catalog
+            p.text-body-text.color-gray-600.mt-20.text-center
+              | The catalog is NBC&rsquo;s official reference for programs, courses, faculty credentials, and academic expectations. Each edition includes:
+          .col-lg-2
+    .container.mt-40
+      .row
+        .col-lg-4.col-md-6.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-acquis.svg', alt='')
+              h4.text-heading-5 Academic Programs &amp; Degree Requirements
+              p.text-body-text.color-gray-600.mt-15
+                | Degree and certificate requirements for every NBC program, including majors, minors, and concentrations.
+        .col-lg-4.col-md-6.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-active.svg', alt='')
+              h4.text-heading-5 Course Descriptions
+              p.text-body-text.color-gray-600.mt-15
+                | Full course descriptions in both English and Spanish (Descripciones de Cursos) for every class NBC offers.
+        .col-lg-4.col-md-6.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-retent.svg', alt='')
+              h4.text-heading-5 Admissions &amp; Financial Information
+              p.text-body-text.color-gray-600.mt-15
+                | Admission requirements, tuition and fees, and financial aid information to help you plan for enrollment.
+        .col-lg-4.col-md-6.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-design.svg', alt='')
+              h4.text-heading-5 Academic Policy &amp; Student Success
+              p.text-body-text.color-gray-600.mt-15
+                | Grading, probation, graduation, and other academic policies, along with student success and support resources.
+        .col-lg-4.col-md-6.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-work.svg', alt='')
+              h4.text-heading-5 Administration &amp; Faculty
+              p.text-body-text.color-gray-600.mt-15
+                | Credentials and backgrounds of NBC&rsquo;s administration, faculty, and Alliance for Ministry Education partners.
+        .col-lg-4.col-md-6.col-sm-12
+          .list-icons.mt-30
+            .item-icon.none-bd
+              span.icon-left
+                img(src='/assets/imgs/page/homepage2/icon-advance.svg', alt='')
+              h4.text-heading-5 Academic Calendar &amp; Facts About NBC
+              p.text-body-text.color-gray-600.mt-15
+                | Trimester start and end dates, registration deadlines, and key facts about the college.
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          h2#download.text-heading-4.text-center.mb-40 Download the Current Catalog
+          .row
+            .col-lg-6
+              .box-gray-100.bdrd-16.p-40.text-center.mb-40
+                h3.text-heading-4.color-gray-900.mb-20 2026&ndash;2027 Academic Catalog
+                p.text-body-text.color-gray-600.mb-30
+                  | Click above to open the file, or right-click and select &quot;Save Target As&quot; to save it to your device.
+                a.btn.btn-black.icon-arrow-right-white(href='https://nbc.edu/core/assets/files/Catalog_2026_2027.pdf', target='_blank', rel='noopener noreferrer') Download the 2026&ndash;2027 Academic Catalog (PDF)
+            .col-lg-6
+              .box-gray-100.bdrd-16.p-40.text-center.mb-40
+                h3.text-heading-4.color-gray-900.mb-15 Trouble Opening?
+                p.text-body-text.color-gray-600.mb-30
+                  | Nazarene Bible College downloadable documents require Adobe Acrobat Reader.
+                a.btn.btn-default.icon-arrow-right(href='https://get.adobe.com/reader/', target='_blank', rel='noopener noreferrer') Get Acrobat Reader for Free
+          p.text-body-small.color-gray-600.text-center
+            | The information contained in the catalog is true and correct in content and policy as of its publish date. It does not constitute a contract between the student and the college; NBC reserves the right to make necessary changes to curricula, policies, or fees. For current course offerings, please refer to class schedules at
+            a(href='https://online.nbc.edu', target='_blank', rel='noopener noreferrer') online.nbc.edu
+            | .
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          #accordionCatalogArchive.accordion
+            .accordion-item
+              h2#catalogArchiveHeading.accordion-header
+                button.accordion-button.collapsed.text-heading-4(type='button', data-bs-toggle='collapse', data-bs-target='#catalogArchiveBody', aria-expanded='false', aria-controls='catalogArchiveBody')
+                  | Catalog Archive
+              #catalogArchiveBody.accordion-collapse.collapse(aria-labelledby='catalogArchiveHeading', data-bs-parent='#accordionCatalogArchive')
+                .accordion-body
+                  p.text-body-text.color-gray-600.mb-20
+                    | Looking for a previous edition of the catalog? Browse archived catalogs by academic year below.
+                  ul.row.list-unstyled
+                    each cat in [{y: '2026-2027', f: 'Catalog_2026_2027.pdf'}, {y: '2025-2026', f: 'Catalog_2025_2026.pdf'}, {y: '2024-2025', f: 'Catalog_2024_2025.pdf'}, {y: '2023-2024', f: 'Catalog_2023_2024.pdf'}, {y: '2022-2023', f: 'Catalog_2022_2023.pdf'}, {y: '2021-2022', f: 'Catalog_2021_2022.pdf'}, {y: '2020-2021', f: 'Catalog_2020_2021.pdf'}, {y: '2019-2020', f: 'Catalog_2019_2020.pdf'}, {y: '2018-2019', f: 'Catalog_2018_2019.pdf'}, {y: '2017-2018', f: 'Catalog_2017_2018.pdf'}, {y: '2016-2017', f: 'Catalog_2016_2017.pdf'}, {y: '2015-2016', f: 'Catalog_2015_2016.pdf'}, {y: '2014-2015', f: 'Catalog_2014_2015.pdf'}, {y: '2012-2014', f: 'Catalog_2012_2014.pdf'}, {y: '2011-2012', f: 'Catalog_2011_2012.pdf'}, {y: '2010-2011', f: 'Catalog_2010_2011.pdf'}, {y: '2009-2010', f: 'Catalog_2009_2010.pdf'}, {y: '2008-2009', f: 'Catalog_2008_2009.pdf'}, {y: '2007-2008', f: 'Catalog_2007_2008.pdf'}, {y: '2006-2007', f: 'Catalog_2006_2007.pdf'}, {y: '2005-2006', f: 'Catalog_2005_2006.pdf'}, {y: '2004-2005', f: 'Catalog_2004_2005.pdf'}, {y: '2003-2004', f: 'Catalog_2003_2004.pdf'}, {y: '2002-2003', f: 'Catalog_2002_2003.pdf'}, {y: '2001-2002', f: 'Catalog_2001_2002.pdf'}]
+                      li.col-6.col-sm-4.col-md-3.mb-15
+                        a(href=`https://nbc.edu/core/assets/files/${cat.f}`, target='_blank', rel='noopener noreferrer')= cat.y
+
+  section.section-box.mt-50.mb-100
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8.text-center
+            h2.text-heading-4 Related Resources
+            p.text-body-text.color-gray-600.mt-15
+              | Have questions after reviewing the catalog? Explore related pages or contact the Admissions Office at
+              a(href='mailto:admissions@nbc.edu') admissions@nbc.edu
+              |  or
+              a(href='tel:800-873-3873,5060') (800) 873-3873, ext. 5060
+              | .
+            .mt-30
+              a.btn.btn-border.mr-10.mb-10(href='/programs/') Explore Programs
+              a.btn.btn-border.mr-10.mb-10(href='/schedule/') Academic Calendar
+              a.btn.btn-border.mr-10.mb-10(href='/handbook/') Student Handbook
+              a.btn.btn-black.mb-10(href='/apply/') Apply Now
+          .col-lg-2
