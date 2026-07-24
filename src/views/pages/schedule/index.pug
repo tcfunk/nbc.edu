@@ -25,66 +25,90 @@ block content
           h1.text-heading-1.color-white.mt-30
             | Academic Calendar
 
-  section.section-box
+  section.section-box.mt-60.mb-50
     .container
-      .content-detail
-        .row
-          .col-lg-12
-            p.text-body-lead-large.color-gray-600.mt-20
+      .row
+        .col-lg-2
+        .col-lg-8
+          .content-detail.text-center
+            span.tag-1.bg-6.color-green-900 Plan Your Academic Journey
+            p.text-body-lead-large.color-gray-600.mt-30
               | The Academic Calendar at Nazarene Bible College outlines important dates and deadlines for each term—including registration, classes, breaks and commencement—so that ministry-focused students can plan their academic journey with clarity and confidence.
+        .col-lg-2
 
-  section.section-box
+  section.section-box.mb-50
     .container
-      .content-detail
-        .row
-          .col-lg-12
-            h2.text-heading-4.color-gray-900.mb-10
-              | Upcoming Terms & Key Dates
-            h3.text-heading-5.color-brand-blue.mb-10
-              | Fall Trimester
-            table.table.table-striped
-              thead
-                tr
-                  th Dates
-                  th Description
-              tbody
-                each item in nbcData.academic_calendar.fall
-                  tr
-                    td= item.date
-                    td= item.title
-            h3.text-heading-5.color-brand-blue.mb-10
-              | Winter Trimester
-            table.table.table-striped
-              thead
-                tr
-                  th Dates
-                  th Description
-              tbody
-                each item in nbcData.academic_calendar.winter
-                  tr
-                    td= item.date
-                    td= item.title
-            h3.text-heading-5.color-brand-blue.mb-10
-              | Spring Trimester
-            table.table.table-striped
-              thead
-                tr
-                  th Dates
-                  th Description
-              tbody
-                each item in nbcData.academic_calendar.spring
-                  tr
-                    td= item.date
-                    td= item.title
-            h3.text-heading-5.color-brand-blue.mb-10
-              | Summer Term
-            table.table.table-striped
-              thead
-                tr
-                  th Dates
-                  th Description
-              tbody
-                each item in nbcData.academic_calendar.summer
-                  tr
-                    td= item.date
-                    td= item.title
+      .row
+        .col-lg-12.text-center
+          span.text-body-capitalized.color-gray-500.text-uppercase Academic Calendar
+          h2.text-heading-4.color-gray-900.mt-10.mb-40
+            | Upcoming Terms & Key Dates
+
+      .row
+        .col-lg-10.mx-auto
+          .text-center.mb-40
+            ul.nav(role='tablist')
+              li
+                a.btn.btn-default.btn-bd-green-hover.btn-select.active(href='#tab-fall', data-bs-toggle='tab', role='tab', aria-controls='tab-fall', aria-selected='true') Fall
+              li
+                a.btn.btn-default.btn-bd-green-hover.btn-select(href='#tab-winter', data-bs-toggle='tab', role='tab', aria-controls='tab-winter', aria-selected='false') Winter
+              li
+                a.btn.btn-default.btn-bd-green-hover.btn-select(href='#tab-spring', data-bs-toggle='tab', role='tab', aria-controls='tab-spring', aria-selected='false') Spring
+              li
+                a.btn.btn-default.btn-bd-green-hover.btn-select(href='#tab-summer', data-bs-toggle='tab', role='tab', aria-controls='tab-summer', aria-selected='false') Summer
+
+          .tab-content
+            #tab-fall.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='tab-fall')
+              .bg-gray-100.bdrd-16.p-40
+                h3.text-heading-5.color-brand-blue.mb-20 Fall Trimester
+                table.table.table-striped.mb-0
+                  thead
+                    tr
+                      th Dates
+                      th Description
+                  tbody
+                    each item in nbcData.academic_calendar.fall
+                      tr
+                        td= item.date
+                        td= item.title
+            #tab-winter.tab-pane.fade(role='tabpanel', aria-labelledby='tab-winter')
+              .bg-gray-100.bdrd-16.p-40
+                h3.text-heading-5.color-brand-blue.mb-20 Winter Trimester
+                table.table.table-striped.mb-0
+                  thead
+                    tr
+                      th Dates
+                      th Description
+                  tbody
+                    each item in nbcData.academic_calendar.winter
+                      tr
+                        td= item.date
+                        td= item.title
+            #tab-spring.tab-pane.fade(role='tabpanel', aria-labelledby='tab-spring')
+              .bg-gray-100.bdrd-16.p-40
+                h3.text-heading-5.color-brand-blue.mb-20 Spring Trimester
+                table.table.table-striped.mb-0
+                  thead
+                    tr
+                      th Dates
+                      th Description
+                  tbody
+                    each item in nbcData.academic_calendar.spring
+                      tr
+                        td= item.date
+                        td= item.title
+            #tab-summer.tab-pane.fade(role='tabpanel', aria-labelledby='tab-summer')
+              .bg-gray-100.bdrd-16.p-40
+                h3.text-heading-5.color-brand-blue.mb-20 Summer Term
+                table.table.table-striped.mb-0
+                  thead
+                    tr
+                      th Dates
+                      th Description
+                  tbody
+                    each item in nbcData.academic_calendar.summer
+                      tr
+                        td= item.date
+                        td= item.title
+
+  +BreadcrumbSection('Have questions about registering for an upcoming term?', 'Explore our programs or apply today to start planning your academic journey.', [{ href: '/programs/', text: 'Explore Programs', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])
