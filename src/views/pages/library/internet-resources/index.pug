@@ -1,7 +1,7 @@
 extends ../../../layouts/master.pug
 
 block title
-  title Online Ministry & Bible Study Resources | Nazarene Bible College Library
+  title Online Ministry &amp; Bible Study Resources | Nazarene Bible College Library
   meta(name='description', content='Explore curated online resources for biblical studies, ministry training, preaching, counseling and Christian leadership. Organized by Nazarene Bible College’s library to support adult learners.')
 
 block header
@@ -12,3 +12,257 @@ block content
     .banner-hero.nav-breadcrums.bg-gray-100
       .container
         .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/library/') Library
+            li
+              span Internet Resources
+
+  section.section-box
+    .banner-hero.banner-head-image(style='background: url(/assets/imgs/stock/AdobeStock_356337517.jpeg); background-size: cover; background-position: center center;')
+      .container
+        .text-center
+          h1.text-heading-1.color-white.mt-30
+            | Online Ministry &amp; Bible Study Resources
+
+  section.section-box.mt-50.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8.text-center
+          p.text-body-lead-large.color-gray-600
+            | The Nazarene Bible College Library provides carefully selected online resources to support students preparing for ministry, biblical studies, counseling and Christian leadership. These tools offer flexible study options, scholarly references and practical ministry-development content to strengthen your academic work and ministry preparation.
+        .col-lg-2
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#bible-study-tools.text-heading-4 Bible Study Tools &amp; Concordances
+            p.text-body-text.mt-20
+              | Discover powerful study tools&mdash;commentaries, original-language lexicons, concordances and digital Bibles designed for rigorous theological exploration.
+
+            h3.text-heading-5.mt-40 General Bible Study &amp; Commentaries
+            ul.mt-15
+              li
+                a(href='https://www.biblestudytools.com/', target='_blank', rel='noopener noreferrer') Bible Study Tools
+              li
+                a(href='https://www.biblestudytools.com/library/', target='_blank', rel='noopener noreferrer') Bible Study Tools Library (Commentaries)
+              li
+                a(href='https://bible.org/', target='_blank', rel='noopener noreferrer') Bible.org
+              li
+                a(href='https://biblehub.com/', target='_blank', rel='noopener noreferrer') Bible Hub
+              li
+                a(href='https://bible.org/netbible/index.htm', target='_blank', rel='noopener noreferrer') NET Bible
+              li
+                a(href='https://www.studylight.org/', target='_blank', rel='noopener noreferrer') StudyLight.org
+              li
+                a(href='https://www.stepbible.org/', target='_blank', rel='noopener noreferrer') STEP: Scripture Tools for Every Person
+              li
+                a(href='https://academic.tyndalehouse.com/index.php', target='_blank', rel='noopener noreferrer') Tyndale House Biblical Resources
+              li
+                a(href='https://www.bsw.org/', target='_blank', rel='noopener noreferrer') Biblical Studies on the Web
+              li
+                a(href='https://www.biblicalstudies.org.uk/index.html', target='_blank', rel='noopener noreferrer') BiblicalStudies.org.uk
+              li
+                a(href='https://www.bible-history.com/', target='_blank', rel='noopener noreferrer') Bible History Online
+              li
+                a(href='https://www.wabashcenter.wabash.edu/', target='_blank', rel='noopener noreferrer') Wabash Center Internet Guide to Religion
+              li
+                a(href='https://academic.logos.com/category/new-testament/', target='_blank', rel='noopener noreferrer') New Testament Gateway
+
+            h3.text-heading-5.mt-40 Original Languages &amp; Lexicons
+            ul.mt-15
+              li
+                a(href='https://www.biblestudytools.com/lexicons/hebrew/', target='_blank', rel='noopener noreferrer') Old Testament Hebrew Lexicon
+              li
+                a(href='https://biblicalgreek.org/translate/', target='_blank', rel='noopener noreferrer') Online Greek Texts and Interlinears
+              li
+                a(href='https://bible.ort.org/intro1.asp', target='_blank', rel='noopener noreferrer') Navigating the Bible: Hebrew Study Resource
+              li
+                a(href='https://www.netministries.org/resources/resource-pronunciation-guide/', target='_blank', rel='noopener noreferrer') Biblical Words Pronunciation Guide
+
+            h3.text-heading-5.mt-40 Archaeology, Ancient Texts &amp; Manuscripts
+            ul.mt-15
+              li
+                a(href='https://biblicalarchaeology.org/', target='_blank', rel='noopener noreferrer') Biblical Archaeology Society
+              li
+                a(href='https://aiadenver.org/education/archaeology-on-the-internet/', target='_blank', rel='noopener noreferrer') Archaeology on the Net
+              li
+                a(href='https://biblearchaeology.org/', target='_blank', rel='noopener noreferrer') Associates for Biblical Research
+              li
+                a(href='http://ggreenberg.tripod.com/ancientne/links.html', target='_blank', rel='noopener noreferrer') Links to Ancient Near Eastern Web Sites
+              li
+                a(href='https://www.bu.edu/anep/', target='_blank', rel='noopener noreferrer') Material Culture: Ancient Near East (West Semitic Research Project)
+              li
+                a(href='https://www.bu.edu/anep/ANET.html', target='_blank', rel='noopener noreferrer') Selected Readings from ANET
+              li
+                a(href='http://orion.mscc.huji.ac.il/', target='_blank', rel='noopener noreferrer') Orion Center for the Study of the Dead Sea Scrolls
+              li
+                a(href='https://www.deadseascrolls.org.il/', target='_blank', rel='noopener noreferrer') Leon Levy Dead Sea Scrolls Digital Library
+              li
+                a(href='https://www.loc.gov/exhibits/scrolls/', target='_blank', rel='noopener noreferrer') Library of Congress: Scrolls from the Dead Sea
+
+            h3.text-heading-5.mt-40 Exegesis, Theological Research &amp; Journals
+            ul.mt-15
+              li
+                a(href='https://www.biblearc.com/', target='_blank', rel='noopener noreferrer') BibleArc: Graphical Exegesis
+              li
+                a(href='https://sbts.libguides.com/OTexegesis/', target='_blank', rel='noopener noreferrer') Essential Resources for Old Testament Exegesis
+              li
+                a(href='https://www.monergism.com/content/genesis-itanakh-resources-academic-study/', target='_blank', rel='noopener noreferrer') iTanakh: Resources for Academic Study
+              li
+                a(href='https://masters.libguides.com/c.php?g=831650&p=5937226/', target='_blank', rel='noopener noreferrer') Online Theological Resources
+              li
+                a(href='https://www.viceregency.com/', target='_blank', rel='noopener noreferrer') Resources for New Testament Study
+              li
+                a(href='https://www.ccel.org/', target='_blank', rel='noopener noreferrer') Christian Classics Ethereal Library
+              li
+                a(href='https://www.tren.com/', target='_blank', rel='noopener noreferrer') Theological Research Exchange Network
+              li
+                a(href='https://commons.ptsem.edu/', target='_blank', rel='noopener noreferrer') Princeton Theological Commons
+              li
+                a(href='https://www.jhsonline.org/', target='_blank', rel='noopener noreferrer') Journal of Hebrew Scriptures
+              li
+                a(href='https://doaj.org/', target='_blank', rel='noopener noreferrer') Directory of Open Access Journals
+              li
+                a(href='https://www.base-search.net/', target='_blank', rel='noopener noreferrer') Bielefeld Academic Search Engine (BASE)
+              li
+                a(href='https://rzblx1.uni-regensburg.de/ezeit/index.phtml?bibid=AAAAA&colors=7&lang=en', target='_blank', rel='noopener noreferrer') Electronic Journals Library
+              li
+                a(href='https://ethos.bl.uk/Home.do', target='_blank', rel='noopener noreferrer') EThOS: E-Thesis Online Service
+              li
+                a(href='https://www.hathitrust.org/', target='_blank', rel='noopener noreferrer') HathiTrust Digital Library
+              li
+                a(href='https://archive.org/', target='_blank', rel='noopener noreferrer') Internet Archive
+
+  section.section-box.mt-50.mb-50
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#ministry-leadership.text-heading-4 Ministry &amp; Leadership Resources
+            p.text-body-text.mt-20
+              | Access resources tailored to ministry leaders including sermon prep guides, leadership articles, worship ministry tools and cross-cultural mission materials.
+
+            h3.text-heading-5.mt-40 Pastoring &amp; Sermon Preparation
+            ul.mt-15
+              li
+                a(href='https://www.preachingtoday.com/', target='_blank', rel='noopener noreferrer') Preaching Today (Christianity Today)
+              li
+                a(href='https://www.preaching.com/', target='_blank', rel='noopener noreferrer') Preaching Magazine &amp; American Academy of Ministry
+              li
+                a(href='https://www.sermoncentral.com/', target='_blank', rel='noopener noreferrer') SermonCentral: Resources for Preaching and Teaching
+              li
+                a(href='http://www.sermonillustrations.com/', target='_blank', rel='noopener noreferrer') Sermon Illustrations
+              li
+                a(href='https://www.sermonindex.net/', target='_blank', rel='noopener noreferrer') SermonIndex
+              li
+                a(href='http://www.textweek.com/', target='_blank', rel='noopener noreferrer') The Text This Week
+              li
+                a(href='https://www.reformedsermons.org/', target='_blank', rel='noopener noreferrer') Reformed Sermons
+
+            h3.text-heading-5.mt-40 Leadership Development
+            ul.mt-15
+              li
+                a(href='https://www.ccl.org/', target='_blank', rel='noopener noreferrer') Center for Creative Leadership
+              li
+                a(href='https://www.kenblanchard.com/', target='_blank', rel='noopener noreferrer') Blanchard Training &amp; Development
+              li
+                a(href='https://globalleadership.org/', target='_blank', rel='noopener noreferrer') Global Leadership Network
+              li
+                a(href='https://courageousleadership.com/', target='_blank', rel='noopener noreferrer') Courageous Leadership Inc.
+
+            h3.text-heading-5.mt-40 Church &amp; Ministry Resources
+            ul.mt-15
+              li
+                a(href='https://nazarene.org/', target='_blank', rel='noopener noreferrer') Church of the Nazarene
+              li
+                a(href='https://www.focusonthefamily.com/', target='_blank', rel='noopener noreferrer') Focus on the Family
+              li
+                a(href='https://www.smallgroups.com/', target='_blank', rel='noopener noreferrer') The Small Group Network
+              li
+                a(href='https://promisekeepers.org/', target='_blank', rel='noopener noreferrer') Promise Keepers
+              li
+                a(href='https://www.umc.org/', target='_blank', rel='noopener noreferrer') The United Methodist Church
+              li
+                a(href='https://urbanministries.com', target='_blank', rel='noopener noreferrer') Urban Ministries, Inc.
+
+            h3.text-heading-5.mt-40 Youth Ministry
+            ul.mt-15
+              li
+                a(href='https://youthspecialties.com/', target='_blank', rel='noopener noreferrer') Youth Specialties
+              li
+                a(href='https://www.search-institute.org/', target='_blank', rel='noopener noreferrer') Search Institute
+              li
+                a(href='http://www.barefootonline.com/nphweb/html/bfv4/index.jsp', target='_blank', rel='noopener noreferrer') Barefoot Ministries
+
+            h3.text-heading-5.mt-40 Publishers &amp; Bookstores
+            ul.mt-15
+              li
+                a(href='https://www.thefoundrypublishing.com/', target='_blank', rel='noopener noreferrer') The Foundry Publishing (Nazarene Publishing House)
+              li
+                a(href='https://www.zondervan.com/', target='_blank', rel='noopener noreferrer') Zondervan
+              li
+                a(href='https://www.cokesbury.com/', target='_blank', rel='noopener noreferrer') Cokesbury
+              li
+                a(href='https://www.wiley.com/learn/jossey-bass/', target='_blank', rel='noopener noreferrer') Jossey-Bass (Wiley)
+              li
+                a(href='https://www.abebooks.com/', target='_blank', rel='noopener noreferrer') AbeBooks
+
+  section.section-box.mt-50.mb-100
+    .container
+      .content-detail
+        .row
+          .col-lg-2
+          .col-lg-8
+            h2#counseling-education.text-heading-4 Counseling &amp; Christian Education Resources
+            p.text-body-text.mt-20
+              | Find scholarly and practical content for those studying counseling, Christian education or teaching ministry&mdash;including journals, training modules and professional associations.
+
+            h3.text-heading-5.mt-40 Christian &amp; Adult Education
+            ul.mt-15
+              li
+                a(href='http://www.infed.org/mobi/', target='_blank', rel='noopener noreferrer') Thinking Informal Education and Lifelong Learning
+              li
+                a(href='https://www.britannica.com/', target='_blank', rel='noopener noreferrer') Encyclopedia Britannica Online
+              li
+                a(href='https://www.worldcat.org', target='_blank', rel='noopener noreferrer') OCLC WorldCat
+              li
+                a(href='https://www.naznet.com/', target='_blank', rel='noopener noreferrer') Nazarene Network
+              li
+                a(href='https://www.napce.org.uk/', target='_blank', rel='noopener noreferrer') NAPCE
+
+            h3.text-heading-5.mt-40 Holiness &amp; Wesleyan Studies
+            ul.mt-15
+              li
+                a(href='https://nbc.whdl.org/', target='_blank', rel='noopener noreferrer') Wesleyan Holiness Digital Library
+              li
+                a(href='https://www.aplainaccount.org', target='_blank', rel='noopener noreferrer') A Plain Account: Wesleyan Lectionary Commentary
+              li
+                a(href='http://wesley.nnu.edu/', target='_blank', rel='noopener noreferrer') Wesley Center for Applied Theology
+              li
+                a(href='https://www.wesleyanbooks.com', target='_blank', rel='noopener noreferrer') Schmul Publishing Co.
+
+            h3.text-heading-5.mt-40 Library &amp; NBC Resources
+            ul.mt-15
+              li
+                a(href='/library/') NBC Library
+              li
+                a(href='https://online.nbc.edu/', target='_blank', rel='noopener noreferrer') NBC Online (Student Information System)
+              li
+                a(href='https://florida.tiu.edu/student-services/library/', target='_blank', rel='noopener noreferrer') Trinity International University Library
+              li
+                a(href='https://www.mnu.edu/learning-commons/library/', target='_blank', rel='noopener noreferrer') Mabee Learning Commons (MidAmerica Nazarene University)
+
+            p.text-body-text.mt-40
+              | Have a resource to suggest, or need help locating a source for a research paper? Contact NBC&rsquo;s librarian at 
+              a(href='mailto:library@mnu.edu') library@mnu.edu
+              |  or 
+              a(href='tel:913-971-3485') (913) 971-3485
+              | .
