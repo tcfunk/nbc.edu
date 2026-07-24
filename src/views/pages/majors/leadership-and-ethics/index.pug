@@ -1,0 +1,106 @@
+extends ../../../layouts/master.pug
+
+block title
+  title Leadership and Ethics Degree | Bachelor of Arts in Ministry
+  meta(name='description', content='Learn to lead with integrity and biblical wisdom through NBC’s Bachelor of Arts in Ministry in Leadership and Ethics.')
+
+block header
+  include ../../../components/header.pug
+
+block content
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalProgram",
+      "name": "Bachelor of Arts in Ministry – Leadership and Ethics",
+      "description": "The Bachelor of Arts in Ministry with a major in Leadership and Ethics at Nazarene Bible College equips adult learners to lead with integrity, ethical clarity, and biblical grounding in ministry, workplace, and volunteer settings.",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "Nazarene Bible College",
+        "url": "https://nbc.edu"
+      },
+      "educationalCredentialAwarded": "Bachelor of Arts in Ministry",
+      "programType": "Undergraduate Degree",
+      "occupationalCategory": [
+        "Ministry Leader",
+        "Organizational Leader",
+        "Nonprofit Leader"
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Adult learner"
+      },
+      "inLanguage": "en"
+    }
+
+  section.section-box
+    .banner-hero.nav-breadcrums.bg-gray-100
+      .container
+        .breadcrumb
+          ul
+            li.home
+              a(href='/') Home
+            li
+              a(href='/programs/') Programs
+            li
+              a(href='/programs/bachelor-of-arts-in-ministry/') B.A. in Ministry
+            li
+              span Leadership and Ethics
+
+  section.section-box
+    .banner-hero.bg-service-2
+      .container
+        .row.align-items-center
+          .col-lg-6
+            span.tag-1.bg-6.color-green-900 Bachelor of Arts in Ministry Major
+            h1.text-display-3.mt-30 Leadership and Ethics
+            p.text-body-lead-large.color-gray-600.mt-30
+              | Is your work environment changing? Do you ever feel like the job you’re doing now is challenging your worldview? Are you encountering more surprising systems and more people who behave in unexpected ways?
+            .mt-40
+              a.btn.btn-black.shape-square.icon-arrow-right-white(href='/programs/bachelor-of-arts-in-ministry/') Learn More
+              a.btn.btn-link.icon-triangle.color-gray-900.ml-40(href='/apply/') Apply
+          .col-lg-6.d-none.d-lg-block
+            .banner-imgs
+              img.img-responsive(src='/assets/imgs/stock/AdobeStock_233516145.jpeg', alt='Professional working on a laptop in a modern office')
+
+  section.section-box.mt-60.mb-50
+    .container
+      .row
+        .col-lg-2
+        .col-lg-8
+          .content-detail
+            p.text-body-lead-large.color-gray-600
+              | You are not alone. Nazarene Bible College is here to help you navigate today’s complex work environment.
+            p.text-body-text.mt-30
+              | The Bachelor of Arts in Ministry (B.A.Min.) degree program with a Leadership and Ethics major is designed for adults who want to lead and grow in the right direction. This ministry-focused degree emphasizes healthy, appropriate ways to serve in your workplace or volunteer setting.
+        .col-lg-2
+
+  section.section-box.mt-70.mb-50
+    .container
+      .row.align-items-center
+        .col-lg-6.col-sm-12.block-img-we-do
+          img.bdrd-16.img-responsive(src='/assets/imgs/stock/AdobeStock_809103813.jpeg', alt='Colleagues collaborating and mentoring one another in the workplace')
+        .col-lg-6.col-sm-12.block-we-do
+          span.tag-1.bg-5.color-green-900 Built for Ethical, Effective Leadership
+          h2.text-heading-1.mt-30 Lead with integrity, grounded in the Bible
+          p.text-body-text.color-gray-600.mt-30
+            | As a student in this program, you will develop new skills necessary to mentoring others. You will learn management concepts for reaching organizational goals.
+          p.text-body-text.color-gray-600.mt-20
+            | You will develop professional communications strategies and discuss regulatory requirements within the business setting.
+
+  section.section-box.mt-50.mb-100
+    .container
+      .row
+        .col-lg-12
+          p.text-body-lead-large.color-gray-600
+            | Build your leadership on the foundation of the Bible and Jesus’s example. Find all that and more in this program.
+          .line-bd-green.mt-30.mb-30
+      .row
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Develop the skills you need to mentor others well.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Learn management concepts for reaching organizational goals.
+        .col-lg-4.col-sm-6.col-12.mt-15
+          p.text-body-excerpt.color-gray-600.icon-triangle Build professional communication skills and understand regulatory requirements in business settings.
+
+  +BreadcrumbSection('Ready to lead with integrity in your workplace or volunteer setting?', 'NBC is waiting to welcome you.', [{ href: '/programs/bachelor-of-arts-in-ministry/', text: 'Learn More', class: 'btn-black shape-square icon-arrow-right-white' }, { href: '/apply/', text: 'Apply Now', class: 'btn-link icon-triangle color-gray-900 ml-40' }])
