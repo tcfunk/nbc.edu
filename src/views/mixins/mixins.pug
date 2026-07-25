@@ -217,6 +217,20 @@ mixin ProgramSection(img='assets/imgs/page/portfolio/portfolio-1.png', cat='Bran
             img.img-responsive.img-program(src=img, alt=name)
            
          
+//-
+  Secondary nav tabs — a horizontal row of pill links used to switch between
+  sibling pages (e.g. Programs, Structures, Majors, Minors). Pass the current
+  page's href as `activeHref` so the matching link is highlighted.
+  links: [{ href: '/majors/', text: 'Majors' }, ...]
+mixin SecondaryNavTabs(links, activeHref)
+  section.section-box.secondary-nav-tabs.bg-gray-100.pt-20.pb-20
+    .container
+      .text-center
+        ul.nav.justify-content-center(role='tablist')
+          each link in links
+            li
+              a.nav-tab-link(href=link.href, class=link.href === activeHref ? 'active' : '')= link.text
+
 mixin BreadcrumbSection(title, subtitle, buttonData = [{ href: '/programs/', text: 'Explore Programs', class: 'btn-square' }])
   section.section-box
     .banner-hero.banner-breadcrums

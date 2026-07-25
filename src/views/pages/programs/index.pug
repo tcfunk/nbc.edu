@@ -17,7 +17,18 @@ block content
               a(href='/') Home
             li
               span Programs
+
   include ../../sections/portfolio_page_title.pug
+
+  +SecondaryNavTabs([
+    { href: '/delivery/', text: 'Course Delivery' },
+    { href: '/programs/', text: 'Programs' },
+    { href: '/structures/', text: 'Structures' },
+    { href: '/majors/', text: 'Majors' },
+    { href: '/minors/', text: 'Minors' },
+    { href: '/concentrations/', text: 'Concentrations' },
+    { href: '/tracks/', text: 'Tracks' }
+  ], '/programs/')
 
   +ProgramSection('/assets/imgs/stock/AdobeStock_286503364.jpeg', 'Degree', 'Bachelors of Arts in Ministry', 'Four Year College Degree', '/programs/bachelor-of-arts-in-ministry/', 'bg-2')
     .content-detail

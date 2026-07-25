@@ -225,6 +225,29 @@
 .text-center .nav {
     justify-content: center;
 }
+.secondary-nav-tabs {
+    ul.nav {
+        li {
+            margin: 0 18px;
+            a.nav-tab-link {
+                font-family: $font-text;
+                font-size: $font-sm;
+                line-height: 19px;
+                color: $color-gray-500;
+                text-decoration: none;
+                padding: 4px 0;
+                transition: 0.2s;
+                &:hover {
+                    color: $color-green-900;
+                }
+                &.active {
+                    color: $color-gray-900;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
 @-webkit-keyframes load7{
 	0%,
 	80%,

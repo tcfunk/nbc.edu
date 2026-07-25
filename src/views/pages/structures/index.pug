@@ -8,6 +8,7 @@ block header
   include ../../components/header.pug
 
 block content
+
   section.section-box
     .banner-hero.nav-breadcrums.bg-gray-100
       .container
@@ -24,5 +25,15 @@ block content
         .text-center
           h1.text-heading-1.color-white.mt-30
             | Academic Structures &amp; Program Pathways
+
+  +SecondaryNavTabs([
+    { href: '/delivery/', text: 'Course Delivery' },
+    { href: '/programs/', text: 'Programs' },
+    { href: '/structures/', text: 'Structures' },
+    { href: '/majors/', text: 'Majors' },
+    { href: '/minors/', text: 'Minors' },
+    { href: '/concentrations/', text: 'Concentrations' },
+    { href: '/tracks/', text: 'Tracks' }
+  ], '/structures/')
 
   include ../../sections/structures_tab_section.pug
