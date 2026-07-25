@@ -303,6 +303,16 @@
 	opacity: 1;
 	visibility: visible;
 }
+.mobile-menu-active .header.sticky-bar {
+	z-index: 1001;
+	background: transparent !important;
+	box-shadow: none !important;
+	.header-logo,
+	.nav-main-menu,
+	.header-right {
+		visibility: hidden;
+	}
+}
 
 // homepage2
 .header-top
